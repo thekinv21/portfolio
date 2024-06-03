@@ -2,7 +2,7 @@
 
 import staticData from '@/json/interested.json'
 import { gsap } from 'gsap'
-import { ChevronRight, Github, Linkedin, Mail } from 'lucide-react'
+import { ChevronRight, Download, Github, Linkedin, Mail } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -22,15 +22,15 @@ export function AboutPage() {
 
 		gsap.fromTo(
 			'.animated-text',
-			{ opacity: 0, y: 20 },
-			{ opacity: 1, y: 0, duration: 1, stagger: 0.1, ease: 'power3.out' }
+			{ opacity: 0, x: 100 },
+			{ opacity: 1, x: 0, duration: 1, stagger: 0.1, ease: 'back.inOut' }
 		)
 
 		return () => clearInterval(interval)
 	}, [])
 
 	return (
-		<section className={styles.section}>
+		<section className={'section'}>
 			<div className={styles.section_container}>
 				<div className={styles.section_content}>
 					<div className={styles.first_div_container}>
@@ -48,22 +48,35 @@ export function AboutPage() {
 							View My Work
 							<ChevronRight strokeWidth={1} />
 						</Link>
-						<Link href='#' className={`${styles.second_link_button} button`}>
-							Contact Me
-							<ChevronRight strokeWidth={1} />
+						<Link
+							type='application/pdf'
+							href='#'
+							className={`${styles.second_link_button} button`}
+						>
+							<Download strokeWidth={1} />
+							Download CV
 						</Link>
 					</div>
 
 					<div className={styles.social_container}>
-						<a href='mailto:thekinv21@gmail.com' className={`${styles.link}`}>
+						<a
+							target='_blank'
+							href='mailto:thekinv21@gmail.com'
+							className={`${styles.link}`}
+						>
 							<Mail size={20} strokeWidth={1.5} />
 						</a>
 
-						<a href='https://github.com/thekinv21' className={`${styles.link}`}>
+						<a
+							target='_blank'
+							href='https://github.com/thekinv21'
+							className={`${styles.link}`}
+						>
 							<Github size={20} strokeWidth={1.5} />
 						</a>
 
 						<a
+							target='_blank'
 							href='https://www.linkedin.com/in/vadim-kiniabaev-035754178/'
 							className={`${styles.link}`}
 						>
