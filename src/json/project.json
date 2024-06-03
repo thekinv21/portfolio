@@ -1,0 +1,267 @@
+[
+	{
+		"url": "#",
+		"title": "Full Stack Yatch Web Application",
+		"id": "6",
+		"imageUrl": "../../project_image/web.png",
+		"description": "The application is a full-stack Yatch Web app that leverages Java Spring Boot for the backend and NextJS for the frontend. The app includes features view and get offer for yatchs.. ",
+		"date": "2024-Present",
+		"tools": [
+			{
+				"id": "35",
+				"name": "NextJS"
+			},
+
+			{
+				"id": "36",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "37",
+				"name": "TailwindCss"
+			},
+
+			{
+				"id": "38",
+				"name": "React-Hook-Form"
+			},
+			{
+				"id": "39",
+				"name": "React-Query"
+			},
+			{
+				"id": "46",
+				"name": "Framer-Motion"
+			}
+		]
+	},
+
+	{
+		"url": "#",
+		"title": "Full Stack HelpDesk Application",
+		"id": "7",
+		"imageUrl": "../../project_image/costest.png",
+		"description": "The application is a full-stack Helpdesk app that leverages Java Spring Boot for the backend and ReactJS ( Vite ) for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features. The backend manages the data persistence with a database system, handling CRUD operations for movie data, user profiles, and user-specific data...",
+		"date": "2023 - Present",
+		"tools": [
+			{
+				"id": "40",
+				"name": "Vite"
+			},
+
+			{
+				"id": "41",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "42",
+				"name": "TailwindCss"
+			},
+
+			{
+				"id": "43",
+				"name": "React-Hook-Form"
+			},
+			{
+				"id": "44",
+				"name": "React-Query"
+			},
+			{
+				"id": "45",
+				"name": "Framer-Motion"
+			}
+		]
+	},
+	{
+		"url": "https://github.com/thekinv21/nextjs_movie_app?tab=readme-ov-file",
+		"title": "Full-Stack Cinama Web Application",
+		"id": "1",
+		"imageUrl": "../../project_image/cinema.png",
+		"description": "The application is a full-stack movie app that leverages NestJS for the backend and NextJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations for movie data, user profiles, and user-specific data....",
+		"date": "2023-January",
+		"tools": [
+			{
+				"id": "1",
+				"name": "NextJS"
+			},
+			{
+				"id": "2",
+				"name": "NestJS"
+			},
+
+			{
+				"id": "13",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "3",
+				"name": "MongoDB"
+			},
+			{
+				"id": "4",
+				"name": "Prisma"
+			},
+
+			{
+				"id": "5",
+				"name": "React-Query"
+			},
+
+			{
+				"id": "6",
+				"name": "React-Hook-Form"
+			}
+		]
+	},
+	{
+		"url": "https://github.com/thekinv21/spotify_clone_nextjs?tab=readme-ov-file",
+		"title": "Spotify Web Application",
+		"id": "2",
+		"imageUrl": "../../project_image/spotify.png",
+		"description": "The application is a Spotify Clone app that leverages only NextJS for the frontend. The app includes features such as user authentication with real spotify account, which allows user can see his playlist and other....",
+		"date": "2022- November",
+		"tools": [
+			{
+				"id": "7",
+				"name": "NextJS"
+			},
+
+			{
+				"id": "8",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "11",
+				"name": "React-Query"
+			},
+
+			{
+				"id": "12",
+				"name": "React-Hook-Form"
+			},
+			{
+				"id": "14",
+				"name": "Rapid Api"
+			},
+			{
+				"id": "15",
+				"name": "TailwindCss"
+			}
+		]
+	},
+	{
+		"url": "https://github.com/thekinv21/cars_catalog_nextjs?tab=readme-ov-file",
+		"title": "Car Catalog Web Application",
+		"id": "3",
+		"imageUrl": "../../project_image/car.png",
+		"description": "The application is a Car catalog app that leverages  NextJS for the frontend. The app includes features view cars and search cars by model other operations..",
+		"date": "2023 - April",
+		"tools": [
+			{
+				"id": "17",
+				"name": "NextJS"
+			},
+
+			{
+				"id": "18",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "19",
+				"name": "React-Query"
+			},
+
+			{
+				"id": "20",
+				"name": "React-Hook-Form"
+			},
+			{
+				"id": "21",
+				"name": "Rapid Api"
+			},
+			{
+				"id": "22",
+				"name": "TailwindCss"
+			},
+			{
+				"id": "23",
+				"name": "Sass"
+			}
+		]
+	},
+	{
+		"url": "https://github.com/thekinv21/rezztoran-frontend",
+		"title": "Full-Stack Restaurant Web Application",
+		"id": "4",
+		"imageUrl": "../../project_image/fe1.png",
+		"description": "The application is a full-stack restaurant app that leverages Java Spring Boot for the backend and ReactJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations....",
+		"date": "2022 - October",
+		"tools": [
+			{
+				"id": "24",
+				"name": "ReactJS"
+			},
+
+			{
+				"id": "25",
+				"name": "Javascript"
+			},
+
+			{
+				"id": "26",
+				"name": "React-Query"
+			},
+
+			{
+				"id": "27",
+				"name": "Formik | Yup"
+			},
+			{
+				"id": "28",
+				"name": "Rest Api & Axios"
+			},
+			{
+				"id": "29",
+				"name": "Chakra UI"
+			},
+			{
+				"id": "30",
+				"name": "CSS"
+			}
+		]
+	},
+	{
+		"url": "https://github.com/thekinv21/Netflix-Clone-With-Javascript?tab=readme-ov-file",
+		"title": "Netflix Clone Web Application",
+		"id": "5",
+		"imageUrl": "../../project_image/netflix.png",
+		"description": "The application is a Netflix clone application for practice Javascript Basics and Html & CSS for web development, It is my first Project on Web Development.... ",
+		"date": "2021 - June",
+		"tools": [
+			{
+				"id": "31",
+				"name": "Javascript"
+			},
+
+			{
+				"id": "32",
+				"name": "HTML"
+			},
+
+			{
+				"id": "33",
+				"name": "CSS"
+			},
+
+			{
+				"id": "34",
+				"name": "Rapid Api"
+			}
+		]
+	}
+]

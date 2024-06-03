@@ -11,6 +11,13 @@ import styles from './AboutPage.module.scss'
 export function AboutPage() {
 	const [interested, setInterested] = useState<string>(staticData[0].title)
 
+	const handleView = () => {
+		const project = document.getElementById('projects')
+		if (project) {
+			project.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	useEffect(() => {
 		const updateInterest = () => {
 			const randomIndex = Math.floor(Math.random() * staticData.length)
@@ -44,10 +51,13 @@ export function AboutPage() {
 					</div>
 
 					<div className={styles.second_div_container}>
-						<Link className={`${styles.first_link_button} button`} href='#'>
+						<button
+							onClick={handleView}
+							className={`${styles.first_link_button} button`}
+						>
 							View My Work
 							<ChevronRight strokeWidth={1} />
-						</Link>
+						</button>
 						<Link
 							type='application/pdf'
 							href='#'
