@@ -11,3 +11,7 @@ body {
 	color: rgb(var(--color));
 	background: --background;
 }
+
+.section {
+	@apply w-full py-12 flex items-center border-b border-b-gray-300 justify-center flex-wrap flex md:py-24 lg:py-32;
+}
