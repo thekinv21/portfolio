@@ -1,0 +1,19 @@
+[
+	{
+		"title": "Web Development",
+		"id": 4
+	},
+
+	{
+		"title": "UI/UX Design",
+		"id": 1
+	},
+	{
+		"title": "Frontend Frameworks",
+		"id": 4
+	},
+	{
+		"title": "Backend Frameworks",
+		"id": 3
+	}
+]
