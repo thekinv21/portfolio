@@ -8,7 +8,7 @@ interface IProjectCard {
 export function ProjectCard({ item }: IProjectCard) {
 	return (
 		<Fragment>
-			<div className='rounded-lg hover:scale-105 transition-all ease-in-out duration-300 bg-card min-h-[400px] text-card-foreground flex flex-col overflow-hidden border p-2'>
+			<div className='rounded-lg hover:scale-105 transition-all ease-in-out duration-300 bg-card h-[450px] text-card-foreground flex flex-col overflow-hidden border p-2'>
 				<video
 					poster={item.imageUrl}
 					width={300}

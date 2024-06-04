@@ -1,0 +1,123 @@
+[
+	{
+		"title": "Freelancer",
+		"position": "Frontend Engineer",
+		"year": "2020 - 2022",
+		"tools": [
+			{ "title": "React", "imageUrl": "../../svg/react.svg" },
+			{
+				"title": "TypeScript",
+				"imageUrl": "../../svg/ts.svg"
+			},
+			{
+				"title": "Javascript",
+				"imageUrl": "../../svg/js.svg"
+			},
+			{
+				"title": "NestJs",
+				"imageUrl": "../../svg/nestjs.svg"
+			},
+
+			{ "title": "Redux", "imageUrl": "../../svg/redux.svg" },
+			{ "title": "Webpack", "imageUrl": "../../svg/webpack.svg" }
+		],
+		"description": "I took orders from Armut or other sites for website construction and continued to improve myself in web development, mostly freelancing during my university years until 2022.",
+		"companyImageUrl": "../../experience_image/freelance.jpeg",
+		"company": "Unknown"
+	},
+	{
+		"title": "React Developer",
+		"position": "Intern",
+		"year": "2023 - July",
+		"tools": [
+			{ "title": "React", "imageUrl": "../../svg/react.svg" },
+
+			{
+				"title": "TypeScript",
+				"imageUrl": "../../svg/ts.svg"
+			},
+			{
+				"title": "Javascript",
+				"imageUrl": "../../svg/js.svg"
+			},
+
+			{ "title": "Redux", "imageUrl": "../../svg/redux.svg" },
+			{
+				"title": "Git",
+				"imageUrl": "../../svg/git.svg"
+			},
+			{ "title": "Azure", "imageUrl": "../../svg/azure.svg" }
+		],
+		"description": "Since I had a compulsory internship at the university, I started working as an intern in the summer of 2023 and during this process I improved myself, I also made observations about how the workflow is in corporate companies and tried to become an intermediate developer in ReactJS and NextJS frameworks.",
+		"companyImageUrl": "../../experience_image/internimage.jpg",
+		"company": "Bosscubess"
+	},
+	{
+		"title": "React Developer",
+		"position": "Frontend Engineer",
+		"year": "2023 - 2024",
+		"tools": [
+			{ "title": "React", "imageUrl": "../../svg/react.svg" },
+			{
+				"title": "TypeScript",
+				"imageUrl": "../../svg/ts.svg"
+			},
+			{
+				"title": "Javascript",
+				"imageUrl": "../../svg/js.svg"
+			},
+			{
+				"title": "NestJs",
+				"imageUrl": "../../svg/nestjs.svg"
+			},
+			{ "title": "React Query", "imageUrl": "../../svg/query.svg" },
+			{
+				"title": "Redux",
+				"imageUrl": "../../svg/redux.svg"
+			},
+			{
+				"title": "Git",
+				"imageUrl": "../../svg/git.svg"
+			},
+			{
+				"title": "Azure",
+				"imageUrl": "../../svg/azure.svg"
+			}
+		],
+		"description": "After the end of my internship period, they offered me a valid job offer because they were satisfied with what I did at work and I also continued to improve myself in new technologies from this process",
+		"companyImageUrl": "../../experience_image/bosscubes.png",
+		"company": "Bosscubess"
+	},
+
+	{
+		"title": "Full-Stack Developer",
+		"position": "Full-Stack Engineer",
+		"year": "2024 March - Present",
+		"tools": [
+			{ "title": "Java", "imageUrl": "../../svg/java.svg" },
+			{
+				"title": "Spring Boot",
+				"imageUrl": "../../svg/spring.svg"
+			},
+			{ "title": "React", "imageUrl": "../../svg/react.svg" },
+			{
+				"title": "Next.js",
+				"imageUrl": "../../svg/next.svg"
+			},
+			{
+				"title": "Git",
+				"imageUrl": "../../svg/git.svg"
+			},
+			{ "title": "Github", "imageUrl": "../../svg/github.svg" },
+			{
+				"title": "Redux",
+				"imageUrl": "../../svg/redux.svg"
+			},
+
+			{ "title": "Webpack", "imageUrl": "../../svg/webpack.svg" }
+		],
+		"description": "After nearly 1 year of working time, I realized that I needed to develop myself in new areas and I also set sail for new channels in order not to remain only as a front-end developer in the market, and in this process, the Edict Digital family helped and continues to help me, thanks to them, I developed myself in Java and its framework, Spring Boot, and I continue to work on it.",
+		"companyImageUrl": "../../experience_image/edic.png",
+		"company": "Edict Digital"
+	}
+]

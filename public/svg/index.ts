@@ -13,6 +13,12 @@ import tsSvg from './ts.svg'
 import reactHookFormSvg from './form.svg'
 import framer from './motion.svg'
 
+import reduxSvg from './redux.svg'
+import vscodeSvg from './vscode.svg'
+import webpackSvg from './webpack.svg'
+
+import nestSvg from './nestjs.svg'
+
 export const stack = [
 	reactSvg,
 	nextSvg,
@@ -20,10 +26,14 @@ export const stack = [
 	jsSvg,
 	javaSvg,
 	springBoot,
+	nestSvg,
+	webpackSvg,
+	reduxSvg,
 	reactQuerySvg,
 	reactHookFormSvg,
 	tailwindSvg,
 	framer,
-	gitSvg,
+	vscodeSvg,
 	githubSvg,
+	gitSvg,
 ]
