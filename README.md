@@ -80,6 +80,7 @@ sudo apt install certbot python3-certbot-nginx
 ![Ekran Resmi 2024-07-14 15 42 31](https://github.com/user-attachments/assets/1db7b366-68f4-44e6-a594-5493e457d6f1)
 
   - Kurulum sonrası sertifikaları almalıyız.
+  - NOT: Günde 5 kereden fazla sertifika almaya çalışırsanız ban yersiniz 2 günlük
 
 ```
 sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
@@ -177,9 +178,7 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 
 
 
-## NOT: 
-
-Günde 5 kereden fazla sertifika almaya çalışırsanız ban yersiniz 2 günlük
+##
 
 
 - Build alındıktan sonra
@@ -280,6 +279,12 @@ pm2 stop `website_adı` veya `all`
 pm2 delete `website_adı` veya `all`
 ```
  - Bu komut ile VPS Ubuntu sunucuda aktif veya pasif olan websitenizi silebilirsiniz
+
+
+## Ekstra kaynaklar
+
+ - [NEXTJS deploy etme ](https://ilgaz.medium.com/deploy-multiple-next-js-apps-on-ubuntu-with-nginx-e8081c9bb080)
+ - [ReactJS deploy etme ](https://github.com/thekinv21/deployment)
 
 
 
