@@ -7,6 +7,7 @@ React projesi deploy etmek istiyorsanız:
 
   - [React Deploy dokümanı](https://github.com/thekinv21/deployment)
 
+
 Eğer `Nginx` ve `VPS Ubuntu` ile herhangi bir bilgiye sahip değilseniz öncelik olarak ReactJS deployment dökümanını incelemeniz önerilir...
 
 Burada ReactJS deployment kısmının devamıdır gibi düşünebilirsiniz ve  bunları yaparken tek VPS ve DNS adı kullanarak yapıldı
@@ -32,7 +33,7 @@ Buradan kendiniz istediğiniz dns alabilirsiniz ve ayarlarını yapabilirsiniz
 
 ### Burasi bizim React deployment için kullandığımız DNS ayarlarıdır, aşağıdaki resimde ise yeni eklenen ayarı görebilirisiniz
 
-![Ekran Resmi 2024-07-14 14 57 52](https://github.com/user-attachments/assets/2d556341-6bd8-4303-8db5-92fbcaa520c6)
+![Ekran Resmi 2024-07-14 14 57 52](https://github.com/user-attachments/assets/1aeffa72-883d-4ccd-a4fb-fd677076ac02)
 
 
 
@@ -44,7 +45,8 @@ Buradan kendiniz istediğiniz dns alabilirsiniz ve ayarlarını yapabilirsiniz
 
 React projesini deploy ettiğimizde kullandığımız nginx Konfigürasyonu ayarları aşağıdaki resimde gösterilmiştir 
 
-![nginix](https://github.com/user-attachments/assets/6740993c-b250-444c-aa11-7085df3ae49b)
+![Ekran Resmi 2024-07-13 16 56 44](https://github.com/user-attachments/assets/d92f165f-4b50-4897-8ecb-547575c845ab)
+
 
 
 - /etc/nginx/sites-available klasörüne git ve içerisindeki default adlı dosyanın içerisini tamamen boşalt.
@@ -56,8 +58,8 @@ sudo nano /etc/nginx/sites-available/default
 
 - NextJS için /etc/nginx/sites-available/default dosyasını aşağıdaki gibi doldur.
 
+![Ekran Resmi 2024-07-14 15 32 47](https://github.com/user-attachments/assets/115902f6-a463-4221-b264-8414b2e97f2d)
 
-![dasdkasd](https://github.com/user-attachments/assets/3ba53632-7c4f-42d9-b594-df63fb1a4069)
 
 
 
@@ -77,17 +79,17 @@ sudo systemctl restart nginx
 sudo apt install certbot python3-certbot-nginx
 ```
 
-![Ekran Resmi 2024-07-14 15 42 31](https://github.com/user-attachments/assets/1db7b366-68f4-44e6-a594-5493e457d6f1)
+![Ekran Resmi 2024-07-14 15 42 31](https://github.com/user-attachments/assets/bcca3788-66a3-49be-ad08-9d80dbc3c1ee)
+
 
   - Kurulum sonrası sertifikaları almalıyız.
-  - NOT: Günde 5 kereden fazla sertifika almaya çalışırsanız ban yersiniz 2 günlük
 
 ```
 sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 ```
 
 
-![Ekran Resmi 2024-07-14 18 26 07](https://github.com/user-attachments/assets/dcec36ea-1938-431c-98d7-86083418f107)
+![Ekran Resmi 2024-07-14 18 26 07](https://github.com/user-attachments/assets/d68105e4-c52a-467c-a409-5d84e2252620)
 
 
   - Burada bizim 2 tane server_name var
@@ -134,7 +136,8 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
   
   - Eklemek istediğiniz git repoya gidip SSH linkini almalıyız
 
-![Ekran Resmi 2024-07-14 18 40 34](https://github.com/user-attachments/assets/0bb4f042-69e9-4cec-a45e-828d4e373fb4)
+![Ekran Resmi 2024-07-14 18 40 34](https://github.com/user-attachments/assets/a92020d8-8476-498d-8ee3-df553e2cb2f2)
+
 
 
 ##
@@ -143,7 +146,9 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
   klonlamalıyız
 
 
-![Ekran Resmi 2024-07-14 18 41 06](https://github.com/user-attachments/assets/46740e4f-9bc3-4259-89ba-4b8660632269)
+![Ekran Resmi 2024-07-14 18 41 06](https://github.com/user-attachments/assets/682eb9c4-6a23-4a88-b854-3a7bdefbcb2e)
+
+
 
 
 ##
@@ -151,21 +156,22 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 - Klonladıktan sonra o dosyaya `chmod 777 dosya_adı` komutu ile public hale getirmeliyiz
 
 - Bu komutu yazdıktan sonra dosya public hale gelmiş ise yeşil renkte olacaktir
-![Ekran Resmi 2024-07-14 18 45 33](https://github.com/user-attachments/assets/95e64604-a97b-4549-bd17-82d4fe451ebe)
+![Ekran Resmi 2024-07-14 18 45 33](https://github.com/user-attachments/assets/cb02ac7d-f44c-4d51-a0f7-49803bc936ea)
+
 
 
 ##
 
 - Klonladığımız repo içerisine girip ilk yapmamız gereken doğru dosyayı eklediğimizden emin olmak için `ls` komutu ile kontrol etmeliyiz, eğer doğru ise `NODE` versiyonunu kontrol etmeliyiz
 
-![Ekran Resmi 2024-07-14 18 49 32](https://github.com/user-attachments/assets/4c1da98e-8f79-41df-bd66-94a8f463c411)
+![Ekran Resmi 2024-07-14 18 49 32](https://github.com/user-attachments/assets/5aefc35a-9820-46bc-b13e-05e9b26255d3)
 
 
 ##
 
 - Daha sonra `npm install` komutu ile bütün proje gereksinimlerini indirmeliyiz
 
-![Ekran Resmi 2024-07-14 18 52 31](https://github.com/user-attachments/assets/ac21b512-bc23-4de7-b9eb-5c14d511e650)
+![Ekran Resmi 2024-07-14 18 52 31](https://github.com/user-attachments/assets/5f1b1a88-2809-4642-b92d-37885ba3e907)
 
 
 
@@ -173,12 +179,13 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 
 - Kurulum tamamlandıktan sonra `npm run build` komutu ile projeyi `build` etmeliyiz
 
-![Ekran Resmi 2024-07-14 18 53 32](https://github.com/user-attachments/assets/357a5e0a-a2bc-4a32-b803-6701cfb1ffe5)
+![Ekran Resmi 2024-07-14 18 53 32](https://github.com/user-attachments/assets/6b794f1b-6064-46a5-a188-6a8f4fd64687)
 
 
 
+## NOT: 
 
-##
+Günde 5 kereden fazla sertifika almaya çalışırsanız ban yersiniz 2 günlük
 
 
 - Build alındıktan sonra
@@ -187,7 +194,8 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
   cp -r /home/alwyzon/nextjs-deployment/. /var/www/nextjs-deployment/
 ```
 
-![Ekran Resmi 2024-07-14 18 57 07](https://github.com/user-attachments/assets/229ee3b9-9768-4975-b0ea-b4575a56a92c)
+![Ekran Resmi 2024-07-14 18 57 07](https://github.com/user-attachments/assets/da838fbe-5bff-463e-81c6-d58e72d33fb1)
+
 
 ## 
 
@@ -196,7 +204,8 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 - `/var/www` altındaki nextjs dosya adı `NGINX` konfigürasyonü dosyasındaki NEXTJS ayarlarındaki  `17.satırda olan alias /var/www/dosya_adı` ile aynı olmalıdır 
 
 
-![Ekran Resmi 2024-07-14 19 02 10](https://github.com/user-attachments/assets/c32068cd-f81a-4780-b356-cacf9ae9c5cd)
+![Ekran Resmi 2024-07-14 15 32 47](https://github.com/user-attachments/assets/b957ea1d-5af3-4f85-8d13-03b25367e57a)
+
 
 ## 7) PM2 kurulumu
 
@@ -209,8 +218,6 @@ npm install pm2@latest -g
 
   - Kurulumu tamamlandıktan sonra NextJS uygulamamızı ayağa kaldırmaya hazırız demektir
 ##
-
-  - bu işlemleri `/var/www/` dosyasy içine koyduğunuz repository dosyasının içinde yapmalısınız
 
 
 - Uygulama nodejs ise
@@ -229,8 +236,6 @@ pm2 start npm --name "next_repository_adı" -- start
 
 
 ##
-
-
 
 ```
 pm2 start npm --name "repository_adı" -- start
@@ -263,7 +268,8 @@ systemctl restart nginx
 pm2 list
 ```
 
-![Ekran Resmi 2024-07-14 19 16 48](https://github.com/user-attachments/assets/81fd3f30-67ce-4daa-8dc3-a3267af005fa)
+![Ekran Resmi 2024-07-14 18 15 15](https://github.com/user-attachments/assets/022e5613-3336-4e1c-879f-2002bd6fcf11)
+
 
  - Bu komut ile VPS Ubuntu sunucuda aktif olan websitenizin durumunu vs görebilirisiniz
 
