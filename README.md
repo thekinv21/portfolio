@@ -210,6 +210,8 @@ npm install pm2@latest -g
   - Kurulumu tamamlandıktan sonra NextJS uygulamamızı ayağa kaldırmaya hazırız demektir
 ##
 
+  - bu işlemleri `/var/www/` dosyasy içine koyduğunuz repository dosyasının içinde yapmalısınız
+
 
 - Uygulama nodejs ise
 
@@ -227,6 +229,8 @@ pm2 start npm --name "next_repository_adı" -- start
 
 
 ##
+
+
 
 ```
 pm2 start npm --name "repository_adı" -- start
