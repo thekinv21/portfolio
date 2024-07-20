@@ -142,45 +142,20 @@ sudo certbot --nginx -d nextjs.vadimkiniabaev.site -d vadimkiniabaev.site
 
 ##
 
-- Daha sonra VPS Ubuntu sunucusunda bulunan `/home/alwyzon` klasörü altına o repoyu
+- Daha sonra VPS Ubuntu sunucusunda bulunan `/var/www` klasörü altına o repoyu
   klonlamalıyız
-
-
-![Ekran Resmi 2024-07-14 18 41 06](https://github.com/user-attachments/assets/682eb9c4-6a23-4a88-b854-3a7bdefbcb2e)
-
-
-
-
-##
-
-- Klonladıktan sonra o dosyaya `chmod 777 dosya_adı` komutu ile public hale getirmeliyiz
-
-- Bu komutu yazdıktan sonra dosya public hale gelmiş ise yeşil renkte olacaktir
-![Ekran Resmi 2024-07-14 18 45 33](https://github.com/user-attachments/assets/cb02ac7d-f44c-4d51-a0f7-49803bc936ea)
-
-
 
 ##
 
 - Klonladığımız repo içerisine girip ilk yapmamız gereken doğru dosyayı eklediğimizden emin olmak için `ls` komutu ile kontrol etmeliyiz, eğer doğru ise `NODE` versiyonunu kontrol etmeliyiz
 
-![Ekran Resmi 2024-07-14 18 49 32](https://github.com/user-attachments/assets/5aefc35a-9820-46bc-b13e-05e9b26255d3)
-
-
 ##
 
 - Daha sonra `npm install` komutu ile bütün proje gereksinimlerini indirmeliyiz
 
-![Ekran Resmi 2024-07-14 18 52 31](https://github.com/user-attachments/assets/5f1b1a88-2809-4642-b92d-37885ba3e907)
-
-
-
 ##
 
 - Kurulum tamamlandıktan sonra `npm run build` komutu ile projeyi `build` etmeliyiz
-
-![Ekran Resmi 2024-07-14 18 53 32](https://github.com/user-attachments/assets/6b794f1b-6064-46a5-a188-6a8f4fd64687)
-
 
 
 ## NOT: 
@@ -189,22 +164,6 @@ Günde 5 kereden fazla sertifika almaya çalışırsanız ban yersiniz 2 günlü
 
 
 - Build alındıktan sonra
-
-```
-  cp -r /home/alwyzon/nextjs-deployment/. /var/www/nextjs-deployment/
-```
-
-![Ekran Resmi 2024-07-14 18 57 07](https://github.com/user-attachments/assets/da838fbe-5bff-463e-81c6-d58e72d33fb1)
-
-
-## 
-
-- Bu komut ile `/var/www/` klasörünün altına yeni bir `nextjs-deployment` klasörüne ekledik
-
-- `/var/www` altındaki nextjs dosya adı `NGINX` konfigürasyonü dosyasındaki NEXTJS ayarlarındaki  `17.satırda olan alias /var/www/dosya_adı` ile aynı olmalıdır 
-
-
-![Ekran Resmi 2024-07-14 15 32 47](https://github.com/user-attachments/assets/b957ea1d-5af3-4f85-8d13-03b25367e57a)
 
 
 ## 7) PM2 kurulumu
