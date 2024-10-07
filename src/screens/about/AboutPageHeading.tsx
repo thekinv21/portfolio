@@ -57,7 +57,7 @@ export function AboutPageHeading() {
 				</button>
 				<Link
 					type='application/pdf'
-					href='https://ik.imagekit.io/vakifk12/VADI%CC%87M%20KI%CC%87NI%CC%87ABAEV.pdf'
+					href='https://ik.imagekit.io/vakifk12/Vadim%20Kiniabaev%20CV.pdf'
 					className={`${styles.second_link_button} button`}
 					target='_blank'
 					download={true}
