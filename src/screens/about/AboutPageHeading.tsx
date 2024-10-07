@@ -57,7 +57,7 @@ export function AboutPageHeading() {
 				</button>
 				<Link
 					type='application/pdf'
-					href='https://edictdigitalspaces.fra1.digitaloceanspaces.com/karina/7dd5dcec-1ca3-4d21-b747-395511eacd51.pdf'
+					href='https://ik.imagekit.io/vakifk12/VADI%CC%87M%20KI%CC%87NI%CC%87ABAEV.pdf'
 					className={`${styles.second_link_button} button`}
 					target='_blank'
 					download={true}
