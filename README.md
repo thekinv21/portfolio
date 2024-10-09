@@ -191,7 +191,9 @@ pm2 start dist/index.js --name "repository_adı" -i max
 pm2 start npm --name "next_repository_adı" -- start
 ```
 
-  - Burada repository_adı `/var/www` klasörünün içine kaydettiğiniz `nextjs` veya `nodejs` repository adı 
+  - Burada repository_adı `/var/www` klasörünün içine kaydettiğiniz `nextjs` veya `nodejs` repository adı
+  - Bu işlemler root kullanıcı olup /var/www dosyası içinde gerçekleştirilmelidir
+  - pm2 ilk komutu /var/www dosyası içinde çalıştır
 
 
 ##
