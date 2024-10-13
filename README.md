@@ -159,8 +159,8 @@ pm2 start npm --name "next_repository_adı" -- start
 ```
 
 - Burada repository_adı `/var/www` klasörünün içine kaydettiğiniz `nextjs` veya `nodejs` repository adı
-- Bu işlemler root kullanıcı olup /var/www dosyası içinde gerçekleştirilmelidir
-- pm2 ilk komutu /var/www dosyası içinde çalıştır
+- Bu işlemleri /var/www/repository_adı dosyası içinde gerçekleştirilmelidir
+- pm2 ilk komutu /var/www/repository_adı dosyası içinde çalıştır
 
 ##
 
