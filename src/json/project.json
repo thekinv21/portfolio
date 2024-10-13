@@ -3,7 +3,7 @@
 		"url": "#",
 		"title": "Full Stack Yatch Web Application",
 		"id": "6",
-		"imageUrl": "../../project_image/web.png",
+		"imageUrl": "/project_image/web.png",
 		"description": "The application is a full-stack Yatch Web app that leverages Java Spring Boot for the backend and NextJS for the frontend. The app includes features view and get offer for yatchs.. ",
 		"date": "2024-Present",
 		"tools": [
@@ -41,7 +41,7 @@
 		"url": "#",
 		"title": "Full Stack HelpDesk Application",
 		"id": "7",
-		"imageUrl": "../../project_image/costest.png",
+		"imageUrl": "/project_image/costest.png",
 		"description": "The application is a full-stack Helpdesk app that leverages Java Spring Boot for the backend and ReactJS ( Vite ) for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features. The backend manages the data persistence with a database system, handling CRUD operations for movie data, user profiles, and user-specific data...",
 		"date": "2023 - Present",
 		"tools": [
@@ -78,7 +78,7 @@
 		"url": "https://github.com/thekinv21/nextjs_movie_app?tab=readme-ov-file",
 		"title": "Full-Stack Cinama Web Application",
 		"id": "1",
-		"imageUrl": "../../project_image/cinema.png",
+		"imageUrl": "/project_image/cinema.png",
 		"description": "The application is a full-stack movie app that leverages NestJS for the backend and NextJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations for movie data, user profiles, and user-specific data....",
 		"date": "2023-January",
 		"tools": [
@@ -120,7 +120,7 @@
 		"url": "https://github.com/thekinv21/spotify_clone_nextjs?tab=readme-ov-file",
 		"title": "Spotify Web Application",
 		"id": "2",
-		"imageUrl": "../../project_image/spotify.png",
+		"imageUrl": "/project_image/spotify.png",
 		"description": "The application is a Spotify Clone app that leverages only NextJS for the frontend. The app includes features such as user authentication with real spotify account, which allows user can see his playlist and other....",
 		"date": "2022- November",
 		"tools": [
@@ -157,7 +157,7 @@
 		"url": "https://github.com/thekinv21/cars_catalog_nextjs?tab=readme-ov-file",
 		"title": "Car Catalog Web Application",
 		"id": "3",
-		"imageUrl": "../../project_image/car.png",
+		"imageUrl": "/project_image/car.png",
 		"description": "The application is a Car catalog app that leverages  NextJS for the frontend. The app includes features view cars and search cars by model other operations..",
 		"date": "2023 - April",
 		"tools": [
@@ -198,7 +198,7 @@
 		"url": "https://github.com/thekinv21/rezztoran-frontend",
 		"title": "Full-Stack Restaurant Web Application",
 		"id": "4",
-		"imageUrl": "../../project_image/fe1.png",
+		"imageUrl": "/project_image/fe1.png",
 		"description": "The application is a full-stack restaurant app that leverages Java Spring Boot for the backend and ReactJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations....",
 		"date": "2022 - October",
 		"tools": [
@@ -239,7 +239,7 @@
 		"url": "https://github.com/thekinv21/Netflix-Clone-With-Javascript?tab=readme-ov-file",
 		"title": "Netflix Clone Web Application",
 		"id": "5",
-		"imageUrl": "../../project_image/netflix.png",
+		"imageUrl": "/project_image/netflix.png",
 		"description": "The application is a Netflix clone application for practice Javascript Basics and Html & CSS for web development, It is my first Project on Web Development.... ",
 		"date": "2021 - June",
 		"tools": [
@@ -261,6 +261,263 @@
 			{
 				"id": "34",
 				"name": "Rapid Api"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/reactjs-deployment",
+		"title": "ReactJS Deployment",
+		"id": "6",
+		"imageUrl": "/project_image/reactjs.png",
+		"description": "Publishing ReactJS project on a VPS server using Ubuntu and NGINX is a quick way to make  project accessible on the internet. You need compile ReactJS Vite project and create static files after transfer these files to the server and set NGINX as a reverse proxy to correctly route incoming requests. NGINX serves these files quickly, allowing users to access project seamlessly",
+		"date": "2024 - August",
+		"tools": [
+			{
+				"id": "32",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "33",
+				"name": "ReactJS"
+			},
+
+			{
+				"id": "34",
+				"name": "TailwindCss"
+			},
+
+			{
+				"id": "35",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "36",
+				"name": "Nginx Reverse Proxy"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/portfolio",
+		"title": "NextJS  Deployment",
+		"id": "7",
+		"imageUrl": "/project_image/nextjs.jpg",
+		"description": "Publishing NextJs project on a VPS server using Ubuntu and NGINX is a quick way to make  project accessible on the internet. You need compile NextJS project and create static files after transfer these files to the server and set NGINX as a reverse proxy to correctly route incoming requests. NGINX serves these files quickly, allowing users to access project seamlessly",
+		"date": "2024 - August",
+		"tools": [
+			{
+				"id": "37",
+				"name": "Typescript"
+			},
+
+			{
+				"id": "38",
+				"name": "NextJS"
+			},
+
+			{
+				"id": "39",
+				"name": "TailwindCss"
+			},
+
+			{
+				"id": "40",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "41",
+				"name": "Nginx Reverse Proxy"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/postgresql_deployment",
+		"title": "PostgreSql Deployment",
+		"id": "8",
+		"imageUrl": "/project_image/postgre.png",
+		"description": "Publishing PostgreSql Database on a VPS server using Ubuntu and NGINX",
+		"date": "2024 - September",
+		"tools": [
+			{
+				"id": "42",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "43",
+				"name": "Nginx Reverse Proxy"
+			},
+			{
+				"id": "44",
+				"name": "PostgreSql"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/tomcat10_spring_boot_deployment",
+		"title": "Apache Tomcat10 Deployment",
+		"id": "9",
+		"imageUrl": "/project_image/tomcat.png",
+		"description": "Publishing Tomcat10 on a VPS server using Ubuntu and NGINX",
+		"date": "2024 - September",
+		"tools": [
+			{
+				"id": "45",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "46",
+				"name": "Nginx Reverse Proxy"
+			},
+			{
+				"id": "47",
+				"name": "Tomcat10"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/seo-optimization-nextjs",
+		"title": "NextJS Seo Optimization",
+		"id": "10",
+		"imageUrl": "/project_image/seo.webp",
+		"description": "Search Engine Optimization (SEO) is crucial for improving the visibility of your website in search engine results. Next.js 14, with its advanced features and optimizations, offers a robust platform for building SEO-friendly web applications",
+		"date": "2024 - September",
+		"tools": [
+			{
+				"id": "48",
+				"name": "NextJS"
+			},
+			{
+				"id": "49",
+				"name": "Typescript"
+			},
+			{
+				"id": "50",
+				"name": "TailwindCss"
+			}
+		]
+	},
+
+	{
+		"url": "https://edebiyat.k12.com.tr/",
+		"title": "Edebiyat Web",
+		"id": "11",
+		"imageUrl": "/project_image/edebiyat.png",
+		"description": "Vakıf k12 Edebiyat official web site",
+		"date": "2024 - September",
+		"tools": [
+			{
+				"id": "51",
+				"name": "NextJS"
+			},
+			{
+				"id": "52",
+				"name": "Java Spring Boot"
+			},
+			{
+				"id": "53",
+				"name": "Typescript"
+			},
+			{
+				"id": "54",
+				"name": "TailwindCss"
+			},
+			{
+				"id": "55",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "56",
+				"name": "Nginx Reverse Proxy"
+			},
+			{
+				"id": "57",
+				"name": "Git"
+			},
+
+			{
+				"id": "58",
+				"name": "Github"
+			}
+		]
+	},
+
+	{
+		"url": "https://k12.com.tr/en",
+		"title": "Vakıf k12 Web",
+		"id": "12",
+		"imageUrl": "/project_image/vakif.png",
+		"description": "Vakıf k12 official web site",
+		"date": "2024 - July",
+		"tools": [
+			{
+				"id": "59",
+				"name": "NextJS"
+			},
+			{
+				"id": "60",
+				"name": "Java Spring Boot"
+			},
+			{
+				"id": "61",
+				"name": "Typescript"
+			},
+			{
+				"id": "62",
+				"name": "TailwindCss"
+			},
+			{
+				"id": "63",
+				"name": "VPS Ubuntu Server 20.04"
+			},
+			{
+				"id": "64",
+				"name": "Nginx Reverse Proxy"
+			},
+			{
+				"id": "65",
+				"name": "Git"
+			},
+
+			{
+				"id": "66",
+				"name": "Github"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/ui-components",
+		"title": "NextJS & ReactJS Custom components",
+		"id": "13",
+		"imageUrl": "/project_image/reactjs.png",
+		"description": "This project template for React and Nextjs custom components for create UI/UX for ease",
+		"date": "September - Present",
+		"tools": [
+			{
+				"id": "67",
+				"name": "NextJS"
+			},
+			{
+				"id": "68",
+				"name": "ReactJS"
+			},
+			{
+				"id": "69",
+				"name": "Typescript"
+			},
+			{
+				"id": "70",
+				"name": "TailwindCss"
+			},
+
+			{
+				"id": "71",
+				"name": "And more others.."
 			}
 		]
 	}

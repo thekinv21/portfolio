@@ -13,5 +13,5 @@ body {
 }
 
 .section {
-	@apply w-full py-12 flex items-center border-b border-b-gray-300 justify-center flex-wrap flex md:py-24 lg:py-32;
+	@apply w-full py-12 border-b border-b-gray-100 items-center justify-center flex-wrap flex lg:py-32;
 }

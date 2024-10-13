@@ -1,5 +1,4 @@
 import gitSvg from './git.svg'
-import githubSvg from './github.svg'
 import javaSvg from './java.svg'
 import tailwindSvg from './tailwind.svg'
 
@@ -11,13 +10,12 @@ import springBoot from './spring.svg'
 import tsSvg from './ts.svg'
 
 import reactHookFormSvg from './form.svg'
-import framer from './motion.svg'
 
 import reduxSvg from './redux.svg'
-import vscodeSvg from './vscode.svg'
-import webpackSvg from './webpack.svg'
 
 import nestSvg from './nestjs.svg'
+import nginx from './nginx.svg'
+import ubuntu from './ubuntu.svg'
 
 export const stack = [
 	reactSvg,
@@ -27,13 +25,11 @@ export const stack = [
 	javaSvg,
 	springBoot,
 	nestSvg,
-	webpackSvg,
 	reduxSvg,
 	reactQuerySvg,
 	reactHookFormSvg,
 	tailwindSvg,
-	framer,
-	vscodeSvg,
-	githubSvg,
 	gitSvg,
+	nginx,
+	ubuntu,
 ]

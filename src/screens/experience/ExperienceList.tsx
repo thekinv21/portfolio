@@ -4,11 +4,11 @@ import { IExperience } from '@/types/experience.types'
 import { useInView } from 'react-intersection-observer'
 import { ExperienceCard } from './ExperienceCard'
 
-interface IExperianceList {
-	experiances: IExperience[]
+interface IExperienceList {
+	experiences: IExperience[]
 }
 
-export function ExperianceList({ experiances }: IExperianceList) {
+export function ExperienceList({ experiences }: IExperienceList) {
 	const { inView: experienceView, ref: experienceRef } = useInView()
 
 	return (
@@ -16,7 +16,7 @@ export function ExperianceList({ experiances }: IExperianceList) {
 			className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'
 			ref={experienceRef}
 		>
-			{experiances.map((item: IExperience, idx: number) => (
+			{experiences.map((item: IExperience, idx: number) => (
 				<motion.div
 					key={idx}
 					initial={{ opacity: 0, x: -100 }}
