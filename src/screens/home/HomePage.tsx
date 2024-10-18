@@ -1,5 +1,6 @@
 'use client'
 
+import { Footer } from '@/components/footer/Footer'
 import { AboutPage } from '../about/AboutPage'
 import { ExperiencePage } from '../experience/ExperiencePage'
 import { ProjectsPage } from '../projects/ProjectsPage'
@@ -13,6 +14,7 @@ export function HomePage() {
 			<ProjectsPage />
 			<StackPage />
 			<ExperiencePage />
+			<Footer />
 		</main>
 	)
 }

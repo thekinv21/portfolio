@@ -13,6 +13,7 @@ import reactHookFormSvg from './form.svg'
 
 import reduxSvg from './redux.svg'
 
+import linkedin from './linkedin.svg'
 import nestSvg from './nestjs.svg'
 import nginx from './nginx.svg'
 import ubuntu from './ubuntu.svg'
@@ -33,3 +34,5 @@ export const stack = [
 	nginx,
 	ubuntu,
 ]
+
+export { linkedin }

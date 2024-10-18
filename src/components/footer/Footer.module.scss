@@ -1,0 +1,57 @@
+.footer {
+	@apply bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]  shadow;
+}
+
+.footer_container {
+	@apply max-w-screen-xl px-4 py-16 mx-auto md:px-6 lg:px-8;
+}
+
+.footer_content_grid {
+	@apply grid grid-cols-1 gap-8 lg:grid-cols-3;
+}
+
+.logo {
+	@apply cursor-pointer;
+
+	> img {
+		@apply mr-5 h-6 md:h-9;
+	}
+
+	> p {
+		@apply max-w-xs mt-8 text-sm text-gray-600;
+	}
+}
+
+.social {
+	@apply flex mt-8 space-x-6 text-gray-600;
+
+	> a {
+		@apply hover:opacity-75;
+
+		> span {
+			@apply sr-only;
+		}
+	}
+}
+
+.footer_links_grid {
+	@apply grid grid-cols-1 gap-8 lg:col-span-2 md:grid-cols-2 lg:grid-cols-4;
+
+	> div {
+		> p {
+			@apply font-medium;
+		}
+
+		> nav {
+			@apply flex flex-col mt-4 space-y-2 text-sm text-gray-500;
+
+			> a {
+				@apply hover:opacity-75;
+			}
+		}
+	}
+}
+
+.company_ {
+	@apply mt-8 text-xs text-gray-800;
+}

@@ -76,7 +76,7 @@
 	},
 	{
 		"url": "https://github.com/thekinv21/nextjs_movie_app?tab=readme-ov-file",
-		"title": "Full-Stack Cinama Web Application",
+		"title": "Full-Stack Cinema Web Application",
 		"id": "1",
 		"imageUrl": "/project_image/cinema.png",
 		"description": "The application is a full-stack movie app that leverages NestJS for the backend and NextJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations for movie data, user profiles, and user-specific data....",

@@ -13,5 +13,5 @@ body {
 }
 
 .section {
-	@apply w-full py-12 border-b border-b-gray-100 items-center justify-center flex-wrap flex lg:py-32;
+	@apply w-full py-12 items-center justify-center flex-wrap flex lg:py-32 inset-0 h-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px];
 }
