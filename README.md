@@ -212,6 +212,13 @@ pm2 delete `website_adı` veya `all`
 
 - Bu komut ile VPS Ubuntu sunucuda aktif veya pasif olan websitenizi silebilirsiniz
 
+
+## 8) Kısaca Bütün komut
+
+```
+pm2 stop portfolio-fe && pm2 delete portfolio-fe && cd /var/www/portfolio && rm -rf node_modules package-lock.json && git pull && git fetch && npm install && npm run build && pm2 start npm --name "portfolio-fe" -- start && sudo systemctl restart nginx && pm2 restart portfolio-fe
+```
+
 ## Ekstra kaynaklar
 
 - [NEXTJS deploy etme ](https://ilgaz.medium.com/deploy-multiple-next-js-apps-on-ubuntu-with-nginx-e8081c9bb080)
