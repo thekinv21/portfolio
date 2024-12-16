@@ -11,7 +11,8 @@ export function AboutPageBlob() {
 					src='/me.jpg'
 					alt='me'
 					priority
-					layout='fill'
+					width={500}
+					height={500}
 					className={styles.image_inside}
 					draggable={false}
 				/>
