@@ -216,8 +216,17 @@ pm2 delete `website_adı` veya `all`
 ## 8) Kısaca Bütün komut
 
 ```
-pm2 stop portfolio-fe && pm2 delete portfolio-fe && cd /var/www/portfolio && rm -rf node_modules package-lock.json && git pull && git fetch && npm install && npm run build && pm2 start npm --name "portfolio-fe" -- start && sudo systemctl restart nginx && pm2 restart portfolio-fe
+pm2 stop portfolio && pm2 delete portfolio && pm2 save --force && cd /var/www/portfolio && rm -rf node_modules package-lock.json .next && git pull && git fetch && npm install && npm run build && pm2 start npm --name "portfolio" -- start && sudo systemctl restart nginx && pm2 restart portfolio
 ```
+
+## 8) Logları Resetlemek için
+
+
+```
+pm2 flush               # Flush all logs
+pm2 reloadLogs          # Reload all logs
+```
+
 
 ## Ekstra kaynaklar
 
