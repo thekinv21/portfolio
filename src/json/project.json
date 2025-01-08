@@ -1,7 +1,7 @@
 [
 	{
 		"url": "#",
-		"title": "Full Stack Yatch Web Application",
+		"title": "Full Stack Yacht Web Application",
 		"id": "6",
 		"imageUrl": "/project_image/web.png",
 		"description": "The application is a full-stack Yatch Web app that leverages Java Spring Boot for the backend and NextJS for the frontend. The app includes features view and get offer for yatchs.. ",
@@ -518,6 +518,130 @@
 			{
 				"id": "71",
 				"name": "And more others.."
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/bloomify-admin",
+		"title": "Full-Stack Bloomify Admin Dashboard",
+		"id": "14",
+		"imageUrl": "/project_image/bloomify-admin.png",
+		"description": "The application is a full-stack Bloomify Admin Dashboard app that leverages Java Spring Boot for the backend and ReactJS for the frontend. The app includes features such as user authentication, which allows users to create accounts and log in to access personalized features like favorite lists and watch later queues. The backend manages the data persistence with a database system, handling CRUD operations....",
+		"date": "December - Present",
+		"tools": [
+			{
+				"id": "69",
+				"name": "ReactJS"
+			},
+			{
+				"id": "73",
+				"name": "Java Spring Boot"
+			},
+			{
+				"id": "70",
+				"name": "Typescript"
+			},
+			{
+				"id": "71",
+				"name": "React Query"
+			},
+			{
+				"id": "71",
+				"name": "TailwindCss"
+			},
+			{
+				"id": "71",
+				"name": "ShadCn"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/nestjs-auth-with-otp",
+		"title": "OTP Authentication with NestJS",
+		"id": "19",
+		"imageUrl": "/project_image/otp.jpg",
+		"description": "OTP Authentication with NestJS and PostMark for secure user authentication with email and save user experience",
+		"date": "January 2025",
+		"tools": [
+			{
+				"id": "69",
+				"name": "NestJS"
+			},
+			{
+				"id": "73",
+				"name": "PostMark"
+			},
+			{
+				"id": "70",
+				"name": "Typescript"
+			},
+			{
+				"id": "71",
+				"name": "Prisma"
+			},
+			{
+				"id": "72",
+				"name": "Jwt Auth"
+			}
+		]
+	},
+
+	{
+		"url": "https://github.com/thekinv21/animated-sidebar",
+		"title": "Animated Sidebar",
+		"id": "20",
+		"imageUrl": "/project_image/animated_sidebar.png",
+		"description": "Animated Sidebar with ReactJS and TailwindCss for create beautiful sidebar for your project",
+		"date": "January 2025",
+		"tools": [
+			{
+				"id": "73",
+				"name": "ReactJS"
+			},
+			{
+				"id": "74",
+				"name": "Typescript"
+			},
+			{
+				"id": "75",
+				"name": "TailwindCss"
+			},
+			{
+				"id": "76",
+				"name": "ShadCn"
+			}
+		]
+	},
+
+	{
+		"url": "https://medium.com/@thekinv21/deploy-spring-boot-on-tomcat-10-with-nginx-autodeploy-ci-cd-via-github-actions-on-ubuntu-24-04-43849a43211d",
+		"title": "Deploy Spring Boot on Tomcat 10 with Nginx & AutoDeploy CI/CD via GitHub Actions on Ubuntu 24.04",
+		"id": "22",
+		"imageUrl": "/project_image/autodeployment.png",
+		"description": "Deploy Spring Boot on Tomcat 10 with Nginx & AutoDeploy CI/CD via GitHub Actions on Ubuntu 24.04",
+		"date": "December - Present",
+		"tools": [
+			{
+				"id": "73",
+				"name": "Java Spring Boot"
+			},
+			{
+				"id": "74",
+				"name": "Tomcat 10"
+			},
+			{
+				"id": "75",
+				"name": "Nginx"
+			},
+			{
+				"id": "76",
+				"name": "Ubuntu 24.04"
+			},
+			{
+				"id": "77",
+				"name": "GitHub Actions"
 			}
 		]
 	}
