@@ -1,7 +1,7 @@
 import { ChipList } from '@/components/ui'
+import type { TSection } from '@/types/CaseStudyTypes'
 
 import { EYEBROW } from '../styles'
-import type { TSection } from './types'
 
 type TStackSectionProps = { section: TSection<'stack'> }
 

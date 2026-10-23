@@ -1,6 +1,6 @@
-import type { TerminalLine, TerminalTone } from '@/content'
+import type { TTerminalLine, TTerminalTone } from '@/types/TerminalTypes'
 
-const tones: Record<TerminalTone, string> = {
+const tones: Record<TTerminalTone, string> = {
 	get: 'bg-[#E8F0FE] text-[#1D4ED8]',
 	post: 'bg-[#E6F4EA] text-[#15803D]',
 	put: 'bg-[#FDF1E1] text-[#B45309]',
@@ -9,7 +9,7 @@ const tones: Record<TerminalTone, string> = {
 
 type TTerminalProps = {
 	title: string
-	lines: TerminalLine[]
+	lines: TTerminalLine[]
 	className?: string
 	compact?: boolean
 }
@@ -38,7 +38,7 @@ export function Terminal(props: TTerminalProps) {
 	)
 }
 
-type TTerminalRowProps = { line: TerminalLine }
+type TTerminalRowProps = { line: TTerminalLine }
 
 function TerminalRow({ line }: TTerminalRowProps) {
 	return (

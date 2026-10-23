@@ -1,12 +1,12 @@
 import { Lock } from 'lucide-react'
 
 import { BulletList, PillLink, Shot } from '@/components/ui'
-import type { Project, ProjectMock } from '@/content'
 import { routes } from '@/lib/routes'
+import type { TProject, TProjectMock } from '@/types/ProjectTypes'
 
 const SHOT_SIZES = '(max-width: 768px) 100vw, 860px'
 
-type TProjectCardProps = { project: Project }
+type TProjectCardProps = { project: TProject }
 
 export function ProjectCard({ project }: TProjectCardProps) {
 	return (
@@ -57,7 +57,7 @@ const PANEL = 'rounded-[10px] border border-line-soft bg-white'
 const ROW_WIDTHS = ['w-[92%]', 'w-[78%]', 'w-[86%]']
 
 /** Internal system without public screenshots — an illustrated stand-in. */
-function LikeMock({ mock }: { mock: ProjectMock }) {
+function LikeMock({ mock }: { mock: TProjectMock }) {
 	return (
 		<div className='shot box-border flex flex-col gap-4 border border-line-soft bg-surface p-7'>
 			<div className='flex flex-wrap items-center justify-between gap-2'>

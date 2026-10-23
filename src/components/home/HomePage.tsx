@@ -1,4 +1,5 @@
-import { getHomeContent, type Locale, profile } from '@/content'
+import { getHomeContent, profile } from '@/lib/content'
+import type { TLocale } from '@/types/LocaleTypes'
 
 import { BackendSection } from './BackendSection'
 import { ContactSection } from './ContactSection'
@@ -11,7 +12,7 @@ import { StackSection } from './StackSection'
 import { TechMarquee } from './TechMarquee'
 import { WritingSection } from './WritingSection'
 
-type THomePageProps = { locale: Locale }
+type THomePageProps = { locale: TLocale }
 
 export function HomePage({ locale }: THomePageProps) {
 	const content = getHomeContent(locale)

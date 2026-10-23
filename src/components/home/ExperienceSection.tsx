@@ -6,11 +6,12 @@ import {
 	Timeline,
 	TimelineDot,
 } from '@/components/ui'
-import type { ExperienceItem, SectionHeading } from '@/content'
+import type { TSectionHeading } from '@/types/CommonTypes'
+import type { TExperienceItem } from '@/types/ExperienceTypes'
 
 type TExperienceSectionProps = {
-	heading: SectionHeading
-	items: ExperienceItem[]
+	heading: TSectionHeading
+	items: TExperienceItem[]
 }
 
 export function ExperienceSection({ heading, items }: TExperienceSectionProps) {

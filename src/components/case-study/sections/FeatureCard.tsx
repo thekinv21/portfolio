@@ -1,8 +1,8 @@
 import { Shot } from '@/components/ui'
-import type { FeatureFigure } from '@/content'
+import type { TFeatureFigure } from '@/types/CaseStudyTypes'
 
 type TFeatureCardProps = {
-	feature: FeatureFigure
+	feature: TFeatureFigure
 	reversed?: boolean
 }
 

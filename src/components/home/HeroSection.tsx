@@ -3,13 +3,14 @@ import Image from 'next/image'
 import { ArrowDown, MapPin } from 'lucide-react'
 
 import { PillLink, RichText } from '@/components/ui'
-import type { Profile, SiteContent } from '@/content'
+import type { TProfile } from '@/types/ProfileTypes'
+import type { THero } from '@/types/SiteTypes'
 
 import { StatusDot } from './StatusDot'
 
 type THeroSectionProps = {
-	profile: Profile
-	hero: SiteContent['hero']
+	profile: TProfile
+	hero: THero
 }
 
 export function HeroSection({ profile, hero }: THeroSectionProps) {

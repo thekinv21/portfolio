@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 import { routes } from '@/lib/routes'
+import type { TSection } from '@/types/CaseStudyTypes'
 
 import { EYEBROW, TITLE } from '../styles'
 import { FlowBox } from './FlowBox'
-import type { TSection } from './types'
 
 type TFlowSectionProps = { section: TSection<'flow'> }
 

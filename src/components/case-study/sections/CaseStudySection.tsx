@@ -1,4 +1,4 @@
-import type { CaseStudySection as TCaseStudySection } from '@/content'
+import type { TCaseStudySection } from '@/types/CaseStudyTypes'
 
 import { CardsSection } from './CardsSection'
 import { FlowSection } from './FlowSection'

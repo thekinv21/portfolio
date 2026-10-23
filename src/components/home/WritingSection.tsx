@@ -1,9 +1,10 @@
 import { SectionHeader } from '@/components/ui'
-import type { Article, SiteContent } from '@/content'
+import type { TArticle } from '@/types/ArticleTypes'
+import type { TWritingHeading } from '@/types/SiteTypes'
 
 type TWritingSectionProps = {
-	heading: SiteContent['sections']['writing']
-	articles: Article[]
+	heading: TWritingHeading
+	articles: TArticle[]
 	mediumHref: string
 }
 

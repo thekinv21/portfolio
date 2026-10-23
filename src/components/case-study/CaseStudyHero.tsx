@@ -1,9 +1,9 @@
 import { PillLink, Shot } from '@/components/ui'
-import type { CaseStudy } from '@/content'
+import type { TCaseStudy } from '@/types/CaseStudyTypes'
 
 import { FULL_SIZES } from './styles'
 
-type TCaseStudyHeroProps = { study: CaseStudy }
+type TCaseStudyHeroProps = { study: TCaseStudy }
 
 export function CaseStudyHero({ study }: TCaseStudyHeroProps) {
 	return (

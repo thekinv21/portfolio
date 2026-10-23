@@ -1,7 +1,7 @@
-import type { TSection } from './types'
+import type { TFlowBox } from '@/types/CaseStudyTypes'
 
 type TFlowBoxProps = {
-	box: TSection<'flow'>['source']
+	box: TFlowBox
 	highlighted?: boolean
 }
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { HomePage } from '@/components/home/HomePage'
-import { getHomeContent } from '@/content'
+import { getHomeContent } from '@/lib/content'
 
 const { title, description } = getHomeContent('tr').site.meta
 

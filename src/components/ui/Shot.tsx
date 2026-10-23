@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import type { Media } from '@/content'
+import type { TMedia } from '@/types/CommonTypes'
 
-type TShotProps = Media & {
+type TShotProps = TMedia & {
 	sizes: string
 	className?: string
 	preload?: boolean

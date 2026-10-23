@@ -9,15 +9,16 @@ import {
 	TimelineAside,
 	TimelineDot,
 } from '@/components/ui'
-import type { Project, ProjectFilter, SiteContent } from '@/content'
+import type { TProject, TProjectFilter } from '@/types/ProjectTypes'
+import type { TProjectsHeading } from '@/types/SiteTypes'
 
 import { ProjectCard } from './ProjectCard'
 
-const FILTERS: ProjectFilter[] = ['all', 'client', 'fullstack', 'frontend']
+const FILTERS: TProjectFilter[] = ['all', 'client', 'fullstack', 'frontend']
 
 type TProjectsSectionProps = {
-	heading: SiteContent['sections']['projects']
-	projects: Project[]
+	heading: TProjectsHeading
+	projects: TProject[]
 	repositoriesHref: string
 }
 
@@ -26,9 +27,9 @@ export function ProjectsSection({
 	projects,
 	repositoriesHref,
 }: TProjectsSectionProps) {
-	const [filter, setFilter] = useState<ProjectFilter>('all')
+	const [filter, setFilter] = useState<TProjectFilter>('all')
 
-	const matches = (project: Project, value: ProjectFilter) =>
+	const matches = (project: TProject, value: TProjectFilter) =>
 		value === 'all' || project.category === value
 
 	return (

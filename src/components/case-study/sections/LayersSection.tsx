@@ -1,5 +1,6 @@
+import type { TSection } from '@/types/CaseStudyTypes'
+
 import { EYEBROW, TITLE } from '../styles'
-import type { TSection } from './types'
 
 type TLayersSectionProps = { section: TSection<'layers'> }
 

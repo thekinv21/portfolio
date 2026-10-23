@@ -1,6 +1,6 @@
-import type { LabelValue } from '@/content'
+import type { TLabelValue } from '@/types/CommonTypes'
 
-type TCaseStudyFactsProps = { facts: LabelValue[] }
+type TCaseStudyFactsProps = { facts: TLabelValue[] }
 
 export function CaseStudyFacts({ facts }: TCaseStudyFactsProps) {
 	return (

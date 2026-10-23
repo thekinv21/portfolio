@@ -1,9 +1,10 @@
 import { ChipList, SectionHeader } from '@/components/ui'
-import type { SectionHeading, StackContent } from '@/content'
+import type { TSectionHeading } from '@/types/CommonTypes'
+import type { TStackContent } from '@/types/StackTypes'
 
 type TStackSectionProps = {
-	heading: SectionHeading
-	stack: StackContent
+	heading: TSectionHeading
+	stack: TStackContent
 }
 
 export function StackSection({ heading, stack }: TStackSectionProps) {

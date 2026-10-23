@@ -3,14 +3,15 @@ import Image from 'next/image'
 import { ArrowDown } from 'lucide-react'
 
 import { PillLink } from '@/components/ui'
-import type { Profile, SiteContent } from '@/content'
+import type { TProfile } from '@/types/ProfileTypes'
+import type { TSiteContent } from '@/types/SiteTypes'
 
 import { CopyEmailButton } from './CopyEmailButton'
 import { StatusDot } from './StatusDot'
 
 type TContactSectionProps = {
-	profile: Profile
-	site: SiteContent
+	profile: TProfile
+	site: TSiteContent
 }
 
 export function ContactSection({ profile, site }: TContactSectionProps) {

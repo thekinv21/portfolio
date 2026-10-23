@@ -1,4 +1,4 @@
-import type { CaseStudy } from '@/content'
+import type { TCaseStudy } from '@/types/CaseStudyTypes'
 
 import { CaseStudyFacts } from './CaseStudyFacts'
 import { CaseStudyFooter } from './CaseStudyFooter'
@@ -6,7 +6,7 @@ import { CaseStudyHeader } from './CaseStudyHeader'
 import { CaseStudyHero } from './CaseStudyHero'
 import { CaseStudySection } from './sections/CaseStudySection'
 
-type TCaseStudyPageProps = { study: CaseStudy }
+type TCaseStudyPageProps = { study: TCaseStudy }
 
 export function CaseStudyPage({ study }: TCaseStudyPageProps) {
 	return (

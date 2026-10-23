@@ -1,8 +1,8 @@
 import { SectionHeader } from '@/components/ui'
+import type { TSection } from '@/types/CaseStudyTypes'
 
 import { FeatureCard } from './FeatureCard'
 import { FigureCard } from './FigureCard'
-import type { TSection } from './types'
 import { WideFigure } from './WideFigure'
 
 type TShowcaseSectionProps = { section: TSection<'showcase'> }

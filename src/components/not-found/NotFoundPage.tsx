@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { PillLink, Terminal } from '@/components/ui'
-import { notFoundContent as content, profile } from '@/content'
+import { notFoundContent as content, profile } from '@/lib/content'
 import { routes } from '@/lib/routes'
 
 const DIGITS = ['4', '0', '4']

@@ -1,9 +1,9 @@
 import { Shot } from '@/components/ui'
-import type { Figure } from '@/content'
+import type { TFigure } from '@/types/CaseStudyTypes'
 
 import { HALF_SIZES } from '../styles'
 
-type TFigureCardProps = { figure: Figure }
+type TFigureCardProps = { figure: TFigure }
 
 export function FigureCard({ figure }: TFigureCardProps) {
 	return (

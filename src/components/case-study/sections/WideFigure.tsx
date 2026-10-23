@@ -1,9 +1,9 @@
 import { Shot } from '@/components/ui'
-import type { Figure } from '@/content'
+import type { TFigure } from '@/types/CaseStudyTypes'
 
 import { FULL_SIZES } from '../styles'
 
-type TWideFigureProps = { figure: Figure }
+type TWideFigureProps = { figure: TFigure }
 
 export function WideFigure({ figure }: TWideFigureProps) {
 	return (

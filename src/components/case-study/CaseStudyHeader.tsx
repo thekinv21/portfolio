@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { profile } from '@/content'
+import { profile } from '@/lib/content'
 import { routes } from '@/lib/routes'
 
 type TCaseStudyHeaderProps = { backLabel: string }

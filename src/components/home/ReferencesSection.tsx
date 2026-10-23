@@ -1,9 +1,10 @@
 import { SectionHeader } from '@/components/ui'
-import type { Reference, SiteContent } from '@/content'
+import type { TReference } from '@/types/ReferenceTypes'
+import type { TReferencesHeading } from '@/types/SiteTypes'
 
 type TReferencesSectionProps = {
-	heading: SiteContent['sections']['references']
-	references: Reference[]
+	heading: TReferencesHeading
+	references: TReference[]
 }
 
 export function ReferencesSection({

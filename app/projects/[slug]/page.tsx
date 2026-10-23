@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { CaseStudyPage } from '@/components/case-study/CaseStudyPage'
-import { getCaseStudy, getCaseStudySlugs } from '@/content'
+import { getCaseStudy, getCaseStudySlugs } from '@/lib/content'
 
 type TPageProps = PageProps<'/projects/[slug]'>
 

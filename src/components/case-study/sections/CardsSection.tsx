@@ -1,6 +1,5 @@
 import { SectionHeader } from '@/components/ui'
-
-import type { TSection } from './types'
+import type { TSection } from '@/types/CaseStudyTypes'
 
 type TCardsSectionProps = { section: TSection<'cards'> }
 

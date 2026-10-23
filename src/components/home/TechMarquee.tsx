@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
 
-import type { SiteContent } from '@/content'
+import type { TMarquee } from '@/types/SiteTypes'
 
-type TTechMarqueeProps = SiteContent['marquee']
+type TTechMarqueeProps = TMarquee
 
 export function TechMarquee({ label, items }: TTechMarqueeProps) {
 	return (

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter_Tight, JetBrains_Mono } from 'next/font/google'
 
-import { getHomeContent } from '@/content'
+import { getHomeContent } from '@/lib/content'
 
 import './globals.css'
 

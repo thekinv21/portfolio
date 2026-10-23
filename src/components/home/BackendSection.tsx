@@ -8,11 +8,12 @@ import {
 	TimelineAside,
 	TimelineDot,
 } from '@/components/ui'
-import type { HomeContent, SiteContent } from '@/content'
+import type { TBackendContent } from '@/types/BackendTypes'
+import type { TBackendHeading } from '@/types/SiteTypes'
 
 type TBackendSectionProps = {
-	heading: SiteContent['sections']['backend']
-	backend: HomeContent['backend']
+	heading: TBackendHeading
+	backend: TBackendContent
 }
 
 export function BackendSection({ heading, backend }: TBackendSectionProps) {

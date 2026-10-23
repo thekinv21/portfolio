@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 import { PillLink } from '@/components/ui'
-import type { CaseStudy } from '@/content'
 import { routes } from '@/lib/routes'
+import type { TCaseStudyFooter } from '@/types/CaseStudyTypes'
 
-type TCaseStudyFooterProps = { footer: CaseStudy['footer'] }
+type TCaseStudyFooterProps = { footer: TCaseStudyFooter }
 
 export function CaseStudyFooter({ footer }: TCaseStudyFooterProps) {
 	return (

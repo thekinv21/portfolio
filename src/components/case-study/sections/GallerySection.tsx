@@ -1,7 +1,7 @@
 import { SectionHeader } from '@/components/ui'
+import type { TSection } from '@/types/CaseStudyTypes'
 
 import { FigureCard } from './FigureCard'
-import type { TSection } from './types'
 
 type TGallerySectionProps = { section: TSection<'gallery'> }
 

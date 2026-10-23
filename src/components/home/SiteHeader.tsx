@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-import type { SiteContent } from '@/content'
 import { routes } from '@/lib/routes'
+import type { TLanguageSwitch, TNav } from '@/types/SiteTypes'
 
 type TSiteHeaderProps = {
 	name: string
-	nav: SiteContent['nav']
-	languageSwitch: SiteContent['languageSwitch']
+	nav: TNav
+	languageSwitch: TLanguageSwitch
 }
 
 export function SiteHeader({ name, nav, languageSwitch }: TSiteHeaderProps) {
