@@ -1,0 +1,4 @@
+bun run lint || {
+  echo "Lint failed. Fix the errors above."
+  exit 1
+}

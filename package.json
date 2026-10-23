@@ -1,35 +1,45 @@
 {
-  "name": "my_portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.4.2",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.2",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  },
-  "packageManager": "bun@1.4.0",
-  "ignoreScripts": [
-    "sharp",
-    "unrs-resolver"
-  ],
-  "trustedDependencies": [
-    "sharp",
-    "unrs-resolver"
-  ]
+	"name": "my_portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint && steiger ./src",
+		"lint:fix": "eslint --fix && steiger ./src",
+		"lint:fsd": "steiger ./src",
+		"format": "prettier --write \"{app,src}/**/*.{ts,tsx}\"",
+		"format:check": "prettier --check \"{app,src}/**/*.{ts,tsx}\"",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"next": "16.4.2",
+		"react": "19.3.0",
+		"react-dom": "19.3.0"
+	},
+	"devDependencies": {
+		"@feature-sliced/steiger-plugin": "^0.8.0",
+		"@tailwindcss/turbopack": "^4",
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "16.4.2",
+		"eslint-plugin-boundaries": "^7.2.1",
+		"husky": "^9.1.7",
+		"steiger": "^0.8.0",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	},
+	"packageManager": "bun@1.4.0",
+	"ignoreScripts": [
+		"sharp",
+		"unrs-resolver"
+	],
+	"trustedDependencies": [
+		"sharp",
+		"unrs-resolver"
+	]
 }
