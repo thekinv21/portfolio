@@ -1,26 +1,456 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--font-sans: var(--font-inter-tight), system-ui, sans-serif;
+	--font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+	--color-ink: #111111;
+	--color-body: #333333;
+	--color-muted: #5f5f5f;
+	--color-faint: #a3a3a3;
+	--color-star: #c8c8c8;
+	--color-line: #eaeaea;
+	--color-line-strong: #e2e2e2;
+	--color-line-soft: #ededea;
+	--color-surface: #f7f7f5;
+	--color-avatar: #f1f1ee;
+	--color-track: #efefec;
+	--color-shot: #f4f4f4;
+	--color-portrait: #eef2f7;
+	--color-accent: #22c55e;
+
+	--ease-expo: cubic-bezier(0.2, 0.75, 0.15, 1);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		background: #ffffff;
+		color: var(--color-ink);
+		font-family: var(--font-sans);
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+/* Motion — ported 1:1 from the portfolio design */
+
+@keyframes lineup {
+	from {
+		transform: translateY(105%);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(28px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes marquee {
+	to {
+		transform: translateX(-50%);
+	}
+}
+@keyframes pulse-ring {
+	0% {
+		box-shadow: 0 0 0 0 currentColor;
+	}
+	100% {
+		box-shadow: 0 0 0 10px transparent;
+	}
+}
+@keyframes grow {
+	from {
+		transform: scaleY(0);
+	}
+	to {
+		transform: scaleY(1);
+	}
+}
+@keyframes growx {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-56px) rotate(-1.5deg);
+	}
+	65% {
+		opacity: 1;
+		transform: translateY(6px) rotate(0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+@keyframes pop {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes clipin {
+	from {
+		clip-path: inset(100% 0 0 0 round 28px);
+	}
+	to {
+		clip-path: inset(0 0 0 0 round 28px);
+	}
+}
+@keyframes clipin-sm {
+	from {
+		clip-path: inset(100% 0 0 0 round 16px);
+	}
+	to {
+		clip-path: inset(0 0 0 0 round 16px);
+	}
+}
+@keyframes zoomout {
+	from {
+		transform: scale(1.18);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+}
+@keyframes spin-slow {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes blink {
+	50% {
+		opacity: 0;
+	}
+}
+@keyframes drift {
+	0%,
+	100% {
+		transform: translateY(0) rotate(-2deg);
+	}
+	50% {
+		transform: translateY(-10px) rotate(2deg);
+	}
+}
+@keyframes flow {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 24px 0;
+	}
+}
+
+@layer components {
+	.mask {
+		display: block;
+		overflow: hidden;
+		padding-bottom: 0.08em;
+	}
+	.mask > span {
+		display: block;
+		animation: lineup 1s var(--ease-expo) both;
+	}
+	.rise {
+		animation: rise 1s var(--ease-expo) both;
+	}
+	.fade {
+		animation: fade 1.2s ease both;
+	}
+	.pulse {
+		animation: pulse-ring 1.8s ease-out infinite;
+	}
+	.clipin {
+		animation: clipin 1.3s cubic-bezier(0.7, 0, 0.2, 1) 0.2s both;
+	}
+	.clipin-sm {
+		animation: clipin-sm 1.3s cubic-bezier(0.7, 0, 0.2, 1) 0.3s both;
+	}
+	.zoomout {
+		animation: zoomout 1.8s var(--ease-expo) 0.2s both;
+	}
+	.float-1 {
+		animation:
+			rise 1s var(--ease-expo) 1.1s both,
+			float 5s ease-in-out 2.1s infinite;
+	}
+	.float-2 {
+		animation:
+			rise 1s var(--ease-expo) 1.3s both,
+			float 6s ease-in-out 2.3s infinite;
+	}
+	.spin-slow {
+		animation: spin-slow 18s linear infinite;
+	}
+	.drift {
+		display: inline-block;
+		animation: drift 4s ease-in-out infinite;
+	}
+	.caret {
+		display: inline-block;
+		width: 8px;
+		height: 16px;
+		background: var(--color-ink);
+		vertical-align: middle;
+		animation: blink 1s steps(1) infinite;
+	}
+	.wire {
+		height: 2px;
+		background-image: linear-gradient(
+			90deg,
+			var(--color-ink) 50%,
+			transparent 50%
+		);
+		background-size: 12px 2px;
+		animation: flow 1s linear infinite;
+	}
+
+	.marquee {
+		display: flex;
+		width: max-content;
+		animation: marquee 45s linear infinite;
+	}
+	.marquee-wrap:hover .marquee {
+		animation-play-state: paused;
+	}
+
+	.btn {
+		transition:
+			transform 0.3s var(--ease-expo),
+			background-color 0.25s,
+			color 0.25s;
+	}
+	.btn:hover {
+		transform: translateY(-2px);
+	}
+	.btn-ghost:hover {
+		background-color: var(--color-ink);
+		color: #ffffff;
+	}
+
+	.arrow {
+		display: inline-block;
+		transition: transform 0.35s var(--ease-expo);
+	}
+	.card:hover .arrow,
+	.link:hover .arrow {
+		transform: translate(3px, -3px);
+	}
+	.back:hover .arrow {
+		transform: translateX(-4px);
+	}
+
+	.uline {
+		background-image: linear-gradient(currentColor, currentColor);
+		background-size: 0% 1px;
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+		transition: background-size 0.4s var(--ease-expo);
+	}
+	.uline:hover {
+		background-size: 100% 1px;
+	}
+
+	.chip {
+		transition:
+			background-color 0.25s,
+			color 0.25s,
+			border-color 0.25s;
+	}
+	.chip:hover {
+		background-color: var(--color-ink);
+		color: #ffffff;
+		border-color: var(--color-ink);
+	}
+
+	.lift {
+		transition:
+			transform 0.4s var(--ease-expo),
+			border-color 0.3s;
+	}
+	.lift:hover {
+		transform: translateY(-4px);
+		border-color: var(--color-ink);
+	}
+
+	.layer {
+		transition:
+			transform 0.35s var(--ease-expo),
+			background-color 0.3s;
+	}
+	.layer:hover {
+		transform: translateX(8px);
+		background-color: var(--color-surface);
+	}
+
+	.row {
+		transition:
+			padding 0.4s var(--ease-expo),
+			background-color 0.3s;
+	}
+	.row:hover {
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: var(--color-surface);
+	}
+	.big-arrow {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		flex-shrink: 0;
+		border-radius: 50%;
+		border: 1px solid var(--color-line-strong);
+		transition:
+			transform 0.4s var(--ease-expo),
+			background-color 0.3s,
+			color 0.3s,
+			border-color 0.3s;
+	}
+	.row:hover .big-arrow {
+		transform: rotate(45deg);
+		background-color: var(--color-ink);
+		color: #ffffff;
+		border-color: var(--color-ink);
+	}
+
+	.shot {
+		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
+		background: var(--color-shot);
+	}
+	.shot img {
+		transition: transform 1s var(--ease-expo);
+	}
+	.card:hover .shot img {
+		transform: scale(1.045);
+	}
+
+	.term-line {
+		transition: transform 0.3s;
+	}
+	.card:hover .term-line {
+		transform: translateX(4px);
+	}
+
+	.wordmark {
+		background: linear-gradient(180deg, var(--color-ink) 0%, #e9e9e6 85%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+
+	.progress {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: var(--color-ink);
+		transform-origin: left;
+		transform: scaleX(0);
+		z-index: 10;
+	}
+	.tl-fill {
+		transform-origin: top;
+	}
+	.lang-fill {
+		transform-origin: left;
+	}
+}
+
+/* Scroll-driven reveals, where the browser supports them */
+@supports (animation-timeline: view()) {
+	.reveal {
+		animation: rise linear both;
+		animation-timeline: view();
+		animation-range: entry 0% entry 55%;
+	}
+	.tl {
+		view-timeline: --tl block;
+	}
+	.tl-fill {
+		animation: grow linear both;
+		animation-timeline: --tl;
+		animation-range: entry 40% exit 60%;
+	}
+	.dot {
+		animation: pop linear both;
+		animation-timeline: view();
+		animation-range: entry 60% entry 100%;
+	}
+	.progress {
+		animation: growx linear both;
+		animation-timeline: scroll(root);
+	}
+	.lang-fill {
+		animation: growx linear both;
+		animation-timeline: view();
+		animation-range: entry 30% cover 45%;
+	}
+	.drop {
+		animation: drop linear both;
+		animation-timeline: view();
+		animation-range: entry 0% entry 55%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+	}
+	.progress {
+		display: none;
+	}
 }

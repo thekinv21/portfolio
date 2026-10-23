@@ -1,0 +1,16 @@
+{
+	"badge": "Error 404",
+	"title": "This page took a wrong turn.",
+	"text": "The link may be broken or the page may have moved. Everything else is right where you left it.",
+	"back": "Back to portfolio",
+	"report": "Report this link",
+	"log": {
+		"title": "REQUEST · LOG",
+		"lines": [
+			{ "method": "GET", "tone": "get", "text": "/this-page" },
+			{ "method": "404", "tone": "del", "text": "Not Found" },
+			{ "comment": "// suggestion: try the homepage" },
+			{ "method": "GET", "tone": "post", "text": "/", "caret": true }
+		]
+	}
+}

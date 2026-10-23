@@ -1,0 +1,88 @@
+{
+	"items": [
+		{
+			"date": "New",
+			"title": "Docker nedir ve hangi sorunları çözüyor?",
+			"summary": "Why “it works on my machine” happens — and how Docker fixes it.",
+			"lang": "TR",
+			"href": "https://medium.com/@thekinv21/docker-nedir-ve-hangi-sorunlar%C4%B1-%C3%A7%C3%B6z%C3%BCyor-b81bc0bc30c5"
+		},
+		{
+			"date": "Aug 12, 2026",
+			"title": "Page Rendering in Next.js",
+			"summary": "SSR, SSG, ISR and CSR — when to use which.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/page-rendering-in-next-js-fe2a051ae118"
+		},
+		{
+			"date": "Feb 25, 2025",
+			"title": "Veri Tabanları ve PostgreSQL’e Giriş",
+			"summary": "An introduction to databases and PostgreSQL.",
+			"lang": "TR",
+			"href": "https://medium.com/@thekinv21/veri-tabanlar%C4%B1-ve-postgresqle-giri%C5%9F-caaf16a371f9"
+		},
+		{
+			"date": "Jan 9, 2025",
+			"title": "How to Dockerize a NestJS Application with Prisma & PostgreSQL",
+			"summary": "Build, test and ship a NestJS API in containers.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/how-to-dockerize-a-nestjs-application-with-prisma-postgresql-7b64fc391694"
+		},
+		{
+			"date": "Jan 5, 2025",
+			"title": "OTP Authentication with NestJS (Email)",
+			"summary": "Verifying users with one-time passwords and Postmark.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/otp-authentication-with-nestjs-email-9d24b3ea0aa2"
+		},
+		{
+			"date": "Oct 27, 2024",
+			"title": "What is Zustand?",
+			"summary": "A compact, fast and scalable approach to React state.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/what-is-zustand-7ffa8cea6043"
+		},
+		{
+			"date": "Oct 13, 2024",
+			"title": "Deploying a NestJS App with PM2 on Ubuntu using Nginx",
+			"summary": "Production deployment of a NestJS API on a VPS.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-a-nestjs-app-with-pm2-on-a-ubuntu-server-20-04-using-nginx-996a6533f2b7"
+		},
+		{
+			"date": "Oct 13, 2024",
+			"title": "Deploying Next.js App on Ubuntu with Nginx and PM2",
+			"summary": "From build to a live Next.js app behind Nginx.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-next-js-app-on-ubuntu-server-20-04-with-nginx-and-pm2-c573e4da37b8"
+		},
+		{
+			"date": "Oct 13, 2024",
+			"title": "Deploying ReactJS App on Ubuntu using Nginx",
+			"summary": "Serving a React SPA from an Ubuntu server.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-reactjs-app-on-ubuntu-server-20-04-using-nginx-9a4970b8a955"
+		},
+		{
+			"date": "Oct 13, 2024",
+			"title": "Deploying PostgreSQL Database on Ubuntu",
+			"summary": "Setting up PostgreSQL on a VPS.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-postgresql-database-on-ubuntu-server-20-04-fc7e6827b129"
+		},
+		{
+			"date": "Aug 4, 2024",
+			"title": "NextJS SEO Optimization: Step by Step",
+			"summary": "Fast, indexable Next.js apps for users and crawlers.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/nextjs-seo-optimization-step-by-step-8e2da931b2fa"
+		},
+		{
+			"date": "Aug 4, 2024",
+			"title": "Vite SEO Optimization",
+			"summary": "Technical SEO for client-rendered Vite apps.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/vite-seo-optimization-3de337dfc90a"
+		}
+	]
+}

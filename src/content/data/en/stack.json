@@ -1,0 +1,63 @@
+{
+	"groups": [
+		{ "label": "Languages", "items": ["TypeScript", "JavaScript (ES6+)", "Java (learning)", "SQL"] },
+		{
+			"label": "Frontend",
+			"items": [
+				"React 19",
+				"Next.js 16",
+				"Vite",
+				"Tailwind CSS",
+				"SCSS",
+				"shadcn/ui",
+				"Mantine UI",
+				"Framer Motion",
+				"next-intl · i18n"
+			]
+		},
+		{
+			"label": "State & data",
+			"items": [
+				"TanStack Query",
+				"Jotai",
+				"Zustand",
+				"Redux Toolkit",
+				"Axios",
+				"React Hook Form",
+				"Zod",
+				"Formik · Yup"
+			]
+		},
+		{ "label": "Real-time", "items": ["SignalR", "WebSocket"] },
+		{ "label": "Backend", "items": ["NestJS 11", "Express.js", "REST APIs", "Swagger", "Resend · Postmark"] },
+		{ "label": "Data & auth", "items": ["PostgreSQL", "Prisma ORM", "MongoDB", "JWT", "OAuth2", "RBAC", "OTP"] },
+		{ "label": "Cloud & DevOps", "items": ["AWS S3", "Docker", "GitHub Actions", "NGINX", "Ubuntu VPS"] },
+		{
+			"label": "Quality",
+			"items": [
+				"Jest",
+				"React Testing Library",
+				"ESLint · Prettier",
+				"Husky",
+				"Lighthouse",
+				"React Profiler",
+				"Webpack"
+			]
+		}
+	],
+	"languages": {
+		"title": "Languages",
+		"count": "5 languages",
+		"items": [
+			{ "name": "Russian", "native": "Русский", "level": "Native", "percent": 100 },
+			{ "name": "Turkish", "native": "Türkçe", "level": "C1", "percent": 85 },
+			{ "name": "Uzbek", "native": "Oʻzbekcha", "level": "Native", "percent": 100 },
+			{ "name": "Kyrgyz", "native": "Кыргызча", "level": "Native", "percent": 100 },
+			{ "name": "English", "native": "English", "level": "B1", "percent": 50 }
+		]
+	},
+	"certificate": {
+		"label": "CERTIFICATE",
+		"value": "TÖMER — Turkish Language Education Certificate"
+	}
+}

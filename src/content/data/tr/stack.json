@@ -1,0 +1,66 @@
+{
+	"groups": [
+		{ "label": "Programlama dilleri", "items": ["TypeScript", "JavaScript (ES6+)", "Java (öğreniyorum)", "SQL"] },
+		{
+			"label": "Frontend",
+			"items": [
+				"React 19",
+				"Next.js 16",
+				"Vite",
+				"Tailwind CSS",
+				"SCSS",
+				"shadcn/ui",
+				"Mantine UI",
+				"Framer Motion",
+				"next-intl · i18n"
+			]
+		},
+		{
+			"label": "State ve veri",
+			"items": [
+				"TanStack Query",
+				"Jotai",
+				"Zustand",
+				"Redux Toolkit",
+				"Axios",
+				"React Hook Form",
+				"Zod",
+				"Formik · Yup"
+			]
+		},
+		{ "label": "Gerçek zamanlı", "items": ["SignalR", "WebSocket"] },
+		{ "label": "Backend", "items": ["NestJS 11", "Express.js", "REST APIs", "Swagger", "Resend · Postmark"] },
+		{
+			"label": "Veri ve kimlik doğrulama",
+			"items": ["PostgreSQL", "Prisma ORM", "MongoDB", "JWT", "OAuth2", "RBAC", "OTP"]
+		},
+		{ "label": "Bulut ve DevOps", "items": ["AWS S3", "Docker", "GitHub Actions", "NGINX", "Ubuntu VPS"] },
+		{
+			"label": "Kalite ve test",
+			"items": [
+				"Jest",
+				"React Testing Library",
+				"ESLint · Prettier",
+				"Husky",
+				"Lighthouse",
+				"React Profiler",
+				"Webpack"
+			]
+		}
+	],
+	"languages": {
+		"title": "Konuştuğum diller",
+		"count": "5 dil",
+		"items": [
+			{ "name": "Rusça", "native": "Русский", "level": "Ana dil", "percent": 100 },
+			{ "name": "Türkçe", "native": "Türkçe", "level": "C1", "percent": 85 },
+			{ "name": "Özbekçe", "native": "Oʻzbekcha", "level": "Ana dil", "percent": 100 },
+			{ "name": "Kırgızca", "native": "Кыргызча", "level": "Ana dil", "percent": 100 },
+			{ "name": "İngilizce", "native": "English", "level": "B1", "percent": 50 }
+		]
+	},
+	"certificate": {
+		"label": "SERTİFİKA",
+		"value": "TÖMER — Türkçe Dil Eğitimi Sertifikası"
+	}
+}

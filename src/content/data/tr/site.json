@@ -1,0 +1,118 @@
+{
+	"meta": {
+		"title": "Vadim Kiniabaev — Full-Stack Geliştirici",
+		"description": "React ve Next.js ile hızlı, erişilebilir arayüzler; NestJS ile güvenilir API’ler geliştiren full-stack geliştirici."
+	},
+	"nav": {
+		"label": "Ana menü",
+		"items": [
+			{ "href": "#experience", "label": "Deneyim" },
+			{ "href": "#stack", "label": "Teknolojiler" },
+			{ "href": "#projects", "label": "Projeler" },
+			{ "href": "#backend", "label": "Backend" },
+			{ "href": "#writing", "label": "Yazılar" },
+			{ "href": "#references", "label": "Referanslar" },
+			{ "href": "#contact", "label": "İletişim" }
+		]
+	},
+	"languageSwitch": {
+		"locale": "en",
+		"label": "EN",
+		"ariaLabel": "English version"
+	},
+	"hero": {
+		"status": "Frontend, backend ve full-stack pozisyonlarına açığım",
+		"greeting": "Merhaba, ben",
+		"intro": "Web uygulamalarını uçtan uca geliştiriyorum: **React ve Next.js** ile hızlı, erişilebilir arayüzler; **NestJS** ile güvenilir API’ler.",
+		"cta": "Bana ulaşın",
+		"cv": "CV’mi indir",
+		"portraitAlt": "Vadim Kiniabaev’in portresi",
+		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",
+		"stat": { "value": "3+ yıl", "label": "canlıya çıkan projeler" },
+		"location": "İstanbul’da ofisten · Şehir dışından uzaktan",
+		"facts": [
+			{ "label": "ROL", "value": "Full-Stack Geliştirici" },
+			{ "label": "ODAK", "value": "Full-Stack Geliştirme" },
+			{ "label": "SON POZİSYON", "value": "EDICT Digital, 2024–26" },
+			{ "label": "EĞİTİM", "value": "Bilgisayar Müh., Trakya Üniversitesi" }
+		],
+		"now": {
+			"label": "ŞU SIRALAR",
+			"text": "Şu sıralar **Java**’yı derinlemesine öğreniyor, **Spring Boot**’a başlamaya hazırlanıyor ve ürettiklerimi Medium’da yazıyorum.",
+			"updated": "Ekim 2026 itibarıyla"
+		}
+	},
+	"marquee": {
+		"label": "Kullandığım teknolojiler",
+		"items": [
+			"React 19",
+			"Next.js",
+			"TypeScript",
+			"NestJS",
+			"PostgreSQL",
+			"Prisma",
+			"TanStack Query",
+			"SignalR",
+			"AWS S3",
+			"Docker",
+			"GitHub Actions"
+		]
+	},
+	"sections": {
+		"experience": { "eyebrow": "01 — Deneyim", "title": "Kariyer yolculuğum" },
+		"stack": { "eyebrow": "02 — Teknolojiler", "title": "Kullandığım teknolojiler" },
+		"projects": {
+			"eyebrow": "03 — Öne çıkan işler",
+			"title": "Projeler",
+			"link": "Tüm repolar",
+			"filterLabel": "Projeleri filtrele",
+			"filters": {
+				"all": "Tümü",
+				"client": "Müşteri",
+				"fullstack": "Full-stack",
+				"frontend": "Frontend"
+			}
+		},
+		"backend": {
+			"eyebrow": "04 — Backend",
+			"title": "API’ler ve servisler",
+			"intro": "Prisma, PostgreSQL, Zod doğrulaması ve Swagger dokümantasyonuyla NestJS servisleri; Express.js ve Docker ile birkaç proje daha.",
+			"moreLabel": "GitHub’da daha fazlası:"
+		},
+		"writing": {
+			"eyebrow": "05 — Yazılar",
+			"title": "Geliştirirken öğrendiklerim",
+			"link": "Medium’daki tüm yazılarım"
+		},
+		"references": {
+			"eyebrow": "06 — Referanslar",
+			"title": "Birlikte çalıştığım kişiler",
+			"note": "Benim hakkımda kendilerine ulaşabilirsiniz"
+		},
+		"contact": {
+			"eyebrow": "07 — İletişim",
+			"title": "Birlikte harika",
+			"titleMuted": "işler çıkaralım."
+		}
+	},
+	"contact": {
+		"rows": [
+			{ "label": "E-POSTA", "value": "vkiniabaev@gmail.com", "href": "mailto:vkiniabaev@gmail.com" },
+			{ "label": "LINKEDIN", "value": "in/vadimkiniabaev", "href": "https://www.linkedin.com/in/vadimkiniabaev" },
+			{ "label": "GITHUB", "value": "@thekinv21", "href": "https://github.com/thekinv21" },
+			{ "label": "MEDIUM", "value": "@thekinv21", "href": "https://medium.com/@thekinv21" }
+		],
+		"copy": { "idle": "E-postamı kopyala", "done": "Kopyalandı!" },
+		"cv": "CV",
+		"details": [
+			{ "label": "KONUM", "value": "İstanbul, Türkiye" },
+			{ "label": "ÇALIŞMA ŞEKLİ", "value": "İstanbul’da ofisten veya hibrit · İstanbul dışı için uzaktan" },
+			{ "label": "ARADIĞIM POZİSYONLAR", "value": "Frontend, backend ve full-stack" },
+			{ "label": "TEMEL TEKNOLOJİLER", "value": "React · Next.js · NestJS · PostgreSQL" }
+		]
+	},
+	"footer": {
+		"copyright": "© 2026 Vadim Kiniabaev · İstanbul’da özenle hazırlandı",
+		"backToTop": "Başa dön"
+	}
+}

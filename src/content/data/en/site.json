@@ -1,0 +1,118 @@
+{
+	"meta": {
+		"title": "Vadim Kiniabaev — Full-Stack Developer",
+		"description": "Full-stack developer building fast, accessible interfaces with React & Next.js and reliable APIs with NestJS."
+	},
+	"nav": {
+		"label": "Primary",
+		"items": [
+			{ "href": "#experience", "label": "Experience" },
+			{ "href": "#stack", "label": "Stack" },
+			{ "href": "#projects", "label": "Projects" },
+			{ "href": "#backend", "label": "Backend" },
+			{ "href": "#writing", "label": "Writing" },
+			{ "href": "#references", "label": "References" },
+			{ "href": "#contact", "label": "Contact" }
+		]
+	},
+	"languageSwitch": {
+		"locale": "tr",
+		"label": "TR",
+		"ariaLabel": "Türkçe sürüm"
+	},
+	"hero": {
+		"status": "Open to frontend, backend & full-stack roles",
+		"greeting": "Hi, I'm",
+		"intro": "I build web apps end to end — fast, accessible interfaces with **React & Next.js** and reliable APIs with **NestJS**.",
+		"cta": "Get in touch",
+		"cv": "Download CV",
+		"portraitAlt": "Portrait of Vadim Kiniabaev",
+		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",
+		"stat": { "value": "3+ yrs", "label": "shipping production apps" },
+		"location": "On-site in Istanbul · Remote anywhere else",
+		"facts": [
+			{ "label": "ROLE", "value": "Full-Stack Developer" },
+			{ "label": "FOCUS", "value": "Full-Stack Development" },
+			{ "label": "LAST ROLE", "value": "EDICT Digital, 2024–26" },
+			{ "label": "EDUCATION", "value": "Computer Eng., Trakya Univ." }
+		],
+		"now": {
+			"label": "NOW",
+			"text": "Learning **Java** in depth and getting ready for **Spring Boot** — and writing about what I build on Medium.",
+			"updated": "Updated Oct 2026"
+		}
+	},
+	"marquee": {
+		"label": "Technologies I use",
+		"items": [
+			"React 19",
+			"Next.js",
+			"TypeScript",
+			"NestJS",
+			"PostgreSQL",
+			"Prisma",
+			"TanStack Query",
+			"SignalR",
+			"AWS S3",
+			"Docker",
+			"GitHub Actions"
+		]
+	},
+	"sections": {
+		"experience": { "eyebrow": "01 — Experience", "title": "The timeline" },
+		"stack": { "eyebrow": "02 — Technologies", "title": "What I work with" },
+		"projects": {
+			"eyebrow": "03 — Selected work",
+			"title": "Projects",
+			"link": "All repositories",
+			"filterLabel": "Filter projects",
+			"filters": {
+				"all": "All",
+				"client": "Client",
+				"fullstack": "Full-stack",
+				"frontend": "Frontend"
+			}
+		},
+		"backend": {
+			"eyebrow": "04 — Backend",
+			"title": "APIs & services",
+			"intro": "NestJS services with Prisma, PostgreSQL, Zod validation and Swagger docs — plus a few in Express.js and Docker.",
+			"moreLabel": "More on GitHub:"
+		},
+		"writing": {
+			"eyebrow": "05 — Writing",
+			"title": "Notes from the build",
+			"link": "All posts on Medium"
+		},
+		"references": {
+			"eyebrow": "06 — References",
+			"title": "People I've worked with",
+			"note": "Happy to be contacted"
+		},
+		"contact": {
+			"eyebrow": "07 — Contact",
+			"title": "Let's build",
+			"titleMuted": "something together."
+		}
+	},
+	"contact": {
+		"rows": [
+			{ "label": "EMAIL", "value": "vkiniabaev@gmail.com", "href": "mailto:vkiniabaev@gmail.com" },
+			{ "label": "LINKEDIN", "value": "in/vadimkiniabaev", "href": "https://www.linkedin.com/in/vadimkiniabaev" },
+			{ "label": "GITHUB", "value": "@thekinv21", "href": "https://github.com/thekinv21" },
+			{ "label": "MEDIUM", "value": "@thekinv21", "href": "https://medium.com/@thekinv21" }
+		],
+		"copy": { "idle": "Copy email", "done": "Copied!" },
+		"cv": "CV",
+		"details": [
+			{ "label": "BASED IN", "value": "Istanbul, Türkiye" },
+			{ "label": "WORK MODE", "value": "On-site or hybrid in Istanbul · Remote outside Istanbul" },
+			{ "label": "LOOKING FOR", "value": "Frontend, backend & full-stack roles" },
+			{ "label": "CORE STACK", "value": "React · Next.js · NestJS · PostgreSQL" }
+		]
+	},
+	"footer": {
+		"copyright": "© 2026 Vadim Kiniabaev · Built with care in Istanbul",
+		"backToTop": "Back to top"
+	}
+}

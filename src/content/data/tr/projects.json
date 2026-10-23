@@ -1,0 +1,254 @@
+{
+	"items": [
+		{
+			"id": "dentacare",
+			"category": "frontend",
+			"year": "2026",
+			"meta": "Frontend · Vaka çalışması",
+			"title": "DentaCare",
+			"description": "Diş klinikleri için bir yönetim paneli. Tasarımdaki tüm ekranları baştan sona geliştirdim; Rusça, Kırgızca ve İngilizce dil desteği, açık ve koyu temayla.",
+			"bullets": [
+				"Hastalar, diş haritası, randevular, tedavi planları, faturalama, stok, raporlar ve personel",
+				"Rol tabanlı erişim: kullanıcılar, roller ve yetkiler için eksiksiz oluşturma ve düzenleme akışları",
+				"ESLint boundaries ve Steiger ile denetlenen Feature-Sliced Design mimarisi",
+				"Tüm formlar, filtreler ve arama React Hook Form + Zod ile"
+			],
+			"tech": "Next.js 16 · React 19 · TanStack Query · Tailwind v4 · React Hook Form + Zod · next-intl",
+			"images": [
+				{
+					"src": "/images/projects/dentacare.jpg",
+					"alt": "DentaCare klinik gösterge paneli",
+					"aspect": "16 / 9",
+					"position": "top left"
+				}
+			],
+			"links": [
+				{ "label": "Vaka çalışmasını incele", "caseStudy": "dentacare", "primary": true },
+				{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/DentaCareAdminPanel" }
+			]
+		},
+		{
+			"id": "like",
+			"category": "client",
+			"year": "2025—26",
+			"meta": "Müşteri · Kastamonu Entegre",
+			"title": "LIKE Yönetim Paneli",
+			"description": "Kastamonu Entegre (Hayat Holding) için sipariş yönetim paneli. Frontend’in tamamını Next.js ile sıfırdan geliştirdim ve sipariş modülünün sorumluluğunu üstlendim.",
+			"bullets": [
+				"Taslak → Teklif → Sipariş aşamalarından oluşan sipariş modülü",
+				"Eş zamanlı düzenleme çakışmalarını önleyen, SignalR ile gerçek zamanlı sipariş kilitleme",
+				"1.000+ satırlık tabloları sanallaştırıp ağır filtreleri tuş vuruşlarından ayırarak hızlanan gösterge panelleri",
+				"Diyalog ve formlarda standart erişilebilirlik: odak yönetimi, klavye kullanımı, etiketler ve hata mesajları",
+				"Code splitting ve paket boyutu optimizasyonuyla daha hafif Webpack derlemeleri"
+			],
+			"tech": "Next.js · TypeScript · Jotai · TanStack Query · React Hook Form · Axios · SignalR",
+			"mock": {
+				"label": "LIKE · SİPARİŞ MODÜLÜ",
+				"note": "Şirket içi sistem · ekran görüntüsü paylaşılamaz",
+				"steps": [
+					{ "step": "ADIM 01", "label": "Taslak" },
+					{ "step": "ADIM 02", "label": "Teklif" },
+					{ "step": "ADIM 03", "label": "Sipariş" }
+				],
+				"lock": "Sipariş kilitli — başka bir kullanıcı düzenliyor",
+				"live": "SIGNALR · LIVE",
+				"table": "SİPARİŞ TABLOSU",
+				"tableNote": "1.000+ satır · sanallaştırılmış"
+			},
+			"links": []
+		},
+		{
+			"id": "karina",
+			"category": "client",
+			"year": "2024",
+			"meta": "Müşteri · EDICT Digital",
+			"title": "Karina",
+			"description": "Azimut Yachts ve Williams Jet Tenders’ın İstanbul ve Bodrum’daki adresi Karina’nın web sitesi. SEO uyumlu sitenin tamamını tek başıma geliştirdim; sitedeki her yat, fiyat ve fotoğraf COST yönetim panelinden geliyor.",
+			"bullets": [
+				"Tüm içerik COST yönetim panelinden yönetiliyor — satış ekibi siteyi geliştiriciye ihtiyaç duymadan güncelliyor",
+				"Marka ve modele göre aranabilen yeni ve ikinci el yat ilanları",
+				"Galerili ve sanal turlu model sayfaları; tam teknik özellik, PDF indirme ve satış iletişimi içeren ilan sayfaları",
+				"Azimut ve Williams marka sayfaları, haberler ve etkinlikler",
+				"İngilizce ve Türkçe dil desteği, ana sayfada video karşılama alanı",
+				"GitHub Actions ile CI/CD; ESLint, Prettier ve Husky ile kod standartları"
+			],
+			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion",
+			"images": [
+				{
+					"src": "/images/projects/karina-home.jpg",
+					"alt": "Karina logosu altında denizde bir yatın yer aldığı Karina ana sayfası",
+					"aspect": "16 / 9",
+					"position": "top"
+				},
+				{
+					"src": "/images/projects/karina-used-yachts.jpg",
+					"alt": "Arama ve öne çıkan teknelerin yer aldığı Karina ikinci el yatlar sayfası",
+					"aspect": "16 / 7",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Vaka çalışmasını incele", "caseStudy": "karina", "primary": true },
+				{ "label": "karina.com.tr’yi ziyaret et", "href": "https://karina.com.tr" }
+			]
+		},
+		{
+			"id": "cost",
+			"category": "client",
+			"year": "2023—25",
+			"meta": "Müşteri · EDICT Digital",
+			"title": "COST Yönetim Paneli",
+			"description": "Tek başıma geliştirdiğim bir arka ofis paneli: müşteriler, ürün konfigüratörü, teklifler ve ikinci el ilanları; gelir ve satış gösterge panelleriyle. Karina web sitesinin tüm içeriği de bu panelden yönetiliyor.",
+			"bullets": [
+				"Müşteri ve Konfigüratör modülleri dahil panelin tamamı",
+				"Yapılandırma tabanlı dinamik form motoru",
+				"Otomatik test ve dağıtım için GitHub Actions ile uçtan uca CI/CD",
+				"Memoization, code splitting ve lazy loading ile iyileşen Core Web Vitals değerleri"
+			],
+			"tech": "React · TypeScript · GitHub Actions · Lighthouse · React Profiler",
+			"images": [
+				{
+					"src": "/images/projects/cost.jpg",
+					"alt": "COST yönetim paneli",
+					"aspect": "16 / 9",
+					"position": "top left"
+				}
+			],
+			"links": []
+		},
+		{
+			"id": "pro-cinema",
+			"category": "fullstack",
+			"year": "2023",
+			"meta": "Full-stack · Kişisel proje",
+			"title": "Pro-Cinema",
+			"description": "Herkese açık bir site ve kapsamlı bir yönetim panelinden oluşan full-stack film platformu.",
+			"bullets": [
+				"Ana sayfa slider’ı, trend ve yeni filmler, tür ve oyuncu sayfaları",
+				"Giriş yapan kullanıcılar için video oynatıcılı film sayfaları, favoriler ve profil",
+				"İstatistik ekranı ile filmler, oyuncular, türler ve kullanıcılar için CRUD işlemleri sunan yönetim paneli",
+				"Slug alanları, dosya yükleme ve zengin metin editörü (Draft.js)",
+				"Cookie tabanlı JWT kimlik doğrulama; NestJS + MongoDB backend"
+			],
+			"tech": "Next.js · TypeScript · React Query · React Hook Form · Tailwind + Sass · NestJS · MongoDB",
+			"images": [
+				{
+					"src": "/images/projects/pro-cinema.jpg",
+					"alt": "Pro-Cinema film uygulaması ana ekranı",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Frontend", "href": "https://github.com/thekinv21/nextjs_movie_app", "primary": true },
+				{ "label": "Backend", "href": "https://github.com/thekinv21/nextjs_movie_app_backend" }
+			]
+		},
+		{
+			"id": "carhub",
+			"category": "frontend",
+			"year": "2023",
+			"meta": "Frontend · Kişisel proje",
+			"title": "CarHub",
+			"description": "Arabaları modele göre keşfetmek, aramak ve karşılaştırmak için bir araç kataloğu.",
+			"bullets": [
+				"Araç verileri React Query ile RapidAPI üzerinden çekiliyor",
+				"Üretici ve modele göre arama",
+				"Fiyat ve teknik bilgileri gösteren araç kartları, görselli detay ekranı",
+				"Toast bildirimleri ve Tailwind + Sass ile responsive arayüz"
+			],
+			"tech": "Next.js 13 · TypeScript · React Query · Tailwind · Sass · React Toastify",
+			"images": [
+				{
+					"src": "/images/projects/carhub.jpg",
+					"alt": "CarHub araç kataloğu karşılama sayfası",
+					"aspect": "16 / 9",
+					"position": "left center"
+				}
+			],
+			"links": [{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/cars_catalog_nextjs", "primary": true }]
+		},
+		{
+			"id": "rezztoran",
+			"category": "frontend",
+			"year": "2022—23",
+			"meta": "Bitirme projesi",
+			"title": "Rezztoran",
+			"description": "Yönetim paneliyle birlikte bir restoran keşif ve rezervasyon uygulaması — Trakya Üniversitesi bitirme projem.",
+			"bullets": [
+				"Hakkında, menü, galeri, yorumlar ve puanlar sekmeleriyle restoran sayfaları",
+				"Doğrulamalı masa rezervasyonu; rezervasyonları görüntüleme, filtreleme ve güncelleme",
+				"Etkileşimli Leaflet haritalarında restoran konumları",
+				"Kayıt, giriş, şifre sıfırlama, profil ve favoriler"
+			],
+			"tech": "React 18 · Redux Toolkit · React Query · Formik · Chakra UI · Ant Design · Leaflet",
+			"images": [
+				{
+					"src": "/images/projects/rezztoran.jpg",
+					"alt": "Rezztoran restoran web sitesi",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Web uygulaması", "href": "https://github.com/thekinv21/rezztoran-frontend", "primary": true },
+				{ "label": "Yönetim paneli", "href": "https://github.com/thekinv21/rezztoran-admin-panel" }
+			]
+		},
+		{
+			"id": "spotify-clone",
+			"category": "frontend",
+			"year": "2022",
+			"meta": "Frontend · Kişisel proje",
+			"title": "Spotify Clone",
+			"description": "Gerçek Spotify Web API’si üzerinde çalışan bir Spotify web istemcisi.",
+			"bullets": [
+				"NextAuth (OAuth) ile Spotify hesabıyla giriş",
+				"Çalma listelerini ve takip edilen sanatçıları gösteren kitaplık menüsü",
+				"Çalma listesi oluşturma; keşfet ve öne çıkanlar bölümleri",
+				"Şarkı bilgisi ve kontrolleriyle oynatıcı çubuğu"
+			],
+			"tech": "Next.js · TypeScript · NextAuth · Redux Toolkit · React Query · Tailwind · Framer Motion",
+			"images": [
+				{
+					"src": "/images/projects/spotify-clone.jpg",
+					"alt": "Spotify klonu ana ekranı",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/spotify_clone_nextjs", "primary": true }
+			]
+		},
+		{
+			"id": "netflix-clone",
+			"category": "frontend",
+			"year": "2021",
+			"meta": "Her şeyin başladığı yer",
+			"title": "Netflix Clone",
+			"description": "İlk web projem: saf HTML, CSS ve JavaScript ile yazdığım bir Netflix klonu.",
+			"bullets": [
+				"Karşılama, giriş, kayıt ve ana sayfa ekranları",
+				"Filmler TMDB API’sinden çekiliyor",
+				"Kullanıcı girişi yerel JSON verisiyle doğrulanıyor"
+			],
+			"tech": "JavaScript · HTML · CSS · TMDB API",
+			"images": [
+				{
+					"src": "/images/projects/netflix-clone.jpg",
+					"alt": "Netflix klonu ana ekranı",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{
+					"label": "Kaynak kod",
+					"href": "https://github.com/thekinv21/Netflix-Clone-With-Javascript",
+					"primary": true
+				}
+			]
+		}
+	]
+}

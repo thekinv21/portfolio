@@ -1,0 +1,188 @@
+{
+	"slug": "karina",
+	"meta": {
+		"title": "Karina — Case study",
+		"description": "The website of Karina — home of Azimut Yachts and Williams Jet Tenders in Istanbul and Bodrum — built solo and powered by the COST admin panel."
+	},
+	"eyebrow": "Case study · 2024 · Client work at EDICT Digital",
+	"title": "Karina",
+	"lead": "The website of Karina — the Istanbul and Bodrum home of Azimut Yachts and Williams Jet Tenders. I built the whole site single-handedly, powered end to end by the COST admin panel.",
+	"primaryLink": {
+		"label": "Visit karina.com.tr",
+		"href": "https://karina.com.tr"
+	},
+	"hero": {
+		"src": "/images/projects/karina-home.jpg",
+		"alt": "Karina homepage: video hero of a yacht at sea under the Karina logo",
+		"aspect": "1442 / 835"
+	},
+	"facts": [
+		{ "label": "ROLE", "value": "Frontend developer — solo build" },
+		{ "label": "CLIENT", "value": "Karina · Istanbul & Bodrum" },
+		{ "label": "CONTENT SOURCE", "value": "COST admin panel" },
+		{ "label": "LANGUAGES", "value": "English · Turkish" }
+	],
+	"sections": [
+		{
+			"type": "overview",
+			"eyebrow": "01 — Overview",
+			"title": "A showroom for yachts, online",
+			"paragraphs": [
+				"Karina sells new Azimut yachts, Williams jet tenders and pre-owned boats from offices in Istanbul and Bodrum. The site has to feel as premium as the boats — big imagery, video and calm typography — while staying fast and easy for search engines to index.",
+				"I built the entire site on my own in Next.js and TypeScript: the brand and model pages, the new and used yacht catalogs, detailed listing pages with full specifications, news, and the English / Turkish versions — plus its CI/CD pipeline and code-quality rules."
+			]
+		},
+		{
+			"type": "flow",
+			"eyebrow": "02 — How it fits together",
+			"title": "Every word and photo comes from COST",
+			"intro": "The Karina team doesn't touch code to update the site. Yachts, models, specifications, prices, galleries, PDFs, second-hand listings and news are all managed in the COST admin panel — which I also built — and the website renders whatever is published there.",
+			"source": {
+				"label": "BACK OFFICE",
+				"title": "COST admin panel",
+				"items": [
+					"New & used yachts, models, specs",
+					"Prices, galleries, videos, PDFs",
+					"Offers, customers, configurator",
+					"News & events"
+				]
+			},
+			"connector": "publishes via API",
+			"target": {
+				"label": "PUBLIC WEBSITE",
+				"title": "karina.com.tr",
+				"items": [
+					"Brand & model pages",
+					"New & used yacht catalogs",
+					"Listing pages with full specs",
+					"News, events, EN / TR"
+				]
+			},
+			"note": {
+				"text": "Both ends are mine: the panel where content is entered, and the site where it's shown. See",
+				"linkLabel": "COST Admin Panel",
+				"suffix": "in my projects."
+			}
+		},
+		{
+			"type": "showcase",
+			"eyebrow": "03 — The site, page by page",
+			"title": "What visitors see",
+			"features": [
+				{
+					"src": "/images/case-studies/karina/homepage-azimut.jpg",
+					"alt": "Homepage section introducing Azimut Yachts over a lifestyle photo",
+					"label": "HOMEPAGE",
+					"title": "Brand storytelling",
+					"text": "A full-screen video hero, then sections for Azimut, the YouTube channel, Williams jet tenders, new and used yachts, and news — each a large image with a short story and a clear next step."
+				},
+				{
+					"src": "/images/case-studies/karina/model-menu.jpg",
+					"alt": "Full-screen Azimut model menu showing the Magellano 60 with Virtual Tour and Detail buttons",
+					"label": "NAVIGATION",
+					"title": "Model explorer menu",
+					"text": "A full-screen menu for Azimut and Williams. Pick a range — Magellano, Seadeck, Fly, S, Atlantis, Verve, Grande — then a model, and jump straight to its virtual tour or detail page."
+				}
+			],
+			"grid": [
+				{
+					"src": "/images/case-studies/karina/model-page.jpg",
+					"alt": "Azimut Magellano 60 model page hero",
+					"title": "Model pages",
+					"caption": "Cinematic hero with the brand mark and model name"
+				},
+				{
+					"src": "/images/case-studies/karina/gallery.jpg",
+					"alt": "Exterior photo gallery with thumbnails",
+					"title": "Exterior & interior galleries",
+					"caption": "Slider with thumbnails, then specs: dimensions, accommodation, tanks, design team and performance"
+				},
+				{
+					"src": "/images/case-studies/karina/new-yachts.jpg",
+					"alt": "New yachts catalog with prices and delivery dates",
+					"title": "New yachts catalog",
+					"caption": "Brand and model search; standard-equipment price and factory delivery date on every card"
+				},
+				{
+					"src": "/images/projects/karina-used-yachts.jpg",
+					"alt": "Used yachts page with featured boats and price-reduced badges",
+					"title": "Used yachts",
+					"caption": "Featured boats, “price reduced” badges and key facts: year, cabins, length, material, flag, location"
+				},
+				{
+					"src": "/images/case-studies/karina/listing.jpg",
+					"alt": "Azimut 66 Fly listing with gallery, price and key specs",
+					"title": "Listing pages",
+					"caption": "25-photo gallery with video, old and new price, Download PDF, Contact Us and the sales manager's card",
+					"position": "top"
+				},
+				{
+					"src": "/images/case-studies/karina/specification.jpg",
+					"alt": "Full specification with General and Dimensions sections",
+					"title": "Full specification",
+					"caption": "Tabs for general, engine, electronics, interior, exterior, description, gallery and video",
+					"position": "top"
+				}
+			],
+			"wide": {
+				"src": "/images/case-studies/karina/news.jpg",
+				"alt": "News and events page featuring the Azimut Seadeck 9",
+				"title": "News & events",
+				"caption": "Launches, boat shows and invitations — published from the admin panel"
+			}
+		},
+		{
+			"type": "cards",
+			"eyebrow": "04 — Engineering",
+			"title": "How it's built",
+			"items": [
+				{
+					"label": "SEO",
+					"title": "Built to be found",
+					"text": "Next.js pages with their own titles and descriptions for every brand, model and listing, so each yacht can rank on its own."
+				},
+				{
+					"label": "CONTENT",
+					"title": "Driven by the admin panel",
+					"text": "Prices, specs, galleries, PDFs and news come from COST, so the sales team updates the site without a developer."
+				},
+				{
+					"label": "MEDIA",
+					"title": "Rich, but light",
+					"text": "Video heroes, sliders and large galleries, with optimized images so heavy media doesn't slow the page down."
+				},
+				{
+					"label": "DELIVERY",
+					"title": "CI/CD from day one",
+					"text": "GitHub Actions pipeline, plus ESLint, Prettier and Husky pre-commit hooks keeping the codebase consistent."
+				}
+			]
+		},
+		{
+			"type": "stack",
+			"eyebrow": "05 — Stack",
+			"items": [
+				"Next.js",
+				"TypeScript",
+				"Tailwind CSS",
+				"React Query",
+				"React Hook Form",
+				"Framer Motion",
+				"GitHub Actions",
+				"ESLint · Prettier · Husky"
+			]
+		}
+	],
+	"footer": {
+		"back": "All projects",
+		"links": [
+			{ "label": "Live site", "href": "https://karina.com.tr" },
+			{
+				"label": "Get in touch",
+				"href": "mailto:vkiniabaev@gmail.com",
+				"primary": true
+			}
+		]
+	},
+	"backLabel": "Back to portfolio"
+}

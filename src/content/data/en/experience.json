@@ -1,0 +1,113 @@
+{
+	"items": [
+		{
+			"period": "Mar 2024 — May 2026 · 2 yrs 3 mos",
+			"role": "Full Stack Engineer",
+			"company": "EDICT Digital Bilgi Teknolojileri A.Ş. · Full-time · Istanbul, Remote",
+			"summary": "Full-stack developer at a software services company, delivering web apps, admin panels and websites for clients in telecom, manufacturing and education.",
+			"projects": [
+				{
+					"title": "Kastamonu Entegre — LIKE Admin",
+					"period": "Apr 25 — Jan 26",
+					"subtitle": "Hayat Holding · manufacturing",
+					"bullets": [
+						"Built the entire frontend end to end with Next.js: architecture, routing, components",
+						"Real-time order locking with SignalR to prevent concurrent edit conflicts",
+						"Owned the Order module across three stages: Draft → Quote → Order",
+						"Sped up dashboards by virtualizing 1,000+ row tables and moving heavy filters out of keystroke updates",
+						"State with Jotai; data and forms with TanStack Query, React Hook Form and Axios",
+						"Optimized Webpack builds with code splitting and bundle size reduction"
+					]
+				},
+				{
+					"title": "Turkcell — TLife",
+					"period": "Oct 24 — Dec 24",
+					"subtitle": "Telecom · Avantajlar Dünyası",
+					"bullets": [
+						"Built the entire Campaigns module of “Avantajlar Dünyası” (Benefits World) single-handedly"
+					]
+				},
+				{
+					"title": "COST — Admin Panel",
+					"period": "2023 — 2025",
+					"subtitle": "Customer & Configurator modules",
+					"bullets": [
+						"Built the entire panel single-handedly, incl. Customer and Configurator modules",
+						"Developed a config-driven dynamic form engine",
+						"Set up the full CI/CD pipeline with GitHub Actions for automated testing and deployment",
+						"Code style rules with ESLint, Prettier and Husky pre-commit hooks",
+						"Improved Core Web Vitals with Lighthouse and React Profiler (memoization, code splitting, lazy loading)"
+					]
+				},
+				{
+					"title": "Karina — Web",
+					"period": "Solo build",
+					"subtitle": "SEO-friendly web application",
+					"bullets": [
+						"Built the entire SEO-friendly web application single-handedly with Next.js and TypeScript",
+						"Set up the full CI/CD pipeline with GitHub Actions",
+						"Code style rules with ESLint, Prettier and Husky pre-commit hooks"
+					]
+				},
+				{
+					"title": "ElodiLab — EdTech",
+					"period": "Admin panel",
+					"subtitle": "Education platform",
+					"bullets": [
+						"Developed the admin panel frontend with React and TypeScript",
+						"Created a frontend review checklist that turned repeated review comments into team guidance",
+						"Set up CI/CD with GitHub Actions; ESLint, Prettier and pre-commit hooks"
+					]
+				}
+			],
+			"tags": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"NestJS",
+				"PostgreSQL",
+				"Prisma",
+				"TanStack Query",
+				"Jotai",
+				"React Hook Form",
+				"SignalR",
+				"GitHub Actions",
+				"Jest"
+			]
+		},
+		{
+			"period": "Aug 2023 — Feb 2024 · 7 mos",
+			"role": "Junior Frontend Developer",
+			"company": "BossCubes Teknoloji A.Ş. · Part-time · Türkiye, Remote",
+			"projects": [
+				{
+					"title": "Helpdesk Admin Panel",
+					"bullets": [
+						"Built the Helpdesk Admin Panel with React and Vite, focusing on routing and reusable components",
+						"Virtualized 1,000+ row tables with Mantine DataTable",
+						"Implemented i18n multi-language support",
+						"Created reusable custom hooks and utilities, separating logic from UI",
+						"Turned Figma designs into accessible components and defined API contracts with backend teams"
+					]
+				}
+			],
+			"tags": ["React", "TypeScript", "Vite", "Mantine UI", "i18n"]
+		},
+		{
+			"period": "Jul 2023 — Aug 2023 · 2 mos",
+			"role": "Frontend Intern",
+			"company": "BossCubes Teknoloji A.Ş. · Internship · Istanbul, On-site",
+			"bullets": [
+				"Implemented new features and fixed UI issues in the Helpdesk Admin Panel",
+				"Built flexible, reusable dynamic form components based on field configurations",
+				"Built responsive interfaces from Figma designs with Mantine UI"
+			]
+		},
+		{
+			"period": "Sep 2019 — Jul 2023",
+			"role": "B.Sc. Computer Engineering",
+			"company": "Trakya University · Edirne",
+			"note": "Graduation project: Rezztoran — a restaurant booking web app and admin panel built with React."
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"items": [
+		{
+			"initials": "AÖ",
+			"name": "Adem Öztürk",
+			"role": "AI Development Manager",
+			"company": "Hayat Holding",
+			"linkedin": "https://linkedin.com/in/adem-ozturk-3a2441b3",
+			"email": "ozturkadem86@gmail.com"
+		},
+		{
+			"initials": "KK",
+			"name": "Kaya Kayseroğlu",
+			"role": "Senior AI Development Specialist",
+			"company": "Hayat Holding",
+			"linkedin": "https://linkedin.com/in/kayakayseroglu",
+			"email": "kayakayseroglu@gmail.com"
+		},
+		{
+			"initials": "OK",
+			"name": "Osman Nuri Kumlu",
+			"role": "DevOps Architect",
+			"company": "OPET",
+			"linkedin": "https://linkedin.com/in/osman-nuri-kumlu",
+			"email": "osmannurikumlu@hotmail.com"
+		},
+		{
+			"initials": "MÖ",
+			"name": "Münevver Özhan",
+			"role": "Software Developer",
+			"company": "EDICT Digital",
+			"linkedin": "https://www.linkedin.com/in/munevverozhan/",
+			"email": "ozhmunevver@gmail.com"
+		},
+		{
+			"initials": "GU",
+			"name": "Gürkan Uçar",
+			"role": "Software Engineer",
+			"company": "ExperiLabs",
+			"linkedin": "https://linkedin.com/in/ucargurkan",
+			"email": "ucar.gurkan@hotmail.com"
+		}
+	]
+}

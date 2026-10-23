@@ -1,0 +1,199 @@
+{
+	"slug": "dentacare",
+	"meta": {
+		"title": "DentaCare — Case study",
+		"description": "An admin panel for dental clinics, built end to end with Next.js 16, React 19 and Feature-Sliced Design."
+	},
+	"eyebrow": "Case study · 2026 · Frontend",
+	"title": "DentaCare",
+	"lead": "An admin panel for dental clinics — every screen of the design built end to end, in three languages, with light and dark themes.",
+	"primaryLink": {
+		"label": "View on GitHub",
+		"href": "https://github.com/thekinv21/DentaCareAdminPanel"
+	},
+	"hero": {
+		"src": "/images/projects/dentacare.jpg",
+		"alt": "DentaCare dashboard with today's schedule, chair load and KPIs",
+		"aspect": "16 / 10",
+		"position": "top left"
+	},
+	"facts": [
+		{ "label": "ROLE", "value": "Frontend developer — solo" },
+		{ "label": "SCOPE", "value": "20+ screens · auth · CRUD · RBAC" },
+		{ "label": "LANGUAGES", "value": "Russian · Kyrgyz · English" },
+		{ "label": "STATUS", "value": "All design screens shipped, on mock data" }
+	],
+	"sections": [
+		{
+			"type": "overview",
+			"eyebrow": "01 — Overview",
+			"title": "One place to run a clinic",
+			"paragraphs": [
+				"DentaCare brings a dental clinic's daily work into one admin panel: patient records with a dental chart (odontogram), an appointment calendar, treatment plans, billing, inventory, reports, staff shifts, users and role-based access control.",
+				"I implemented every screen from the design file as a Next.js App Router app. The data layer runs on mock requests behind a single helper, so wiring up the real backend is a swap, not a rewrite."
+			]
+		},
+		{
+			"type": "gallery",
+			"eyebrow": "02 — What I built",
+			"title": "Screens & features",
+			"items": [
+				{
+					"src": "/images/case-studies/dentacare/patients.jpg",
+					"alt": "Patient list",
+					"title": "Patients",
+					"caption": "Searchable list with filters and sorting through React Hook Form",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/patient-profile.jpg",
+					"alt": "Patient profile with dental chart",
+					"title": "Patient profile",
+					"caption": "History and an interactive dental chart",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/appointments.jpg",
+					"alt": "Appointment calendar",
+					"title": "Appointments",
+					"caption": "Calendar with create, edit and delete flows",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/treatment-plans.jpg",
+					"alt": "Treatment plans",
+					"title": "Treatment plans",
+					"caption": "Plans, stages and costs per patient",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/billing.jpg",
+					"alt": "Billing",
+					"title": "Billing",
+					"caption": "Payments and invoices",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/inventory.jpg",
+					"alt": "Inventory",
+					"title": "Inventory",
+					"caption": "Stock levels and new items",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/reports.jpg",
+					"alt": "Reports",
+					"title": "Reports",
+					"caption": "Clinic performance at a glance",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/roles.jpg",
+					"alt": "Roles and permissions",
+					"title": "Roles & access",
+					"caption": "Role-based permissions for users and staff",
+					"position": "top left"
+				},
+				{
+					"src": "/images/case-studies/dentacare/sign-in.jpg",
+					"alt": "Sign-in screen",
+					"title": "Authentication",
+					"caption": "Sign in, register, reset password, SMS verification",
+					"position": "top left"
+				}
+			]
+		},
+		{
+			"type": "layers",
+			"eyebrow": "03 — Architecture",
+			"title": "Feature-Sliced Design",
+			"paragraphs": [
+				"The codebase follows Feature-Sliced Design. Imports only ever go downward, slices on the same layer never import each other, and every slice exposes a public API.",
+				"The rules aren't just conventions — ESLint boundaries and Steiger enforce them, and a Husky pre-commit hook rejects any commit with lint errors."
+			],
+			"listLabel": "Layers, top to bottom",
+			"layers": [
+				{ "name": "app", "description": "Providers and layouts" },
+				{
+					"name": "pages",
+					"description": "Dashboard, patients, billing, roles… 20 screens"
+				},
+				{
+					"name": "widgets",
+					"description": "Sidebar, dental chart, page header"
+				},
+				{ "name": "features", "description": "Language switching" },
+				{
+					"name": "entities",
+					"description": "Appointment, employee, invoice, patient, role, user"
+				},
+				{
+					"name": "shared",
+					"description": "API instance, i18n, UI kit, utilities"
+				}
+			],
+			"note": "imports flow downward only"
+		},
+		{
+			"type": "cards",
+			"eyebrow": "04 — Decisions",
+			"title": "How it's built",
+			"items": [
+				{
+					"label": "FORMS",
+					"title": "Everything goes through React Hook Form",
+					"text": "Create and edit forms, settings, table filters, search, sorting — all one pattern, validated with Zod schemas whose messages are translation keys."
+				},
+				{
+					"label": "I18N",
+					"title": "Three languages, one key tree",
+					"text": "next-intl with ru, ky and en. The locale lives in a cookie, not the URL; numbers, dates and money are formatted per locale with ICU placeholders."
+				},
+				{
+					"label": "DATA",
+					"title": "Backend-ready mock layer",
+					"text": "TanStack Query on top of an Axios instance. Mutations go through one mock helper that gets replaced by real API calls once the backend is connected."
+				},
+				{
+					"label": "RENDERING",
+					"title": "Server Components by default",
+					"text": "“use client” only where interactivity, browser APIs or hooks need it — plus a custom UI kit with modals, tables, toasts and confirm dialogs."
+				}
+			]
+		},
+		{
+			"type": "stack",
+			"eyebrow": "05 — Stack",
+			"items": [
+				"Next.js 16 (App Router)",
+				"React 19",
+				"TypeScript (strict)",
+				"Tailwind CSS v4",
+				"Framer Motion",
+				"TanStack Query v5",
+				"Axios",
+				"React Hook Form",
+				"Zod v4",
+				"next-intl v4",
+				"ESLint boundaries · Steiger",
+				"Prettier · Husky",
+				"Bun"
+			]
+		}
+	],
+	"footer": {
+		"back": "All projects",
+		"links": [
+			{
+				"label": "Source code",
+				"href": "https://github.com/thekinv21/DentaCareAdminPanel"
+			},
+			{
+				"label": "Get in touch",
+				"href": "mailto:vkiniabaev@gmail.com",
+				"primary": true
+			}
+		]
+	},
+	"backLabel": "Back to portfolio"
+}

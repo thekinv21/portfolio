@@ -1,0 +1,246 @@
+{
+	"items": [
+		{
+			"number": "01",
+			"category": "Cloud storage",
+			"repo": "~/AWS_MultipartFileUpload_BE",
+			"href": "https://github.com/thekinv21/AWS_MultipartFileUpload_BE",
+			"title": "S3 Multipart Upload API",
+			"bullets": [
+				"Parallel, out-of-order part uploads; the server sorts and completes them",
+				"Final size verified from S3 — oversize uploads abort automatically",
+				"Public files or time-limited private download links",
+				"Swagger docs generated from the same Zod schemas as validation"
+			],
+			"tech": "NestJS · Prisma · PostgreSQL · AWS SDK · Zod · Bun",
+			"image": {
+				"src": "/images/backend/s3-multipart-swagger.jpg",
+				"alt": "Swagger docs for the S3 multipart upload API"
+			}
+		},
+		{
+			"number": "02",
+			"category": "Auth · ★ 3",
+			"repo": "~/RBAC_Authentication",
+			"href": "https://github.com/thekinv21/RBAC_Authentication",
+			"title": "Role-based Auth API",
+			"bullets": [
+				"JWT access + refresh tokens with instant revocation",
+				"RBAC with custom `@Auth` / `@PreAuthorize` decorators",
+				"Argon2 hashing, Helmet and Arcjet rate limiting"
+			],
+			"tech": "NestJS 11 · Prisma · PostgreSQL · Zod",
+			"terminal": {
+				"title": "rbac-auth · endpoints",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/api/auth/register" },
+					{ "method": "POST", "tone": "post", "text": "/api/auth/login" },
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/api/auth/refresh-token"
+					},
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/api/users",
+						"comment": "— admin only"
+					},
+					{ "method": "PATCH", "tone": "put", "text": "/api/roles/toggle/:id" },
+					{ "method": "DELETE", "tone": "del", "text": "/api/users/delete/:id" }
+				]
+			}
+		},
+		{
+			"number": "03",
+			"category": "Real-time",
+			"repo": "~/PessimisticLockingBE",
+			"href": "https://github.com/thekinv21/PessimisticLockingBE",
+			"title": "Post Locking & Sync",
+			"bullets": [
+				"The first tab to open a post locks it; others get a read-only view",
+				"Saves accepted only with the holder's `X-Lock-Token`",
+				"Changes broadcast to every tab over WebSockets"
+			],
+			"tech": "NestJS 11 · WebSockets · Zod · Swagger",
+			"terminal": {
+				"title": "post-locking · flow",
+				"lines": [
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/posts/:id",
+						"comment": "→ lock acquired"
+					},
+					{
+						"method": "PUT",
+						"tone": "put",
+						"text": "/posts/:id",
+						"comment": "X-Lock-Token"
+					},
+					{
+						"method": "WS",
+						"tone": "post",
+						"text": "record:changed",
+						"comment": "→ all tabs"
+					},
+					{ "method": "GET", "tone": "get", "text": "/health" }
+				]
+			}
+		},
+		{
+			"number": "04",
+			"category": "Messaging",
+			"repo": "~/NotificationService",
+			"href": "https://github.com/thekinv21/NotificationService",
+			"title": "Notification Service",
+			"bullets": [
+				"Transactional email delivery through Resend",
+				"API-key authentication on every endpoint",
+				"Zod validation, Helmet headers, versioned API, Swagger"
+			],
+			"tech": "NestJS · Resend · nestjs-zod · Helmet",
+			"terminal": {
+				"title": "notification · request",
+				"lines": [
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/api/v1/notification/email"
+					},
+					{ "comment": "x-api-key: ••••••••" },
+					{
+						"method": "201",
+						"tone": "post",
+						"text": "Created",
+						"comment": "— email sent"
+					},
+					{
+						"method": "400",
+						"tone": "del",
+						"text": "Bad Request",
+						"comment": "— invalid payload or key"
+					}
+				]
+			}
+		},
+		{
+			"number": "05",
+			"category": "DevOps",
+			"repo": "~/DockerizeAndDeployment",
+			"href": "https://github.com/thekinv21/DockerizeAndDeployment",
+			"title": "Docker & AWS Deployment",
+			"bullets": [
+				"Compose setup: PostgreSQL, a one-shot migration job and the API",
+				"The API boots only after migrations succeed",
+				"Shipped to AWS with GitHub Actions"
+			],
+			"tech": "NestJS · Docker · Prisma 7 · AWS",
+			"terminal": {
+				"title": "docker-compose · services",
+				"lines": [
+					{ "method": "DB", "tone": "get", "text": "postgres:18-alpine" },
+					{
+						"method": "JOB",
+						"tone": "put",
+						"text": "migrate",
+						"comment": "— runs once"
+					},
+					{
+						"method": "APP",
+						"tone": "post",
+						"text": "backend",
+						"comment": "— NestJS"
+					},
+					{ "comment": "db → migrate → backend" }
+				]
+			}
+		},
+		{
+			"number": "06",
+			"category": "Platform · ★ 1",
+			"repo": "~/nest_snap_link",
+			"href": "https://github.com/thekinv21/nest_snap_link",
+			"title": "SnapLink",
+			"bullets": [
+				"Short, shareable links with 302 redirects",
+				"Per-link info, analytics and status toggling",
+				"Token auth and user management; runs on Docker"
+			],
+			"tech": "NestJS · Prisma · JWT · Docker",
+			"terminal": {
+				"title": "snaplink · endpoints",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/url/shorten" },
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/url/:shortUrl",
+						"comment": "→ 302"
+					},
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/url/analytics/:shortUrl"
+					},
+					{
+						"method": "PATCH",
+						"tone": "put",
+						"text": "/url/toggle-status/:shortUrl"
+					},
+					{ "method": "DELETE", "tone": "del", "text": "/url/delete/:shortUrl" }
+				]
+			}
+		},
+		{
+			"number": "07",
+			"category": "Auth · ★ 3",
+			"repo": "~/nestjs-auth-with-otp",
+			"href": "https://github.com/thekinv21/nestjs-auth-with-otp",
+			"title": "OTP Authentication",
+			"bullets": [
+				"Email one-time-password verification for new accounts",
+				"JWT login with refresh tokens",
+				"Written up as a step-by-step guide on Medium"
+			],
+			"tech": "NestJS · Postmark · Prisma · JWT",
+			"terminal": {
+				"title": "otp-auth · flow",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/auth/register" },
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/send-otp",
+						"comment": "→ code by email"
+					},
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/verify-otp",
+						"comment": "→ verified"
+					},
+					{ "method": "POST", "tone": "post", "text": "/auth/login" }
+				]
+			}
+		}
+	],
+	"more": [
+		{
+			"label": "nestjs_authentication_be",
+			"href": "https://github.com/thekinv21/nestjs_authentication_be"
+		},
+		{
+			"label": "twitter-be-expressjs",
+			"href": "https://github.com/thekinv21/twitter-be-expressjs"
+		},
+		{
+			"label": "telegram_bot",
+			"href": "https://github.com/thekinv21/telegram_bot"
+		},
+		{
+			"label": "dockerize-nestjs-app",
+			"href": "https://github.com/thekinv21/dockerize-nestjs-app"
+		}
+	]
+}

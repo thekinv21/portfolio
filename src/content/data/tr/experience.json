@@ -1,0 +1,113 @@
+{
+	"items": [
+		{
+			"period": "Mart 2024 — Mayıs 2026 · 2 yıl 3 ay",
+			"role": "Full-Stack Mühendis",
+			"company": "EDICT Digital Bilgi Teknolojileri A.Ş. · Tam zamanlı · İstanbul, uzaktan",
+			"summary": "Bir yazılım hizmetleri şirketinde telekom, üretim ve eğitim sektörlerindeki müşterilere web uygulamaları, yönetim panelleri ve kurumsal web siteleri geliştirdim.",
+			"projects": [
+				{
+					"title": "Kastamonu Entegre — LIKE Yönetim Paneli",
+					"period": "Nis 2025 — Oca 2026",
+					"subtitle": "Hayat Holding · üretim",
+					"bullets": [
+						"Frontend’in tamamını Next.js ile sıfırdan kurdum: mimari, yönlendirme ve bileşenler",
+						"Aynı siparişin aynı anda birden fazla kişi tarafından düzenlenmesini önlemek için SignalR ile gerçek zamanlı sipariş kilitleme geliştirdim",
+						"Taslak → Teklif → Sipariş aşamalarından oluşan sipariş modülünü uçtan uca üstlendim",
+						"1.000+ satırlık tabloları sanallaştırarak ve ağır filtreleri her tuş vuruşunda çalışmaktan kurtararak gösterge panellerini hızlandırdım",
+						"State yönetiminde Jotai; veri ve formlarda TanStack Query, React Hook Form ve Axios kullandım",
+						"Code splitting ve paket boyutunu küçülterek Webpack derlemelerini optimize ettim"
+					]
+				},
+				{
+					"title": "Turkcell — TLife",
+					"period": "Eki 2024 — Ara 2024",
+					"subtitle": "Telekom · Avantajlar Dünyası",
+					"bullets": [
+						"“Avantajlar Dünyası”nın Kampanyalar modülünü baştan sona tek başıma geliştirdim"
+					]
+				},
+				{
+					"title": "COST — Yönetim Paneli",
+					"period": "2023 — 2025",
+					"subtitle": "Müşteri ve Konfigüratör modülleri",
+					"bullets": [
+						"Müşteri ve Konfigüratör modülleri dahil panelin tamamını tek başıma geliştirdim",
+						"Yapılandırma tabanlı dinamik bir form motoru geliştirdim",
+						"Otomatik test ve dağıtım için GitHub Actions ile CI/CD sürecini sıfırdan kurdum",
+						"ESLint, Prettier ve Husky pre-commit kancalarıyla kod standartlarını belirledim",
+						"Lighthouse ve React Profiler ile Core Web Vitals değerlerini iyileştirdim (memoization, code splitting, lazy loading)"
+					]
+				},
+				{
+					"title": "Karina — Web",
+					"period": "Tek başıma",
+					"subtitle": "SEO uyumlu web uygulaması",
+					"bullets": [
+						"SEO uyumlu web uygulamasını Next.js ve TypeScript ile baştan sona tek başıma geliştirdim",
+						"GitHub Actions ile CI/CD sürecini sıfırdan kurdum",
+						"ESLint, Prettier ve Husky pre-commit kancalarıyla kod standartlarını belirledim"
+					]
+				},
+				{
+					"title": "ElodiLab — Eğitim Teknolojileri",
+					"period": "Yönetim paneli",
+					"subtitle": "Eğitim platformu",
+					"bullets": [
+						"Yönetim panelinin frontend’ini React ve TypeScript ile geliştirdim",
+						"Kod incelemelerinde tekrar eden yorumları, ekibin kullandığı bir frontend kontrol listesine dönüştürdüm",
+						"GitHub Actions ile CI/CD sürecini; ESLint, Prettier ve pre-commit kancalarını kurdum"
+					]
+				}
+			],
+			"tags": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"NestJS",
+				"PostgreSQL",
+				"Prisma",
+				"TanStack Query",
+				"Jotai",
+				"React Hook Form",
+				"SignalR",
+				"GitHub Actions",
+				"Jest"
+			]
+		},
+		{
+			"period": "Ağustos 2023 — Şubat 2024 · 7 ay",
+			"role": "Junior Frontend Geliştirici",
+			"company": "BossCubes Teknoloji A.Ş. · Yarı zamanlı · Türkiye, uzaktan",
+			"projects": [
+				{
+					"title": "Helpdesk Yönetim Paneli",
+					"bullets": [
+						"Helpdesk Yönetim Paneli’ni React ve Vite ile geliştirdim; yönlendirme ve yeniden kullanılabilir bileşenlere odaklandım",
+						"Mantine DataTable ile 1.000+ satırlık tabloları sanallaştırdım",
+						"i18n ile çoklu dil desteği ekledim",
+						"İş mantığını arayüzden ayıran, yeniden kullanılabilir custom hook’lar ve yardımcı fonksiyonlar yazdım",
+						"Figma tasarımlarını erişilebilir bileşenlere dönüştürdüm; backend ekipleriyle API sözleşmelerini belirledim"
+					]
+				}
+			],
+			"tags": ["React", "TypeScript", "Vite", "Mantine UI", "i18n"]
+		},
+		{
+			"period": "Temmuz 2023 — Ağustos 2023 · 2 ay",
+			"role": "Frontend Stajyer",
+			"company": "BossCubes Teknoloji A.Ş. · Staj · İstanbul, ofisten",
+			"bullets": [
+				"Helpdesk Yönetim Paneli’ne yeni özellikler ekledim ve arayüz hatalarını giderdim",
+				"Alan yapılandırmalarına göre çalışan esnek, yeniden kullanılabilir dinamik form bileşenleri geliştirdim",
+				"Figma tasarımlarından Mantine UI ile responsive arayüzler geliştirdim"
+			]
+		},
+		{
+			"period": "Eylül 2019 — Temmuz 2023",
+			"role": "Bilgisayar Mühendisliği, Lisans",
+			"company": "Trakya Üniversitesi · Edirne",
+			"note": "Bitirme projesi: Rezztoran — React ile geliştirdiğim restoran rezervasyon uygulaması ve yönetim paneli."
+		}
+	]
+}

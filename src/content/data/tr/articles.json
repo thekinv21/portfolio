@@ -1,0 +1,88 @@
+{
+	"items": [
+		{
+			"date": "Yeni",
+			"title": "Docker nedir ve hangi sorunları çözüyor?",
+			"summary": "“Benim bilgisayarımda çalışıyor” sorunu neden olur, Docker nasıl çözer?",
+			"lang": "TR",
+			"href": "https://medium.com/@thekinv21/docker-nedir-ve-hangi-sorunlar%C4%B1-%C3%A7%C3%B6z%C3%BCyor-b81bc0bc30c5"
+		},
+		{
+			"date": "12 Ağu 2026",
+			"title": "Page Rendering in Next.js",
+			"summary": "SSR, SSG, ISR ve CSR — hangisi ne zaman?",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/page-rendering-in-next-js-fe2a051ae118"
+		},
+		{
+			"date": "25 Şub 2025",
+			"title": "Veri Tabanları ve PostgreSQL’e Giriş",
+			"summary": "Veri tabanlarına ve PostgreSQL’e giriş.",
+			"lang": "TR",
+			"href": "https://medium.com/@thekinv21/veri-tabanlar%C4%B1-ve-postgresqle-giri%C5%9F-caaf16a371f9"
+		},
+		{
+			"date": "9 Oca 2025",
+			"title": "How to Dockerize a NestJS Application with Prisma & PostgreSQL",
+			"summary": "Bir NestJS API’sini container’larla derleyip yayına alma.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/how-to-dockerize-a-nestjs-application-with-prisma-postgresql-7b64fc391694"
+		},
+		{
+			"date": "5 Oca 2025",
+			"title": "OTP Authentication with NestJS (Email)",
+			"summary": "Tek kullanımlık şifreler ve Postmark ile kullanıcı doğrulama.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/otp-authentication-with-nestjs-email-9d24b3ea0aa2"
+		},
+		{
+			"date": "27 Eki 2024",
+			"title": "What is Zustand?",
+			"summary": "React state yönetimine sade, hızlı ve ölçeklenebilir bir yaklaşım.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/what-is-zustand-7ffa8cea6043"
+		},
+		{
+			"date": "13 Eki 2024",
+			"title": "Deploying a NestJS App with PM2 on Ubuntu using Nginx",
+			"summary": "Bir NestJS API’sinin VPS üzerinde canlıya alınması.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-a-nestjs-app-with-pm2-on-a-ubuntu-server-20-04-using-nginx-996a6533f2b7"
+		},
+		{
+			"date": "13 Eki 2024",
+			"title": "Deploying Next.js App on Ubuntu with Nginx and PM2",
+			"summary": "Build’den Nginx arkasında çalışan canlı Next.js uygulamasına.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-next-js-app-on-ubuntu-server-20-04-with-nginx-and-pm2-c573e4da37b8"
+		},
+		{
+			"date": "13 Eki 2024",
+			"title": "Deploying ReactJS App on Ubuntu using Nginx",
+			"summary": "Bir React SPA’yı Ubuntu sunucudan yayınlama.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-reactjs-app-on-ubuntu-server-20-04-using-nginx-9a4970b8a955"
+		},
+		{
+			"date": "13 Eki 2024",
+			"title": "Deploying PostgreSQL Database on Ubuntu",
+			"summary": "VPS üzerinde PostgreSQL kurulumu.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/deploying-postgresql-database-on-ubuntu-server-20-04-fc7e6827b129"
+		},
+		{
+			"date": "4 Ağu 2024",
+			"title": "NextJS SEO Optimization: Step by Step",
+			"summary": "Kullanıcılar ve arama motorları için hızlı, indekslenebilir Next.js uygulamaları.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/nextjs-seo-optimization-step-by-step-8e2da931b2fa"
+		},
+		{
+			"date": "4 Ağu 2024",
+			"title": "Vite SEO Optimization",
+			"summary": "İstemci tarafında render edilen Vite uygulamaları için teknik SEO.",
+			"lang": "EN",
+			"href": "https://medium.com/@thekinv21/vite-seo-optimization-3de337dfc90a"
+		}
+	]
+}

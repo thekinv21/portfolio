@@ -1,0 +1,252 @@
+{
+	"items": [
+		{
+			"id": "dentacare",
+			"category": "frontend",
+			"year": "2026",
+			"meta": "Frontend · Case study",
+			"title": "DentaCare",
+			"description": "An admin panel for dental clinics — every screen of the design built end to end, in Russian, Kyrgyz and English, with light and dark themes.",
+			"bullets": [
+				"Patients, dental chart, appointments, treatment plans, billing, inventory, reports and staff",
+				"Role-based access: users, roles and permissions with full create / edit flows",
+				"Feature-Sliced Design enforced by ESLint boundaries and Steiger",
+				"All forms, filters and search through React Hook Form + Zod"
+			],
+			"tech": "Next.js 16 · React 19 · TanStack Query · Tailwind v4 · React Hook Form + Zod · next-intl",
+			"images": [
+				{
+					"src": "/images/projects/dentacare.jpg",
+					"alt": "DentaCare clinic dashboard",
+					"aspect": "16 / 9",
+					"position": "top left"
+				}
+			],
+			"links": [
+				{ "label": "Read case study", "caseStudy": "dentacare", "primary": true },
+				{ "label": "Source", "href": "https://github.com/thekinv21/DentaCareAdminPanel" }
+			]
+		},
+		{
+			"id": "like",
+			"category": "client",
+			"year": "2025—26",
+			"meta": "Client · Kastamonu Entegre",
+			"title": "LIKE Admin Panel",
+			"description": "The order management panel for Kastamonu Entegre (Hayat Holding). I built the entire frontend end to end in Next.js and owned the order module.",
+			"bullets": [
+				"Order module across three stages: Draft → Quote → Order",
+				"Real-time order locking with SignalR to prevent concurrent edit conflicts",
+				"Dashboards sped up by virtualizing 1,000+ row tables and moving heavy filters off keystrokes",
+				"Standardized dialog and form accessibility: focus, keyboard, labels and errors",
+				"Leaner Webpack builds with code splitting and bundle-size reduction"
+			],
+			"tech": "Next.js · TypeScript · Jotai · TanStack Query · React Hook Form · Axios · SignalR",
+			"mock": {
+				"label": "LIKE · ORDER MODULE",
+				"note": "Internal system · no public screenshots",
+				"steps": [
+					{ "step": "STEP 01", "label": "Draft" },
+					{ "step": "STEP 02", "label": "Quote" },
+					{ "step": "STEP 03", "label": "Order" }
+				],
+				"lock": "Order locked — another user is editing",
+				"live": "SIGNALR · LIVE",
+				"table": "ORDERS TABLE",
+				"tableNote": "1,000+ rows · virtualized"
+			},
+			"links": []
+		},
+		{
+			"id": "karina",
+			"category": "client",
+			"year": "2024",
+			"meta": "Client · EDICT Digital",
+			"title": "Karina",
+			"description": "The website of Karina, home of Azimut Yachts and Williams Jet Tenders in Istanbul and Bodrum. I built the whole SEO-friendly site single-handedly — every yacht, price and photo on it comes from the COST admin panel.",
+			"bullets": [
+				"All content managed in the COST admin panel — the sales team updates the site without a developer",
+				"New and used yacht listings with brand and model search",
+				"Model pages with galleries and virtual tours; listings with full specs, PDF download and sales contact",
+				"Brand pages for Azimut and Williams, plus news and events",
+				"English and Turkish, with a video hero on the homepage",
+				"CI/CD with GitHub Actions; ESLint, Prettier and Husky rules"
+			],
+			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion",
+			"images": [
+				{
+					"src": "/images/projects/karina-home.jpg",
+					"alt": "Karina homepage with a yacht at sea under the Karina logo",
+					"aspect": "16 / 9",
+					"position": "top"
+				},
+				{
+					"src": "/images/projects/karina-used-yachts.jpg",
+					"alt": "Karina used yachts page with search and featured boats",
+					"aspect": "16 / 7",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Read case study", "caseStudy": "karina", "primary": true },
+				{ "label": "Visit karina.com.tr", "href": "https://karina.com.tr" }
+			]
+		},
+		{
+			"id": "cost",
+			"category": "client",
+			"year": "2023—25",
+			"meta": "Client · EDICT Digital",
+			"title": "COST Admin Panel",
+			"description": "A back-office panel built solo — customers, a product configurator, offers and second-hand listings, with revenue and sales dashboards. It also powers all the content on the Karina website.",
+			"bullets": [
+				"Built the entire panel, incl. Customer and Configurator modules",
+				"Config-driven dynamic form engine",
+				"Full CI/CD pipeline with GitHub Actions for automated tests and deploys",
+				"Core Web Vitals improved with memoization, code splitting and lazy loading"
+			],
+			"tech": "React · TypeScript · GitHub Actions · Lighthouse · React Profiler",
+			"images": [
+				{
+					"src": "/images/projects/cost.jpg",
+					"alt": "COST admin dashboard",
+					"aspect": "16 / 9",
+					"position": "top left"
+				}
+			],
+			"links": []
+		},
+		{
+			"id": "pro-cinema",
+			"category": "fullstack",
+			"year": "2023",
+			"meta": "Full-stack · Personal",
+			"title": "Pro-Cinema",
+			"description": "A full-stack movie platform with a public site and a complete admin panel.",
+			"bullets": [
+				"Home slider, trending and fresh movies, genres and actor pages",
+				"Movie pages with a video player for signed-in users, plus favorites and profile",
+				"Admin panel with stats and CRUD for movies, actors, genres and users",
+				"Slug fields, file uploads and a rich-text editor (Draft.js)",
+				"JWT auth with cookies; NestJS + MongoDB backend"
+			],
+			"tech": "Next.js · TypeScript · React Query · React Hook Form · Tailwind + Sass · NestJS · MongoDB",
+			"images": [
+				{
+					"src": "/images/projects/pro-cinema.jpg",
+					"alt": "Pro-Cinema movie app home screen",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Frontend", "href": "https://github.com/thekinv21/nextjs_movie_app", "primary": true },
+				{ "label": "Backend", "href": "https://github.com/thekinv21/nextjs_movie_app_backend" }
+			]
+		},
+		{
+			"id": "carhub",
+			"category": "frontend",
+			"year": "2023",
+			"meta": "Frontend · Personal",
+			"title": "CarHub",
+			"description": "A car catalog to explore, search and compare cars by model.",
+			"bullets": [
+				"Cars fetched from a RapidAPI car API with React Query",
+				"Search by manufacturer and model",
+				"Car cards with price and specs; detail view with images",
+				"Toast notifications and a responsive Tailwind + Sass UI"
+			],
+			"tech": "Next.js 13 · TypeScript · React Query · Tailwind · Sass · React Toastify",
+			"images": [
+				{
+					"src": "/images/projects/carhub.jpg",
+					"alt": "CarHub car catalog landing page",
+					"aspect": "16 / 9",
+					"position": "left center"
+				}
+			],
+			"links": [{ "label": "Source", "href": "https://github.com/thekinv21/cars_catalog_nextjs", "primary": true }]
+		},
+		{
+			"id": "rezztoran",
+			"category": "frontend",
+			"year": "2022—23",
+			"meta": "Graduation project",
+			"title": "Rezztoran",
+			"description": "A restaurant discovery and booking app with an admin panel — my final-term project at Trakya University.",
+			"bullets": [
+				"Restaurant pages with about, menu, gallery, reviews and ratings tabs",
+				"Table reservations with validation; view, filter and update your bookings",
+				"Restaurant locations on interactive Leaflet maps",
+				"Sign-up, sign-in, password reset, profile and favorites"
+			],
+			"tech": "React 18 · Redux Toolkit · React Query · Formik · Chakra UI · Ant Design · Leaflet",
+			"images": [
+				{
+					"src": "/images/projects/rezztoran.jpg",
+					"alt": "Rezztoran restaurant website",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{ "label": "Web app", "href": "https://github.com/thekinv21/rezztoran-frontend", "primary": true },
+				{ "label": "Admin panel", "href": "https://github.com/thekinv21/rezztoran-admin-panel" }
+			]
+		},
+		{
+			"id": "spotify-clone",
+			"category": "frontend",
+			"year": "2022",
+			"meta": "Frontend · Personal",
+			"title": "Spotify Clone",
+			"description": "A Spotify web client on the real Spotify Web API.",
+			"bullets": [
+				"Sign in with a Spotify account via NextAuth (OAuth)",
+				"Library sidebar with your playlists and followed artists",
+				"Create playlists; discover and featured sections",
+				"Player bar with track info and controls"
+			],
+			"tech": "Next.js · TypeScript · NextAuth · Redux Toolkit · React Query · Tailwind · Framer Motion",
+			"images": [
+				{
+					"src": "/images/projects/spotify-clone.jpg",
+					"alt": "Spotify clone home screen",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [{ "label": "Source", "href": "https://github.com/thekinv21/spotify_clone_nextjs", "primary": true }]
+		},
+		{
+			"id": "netflix-clone",
+			"category": "frontend",
+			"year": "2021",
+			"meta": "Where it started",
+			"title": "Netflix Clone",
+			"description": "My very first web project — a Netflix clone in plain HTML, CSS and JavaScript.",
+			"bullets": [
+				"Landing, sign-in, sign-up and home pages",
+				"Movies loaded from the TMDB API",
+				"User sign-in checked against local JSON data"
+			],
+			"tech": "JavaScript · HTML · CSS · TMDB API",
+			"images": [
+				{
+					"src": "/images/projects/netflix-clone.jpg",
+					"alt": "Netflix clone home screen",
+					"aspect": "16 / 9",
+					"position": "top"
+				}
+			],
+			"links": [
+				{
+					"label": "Source",
+					"href": "https://github.com/thekinv21/Netflix-Clone-With-Javascript",
+					"primary": true
+				}
+			]
+		}
+	]
+}

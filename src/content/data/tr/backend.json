@@ -1,0 +1,246 @@
+{
+	"items": [
+		{
+			"number": "01",
+			"category": "Bulut depolama",
+			"repo": "~/AWS_MultipartFileUpload_BE",
+			"href": "https://github.com/thekinv21/AWS_MultipartFileUpload_BE",
+			"title": "S3 Multipart Upload API",
+			"bullets": [
+				"Parçalar paralel ve sırasız yüklenebiliyor; sunucu bunları sıralayıp birleştiriyor",
+				"Nihai dosya boyutu S3 üzerinden doğrulanıyor; sınırı aşan yüklemeler otomatik iptal ediliyor",
+				"Herkese açık dosyalar veya süreli, özel indirme bağlantıları",
+				"Swagger dokümantasyonu, doğrulamada kullanılan Zod şemalarından otomatik üretiliyor"
+			],
+			"tech": "NestJS · Prisma · PostgreSQL · AWS SDK · Zod · Bun",
+			"image": {
+				"src": "/images/backend/s3-multipart-swagger.jpg",
+				"alt": "S3 multipart yükleme API’sinin Swagger dokümantasyonu"
+			}
+		},
+		{
+			"number": "02",
+			"category": "Kimlik doğrulama · ★ 3",
+			"repo": "~/RBAC_Authentication",
+			"href": "https://github.com/thekinv21/RBAC_Authentication",
+			"title": "Rol Tabanlı Kimlik Doğrulama API’si",
+			"bullets": [
+				"Anında iptal edilebilen JWT access ve refresh token’lar",
+				"Özel `@Auth` / `@PreAuthorize` dekoratörleriyle RBAC",
+				"Argon2 ile şifre hash’leme; Helmet ve Arcjet ile istek sınırlama"
+			],
+			"tech": "NestJS 11 · Prisma · PostgreSQL · Zod",
+			"terminal": {
+				"title": "rbac-auth · endpoints",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/api/auth/register" },
+					{ "method": "POST", "tone": "post", "text": "/api/auth/login" },
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/api/auth/refresh-token"
+					},
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/api/users",
+						"comment": "— yalnızca admin"
+					},
+					{ "method": "PATCH", "tone": "put", "text": "/api/roles/toggle/:id" },
+					{ "method": "DELETE", "tone": "del", "text": "/api/users/delete/:id" }
+				]
+			}
+		},
+		{
+			"number": "03",
+			"category": "Gerçek zamanlı",
+			"repo": "~/PessimisticLockingBE",
+			"href": "https://github.com/thekinv21/PessimisticLockingBE",
+			"title": "Gönderi Kilitleme ve Senkronizasyon",
+			"bullets": [
+				"Gönderiyi ilk açan sekme kilidi alıyor; diğerleri salt okunur görüyor",
+				"Değişiklikler yalnızca kilit sahibinin `X-Lock-Token` anahtarıyla kaydediliyor",
+				"Değişiklikler WebSocket üzerinden tüm sekmelere anında iletiliyor"
+			],
+			"tech": "NestJS 11 · WebSockets · Zod · Swagger",
+			"terminal": {
+				"title": "post-locking · flow",
+				"lines": [
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/posts/:id",
+						"comment": "→ kilit alındı"
+					},
+					{
+						"method": "PUT",
+						"tone": "put",
+						"text": "/posts/:id",
+						"comment": "X-Lock-Token"
+					},
+					{
+						"method": "WS",
+						"tone": "post",
+						"text": "record:changed",
+						"comment": "→ tüm sekmeler"
+					},
+					{ "method": "GET", "tone": "get", "text": "/health" }
+				]
+			}
+		},
+		{
+			"number": "04",
+			"category": "Bildirim",
+			"repo": "~/NotificationService",
+			"href": "https://github.com/thekinv21/NotificationService",
+			"title": "Bildirim Servisi",
+			"bullets": [
+				"Resend ile işlemsel e-posta gönderimi",
+				"Tüm uç noktalarda API anahtarıyla kimlik doğrulama",
+				"Zod doğrulaması, Helmet güvenlik başlıkları, sürümlü API ve Swagger"
+			],
+			"tech": "NestJS · Resend · nestjs-zod · Helmet",
+			"terminal": {
+				"title": "notification · request",
+				"lines": [
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/api/v1/notification/email"
+					},
+					{ "comment": "x-api-key: ••••••••" },
+					{
+						"method": "201",
+						"tone": "post",
+						"text": "Created",
+						"comment": "— e-posta gönderildi"
+					},
+					{
+						"method": "400",
+						"tone": "del",
+						"text": "Bad Request",
+						"comment": "— geçersiz istek veya anahtar"
+					}
+				]
+			}
+		},
+		{
+			"number": "05",
+			"category": "DevOps",
+			"repo": "~/DockerizeAndDeployment",
+			"href": "https://github.com/thekinv21/DockerizeAndDeployment",
+			"title": "Docker ve AWS’ye Dağıtım",
+			"bullets": [
+				"Docker Compose kurulumu: PostgreSQL, tek seferlik migration işi ve API",
+				"API, migration’lar başarıyla tamamlandıktan sonra ayağa kalkıyor",
+				"GitHub Actions ile AWS’ye otomatik dağıtım"
+			],
+			"tech": "NestJS · Docker · Prisma 7 · AWS",
+			"terminal": {
+				"title": "docker-compose · services",
+				"lines": [
+					{ "method": "DB", "tone": "get", "text": "postgres:18-alpine" },
+					{
+						"method": "JOB",
+						"tone": "put",
+						"text": "migrate",
+						"comment": "— bir kez çalışır"
+					},
+					{
+						"method": "APP",
+						"tone": "post",
+						"text": "backend",
+						"comment": "— NestJS"
+					},
+					{ "comment": "db → migrate → backend" }
+				]
+			}
+		},
+		{
+			"number": "06",
+			"category": "Platform · ★ 1",
+			"repo": "~/nest_snap_link",
+			"href": "https://github.com/thekinv21/nest_snap_link",
+			"title": "SnapLink",
+			"bullets": [
+				"302 yönlendirmeli kısa ve paylaşılabilir bağlantılar",
+				"Her bağlantı için bilgi, analitik ve durum yönetimi",
+				"Token tabanlı kimlik doğrulama ve kullanıcı yönetimi; Docker üzerinde çalışır"
+			],
+			"tech": "NestJS · Prisma · JWT · Docker",
+			"terminal": {
+				"title": "snaplink · endpoints",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/url/shorten" },
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/url/:shortUrl",
+						"comment": "→ 302"
+					},
+					{
+						"method": "GET",
+						"tone": "get",
+						"text": "/url/analytics/:shortUrl"
+					},
+					{
+						"method": "PATCH",
+						"tone": "put",
+						"text": "/url/toggle-status/:shortUrl"
+					},
+					{ "method": "DELETE", "tone": "del", "text": "/url/delete/:shortUrl" }
+				]
+			}
+		},
+		{
+			"number": "07",
+			"category": "Kimlik doğrulama · ★ 3",
+			"repo": "~/nestjs-auth-with-otp",
+			"href": "https://github.com/thekinv21/nestjs-auth-with-otp",
+			"title": "OTP ile Kimlik Doğrulama",
+			"bullets": [
+				"Yeni hesaplar için e-postayla tek kullanımlık şifre doğrulaması",
+				"Refresh token destekli JWT girişi",
+				"Medium’da adım adım bir rehber olarak anlattım"
+			],
+			"tech": "NestJS · Postmark · Prisma · JWT",
+			"terminal": {
+				"title": "otp-auth · flow",
+				"lines": [
+					{ "method": "POST", "tone": "post", "text": "/auth/register" },
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/send-otp",
+						"comment": "→ e-postayla kod"
+					},
+					{
+						"method": "POST",
+						"tone": "post",
+						"text": "/verify-otp",
+						"comment": "→ doğrulandı"
+					},
+					{ "method": "POST", "tone": "post", "text": "/auth/login" }
+				]
+			}
+		}
+	],
+	"more": [
+		{
+			"label": "nestjs_authentication_be",
+			"href": "https://github.com/thekinv21/nestjs_authentication_be"
+		},
+		{
+			"label": "twitter-be-expressjs",
+			"href": "https://github.com/thekinv21/twitter-be-expressjs"
+		},
+		{
+			"label": "telegram_bot",
+			"href": "https://github.com/thekinv21/telegram_bot"
+		},
+		{
+			"label": "dockerize-nestjs-app",
+			"href": "https://github.com/thekinv21/dockerize-nestjs-app"
+		}
+	]
+}
