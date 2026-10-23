@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vadim Kiniabaev — Portfolio
 
-## Getting Started
+Personal portfolio of **Vadim Kiniabaev**, full-stack developer (React · Next.js · NestJS).
+Bilingual (English / Turkish), fully static, with in-depth case studies of selected projects.
 
-First, run the development server:
+**Live:** https://myportfolio-kappa-dusky-40.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Home page](public/screenshots/home-desktop.png)
+
+## Screenshots
+
+| Case study — DentaCare                                             | Case study — Karina Yachts                                   |
+| ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![DentaCare case study](public/screenshots/case-study-dentacare.png) | ![Karina case study](public/screenshots/case-study-karina.png) |
+
+## Lighthouse
+
+### Home — `/`
+
+**Desktop**
+
+![Lighthouse home desktop](public/screenshots/lighthouse-home-desktop.png)
+
+**Mobile**
+
+![Lighthouse home mobile](public/screenshots/lighthouse-home-mobile.png)
+
+### Case study — `/projects/dentacare`
+
+**Desktop**
+
+![Lighthouse dentacare desktop](public/screenshots/lighthouse-dentacare-desktop.png)
+
+**Mobile**
+
+![Lighthouse dentacare mobile](public/screenshots/lighthouse-dentacare-mobile.png)
+
+### Case study — `/projects/karina`
+
+**Desktop**
+
+![Lighthouse karina desktop](public/screenshots/lighthouse-karina-desktop.png)
+
+**Mobile**
+
+![Lighthouse karina mobile](public/screenshots/lighthouse-karina-mobile.png)
+
+## Tech stack
+
+[![Tech stack](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,bun,vercel)](#tech-stack)
+
+| Area      | Technology                                                                                      |
+| --------- | ----------------------------------------------------------------------------------------------- |
+| Framework | [Next.js 16](https://nextjs.org) (App Router, Cache Components, Partial Prefetching, Turbopack) |
+| UI        | [React 19](https://react.dev), Server Components                                                |
+| Language  | [TypeScript 5](https://www.typescriptlang.org)                                                  |
+| Styling   | [Tailwind CSS 4](https://tailwindcss.com)                                                       |
+| Icons     | [Lucide](https://lucide.dev)                                                                    |
+| Fonts     | Inter Tight & JetBrains Mono via `next/font`                                                    |
+| Tooling   | [Bun](https://bun.sh), ESLint 9, Prettier (sorted imports), Husky git hooks                     |
+| Hosting   | [Vercel](https://vercel.com)                                                                    |
+
+## Features
+
+- **Bilingual** — English at `/`, Turkish at `/tr`; all copy lives in JSON under `src/data/{en,tr}`.
+- **Case studies** — statically generated pages at `/projects/[slug]` (DentaCare, Karina Yachts) built from JSON content.
+- **Fully static** — every route is prerendered; no client-side data fetching.
+- **Accessible & responsive** — semantic markup, keyboard-friendly navigation, layouts from 360 px up.
+- **Optimised assets** — `next/image` and self-hosted fonts keep CLS at 0.
+
+## Project structure
+
+```
+app/                    Routes (/, /tr, /projects/[slug], error, loading, not-found)
+src/
+  components/
+    home/               Home page sections (hero, experience, stack, projects…)
+    case-study/         Case study layout and section components
+    ui/                 Shared primitives (Chip, PillLink, Terminal, Timeline…)
+  data/                 Content as JSON (en, tr, case-studies, profile)
+  lib/                  Content loaders and route helpers
+  types/                Shared TypeScript types
+public/images/          Project screenshots and portrait
+public/screenshots/     README screenshots
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Requires [Bun](https://bun.sh) 1.4+.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun install
+bun dev            # http://localhost:3000
+```
 
-## Learn More
+| Script           | Description                |
+| ---------------- | -------------------------- |
+| `bun dev`        | Start the dev server       |
+| `bun run build`  | Production build           |
+| `bun start`      | Serve the production build |
+| `bun run lint`   | Lint with ESLint           |
+| `bun run format` | Format with Prettier       |
 
-To learn more about Next.js, take a look at the following resources:
+Commit messages are checked by a Husky hook and must follow
+`type:[branch][developer]: description`, e.g. `feat:[master][Vadim]: add contact form`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployed on [Vercel](https://myportfolio-kappa-dusky-40.vercel.app). To deploy manually:
 
-## Deploy on Vercel
+```bash
+vercel --prod
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: [vkiniabaev@gmail.com](mailto:vkiniabaev@gmail.com)
+- GitHub: [@thekinv21](https://github.com/thekinv21)
+- LinkedIn: [vadimkiniabaev](https://www.linkedin.com/in/vadimkiniabaev)
+- Medium: [@thekinv21](https://medium.com/@thekinv21)
