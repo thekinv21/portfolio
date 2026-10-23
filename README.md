@@ -3,14 +3,14 @@
 Personal portfolio of **Vadim Kiniabaev**, full-stack developer (React · Next.js · NestJS).
 Bilingual (English / Turkish), fully static, with in-depth case studies of selected projects.
 
-**Live:** https://myportfolio-kappa-dusky-40.vercel.app
+**Live:** https://vadimkiniabaev.vercel.app
 
 ![Home page](public/screenshots/home-desktop.png)
 
 ## Screenshots
 
-| Case study — DentaCare                                             | Case study — Karina Yachts                                   |
-| ------------------------------------------------------------------ | ------------------------------------------------------------ |
+| Case study — DentaCare                                               | Case study — Karina Yachts                                     |
+| -------------------------------------------------------------------- | -------------------------------------------------------------- |
 | ![DentaCare case study](public/screenshots/case-study-dentacare.png) | ![Karina case study](public/screenshots/case-study-karina.png) |
 
 ## Lighthouse
@@ -106,7 +106,7 @@ Commit messages are checked by a Husky hook and must follow
 
 ## Deployment
 
-Deployed on [Vercel](https://myportfolio-kappa-dusky-40.vercel.app). To deploy manually:
+Deployed on [Vercel](https://vadimkiniabaev.vercel.app). To deploy manually:
 
 ```bash
 vercel --prod
