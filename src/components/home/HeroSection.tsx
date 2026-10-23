@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { MapPin } from 'lucide-react'
+import { ArrowDown, MapPin } from 'lucide-react'
 
 import { PillLink, RichText } from '@/components/ui'
 import type { Profile, SiteContent } from '@/content'
@@ -49,15 +49,17 @@ export function HeroSection({ profile, hero }: THeroSectionProps) {
 						<RichText text={hero.intro} />
 					</p>
 					<div className='rise flex flex-wrap items-center gap-3 [animation-delay:.7s]'>
-						<PillLink href={`mailto:${profile.email}`} size='lg'>
-							{hero.cta}
-						</PillLink>
 						<PillLink
 							href={profile.cv.href}
-							variant='outline'
-							size='lg'
+							size='md'
 							download={profile.cv.fileName}
-							arrow={<span aria-hidden='true'>↓</span>}
+							arrow={
+								<ArrowDown
+									size={16}
+									className='arrow-down'
+									aria-hidden='true'
+								/>
+							}
 						>
 							{hero.cv}
 						</PillLink>

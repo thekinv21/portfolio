@@ -23,8 +23,7 @@
 	"hero": {
 		"status": "Open to frontend, backend & full-stack roles",
 		"greeting": "Hi, I'm",
-		"intro": "I build web apps end to end — fast, accessible interfaces with **React & Next.js** and reliable APIs with **NestJS**.",
-		"cta": "Get in touch",
+		"intro": "I develop high-performance, scalable web applications. I design modern, user-focused interfaces with **React & Next.js** and build secure, maintainable infrastructure with **NestJS**.",
 		"cv": "Download CV",
 		"portraitAlt": "Portrait of Vadim Kiniabaev",
 		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",

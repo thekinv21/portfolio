@@ -23,8 +23,7 @@
 	"hero": {
 		"status": "Frontend, backend ve full-stack pozisyonlarına açığım",
 		"greeting": "Merhaba, ben",
-		"intro": "Web uygulamalarını uçtan uca geliştiriyorum: **React ve Next.js** ile hızlı, erişilebilir arayüzler; **NestJS** ile güvenilir API’ler.",
-		"cta": "Bana ulaşın",
+		"intro": "Yüksek performanslı ve ölçeklenebilir web uygulamaları geliştiriyorum. **React ve Next.js** ile modern, kullanıcı odaklı arayüzler tasarlıyor; **NestJS** ile güvenli ve sürdürülebilir altyapılar kuruyorum.",
 		"cv": "CV’mi indir",
 		"portraitAlt": "Vadim Kiniabaev’in portresi",
 		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",

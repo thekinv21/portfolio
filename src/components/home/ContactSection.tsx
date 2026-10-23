@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { ArrowDown } from 'lucide-react'
+
 import { PillLink } from '@/components/ui'
 import type { Profile, SiteContent } from '@/content'
 
@@ -80,7 +82,13 @@ export function ContactSection({ profile, site }: TContactSectionProps) {
 							download={profile.cv.fileName}
 							variant='outline'
 							size='md'
-							arrow={<span aria-hidden='true'>↓</span>}
+							arrow={
+								<ArrowDown
+									size={16}
+									className='arrow-down'
+									aria-hidden='true'
+								/>
+							}
 						>
 							{contact.cv}
 						</PillLink>

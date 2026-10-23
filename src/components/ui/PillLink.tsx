@@ -50,7 +50,13 @@ export function PillLink(props: TPillLinkProps) {
 	}
 
 	return (
-		<a href={href} target='_blank' download={download} className={classes}>
+		<a
+			href={href}
+			{...(download
+				? { download }
+				: { target: '_blank', rel: 'noopener noreferrer' })}
+			className={classes}
+		>
 			{children} {arrow}
 		</a>
 	)

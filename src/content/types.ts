@@ -50,7 +50,6 @@ export interface SiteContent {
 		status: string
 		greeting: string
 		intro: string
-		cta: string
 		cv: string
 		portraitAlt: string
 		badge: string
