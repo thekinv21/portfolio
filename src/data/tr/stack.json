@@ -1,6 +1,13 @@
 {
 	"groups": [
-		{ "label": "Programlama dilleri", "items": ["TypeScript", "JavaScript (ES6+)", "Java (öğreniyorum)", "SQL"] },
+		{
+			"label": "Programlama dilleri",
+			"items": ["TypeScript", "JavaScript (ES6+)", "Java (öğreniyorum)", "SQL"]
+		},
+		{
+			"label": "Yapay zekâ destekli geliştirme",
+			"items": ["Claude Code", "OpenAI Codex", "Gemini", "GitHub Copilot"]
+		},
 		{
 			"label": "Frontend",
 			"items": [
@@ -11,6 +18,7 @@
 				"SCSS",
 				"shadcn/ui",
 				"Mantine UI",
+				"Kendo UI",
 				"Framer Motion",
 				"next-intl · i18n"
 			]
@@ -25,16 +33,48 @@
 				"Axios",
 				"React Hook Form",
 				"Zod",
-				"Formik · Yup"
+				"Formik · Yup",
+				"React PDF Renderer"
 			]
 		},
-		{ "label": "Gerçek zamanlı", "items": ["SignalR", "WebSocket"] },
-		{ "label": "Backend", "items": ["NestJS 11", "Express.js", "REST APIs", "Swagger", "Resend · Postmark"] },
+		{
+			"label": "Gerçek zamanlı",
+			"items": ["SignalR", "WebSocket"]
+		},
+		{
+			"label": "Backend",
+			"items": [
+				"NestJS 11",
+				"Express.js",
+				"REST APIs",
+				"Swagger",
+				"Resend · Postmark",
+				"Java · Spring Boot"
+			]
+		},
 		{
 			"label": "Veri ve kimlik doğrulama",
-			"items": ["PostgreSQL", "Prisma ORM", "MongoDB", "JWT", "OAuth2", "RBAC", "OTP"]
+			"items": [
+				"PostgreSQL",
+				"Prisma ORM",
+				"MongoDB",
+				"JWT",
+				"OAuth2",
+				"RBAC",
+				"OTP"
+			]
 		},
-		{ "label": "Bulut ve DevOps", "items": ["AWS S3", "Docker", "GitHub Actions", "NGINX", "Ubuntu VPS"] },
+		{
+			"label": "Bulut ve DevOps",
+			"items": [
+				"AWS S3",
+				"Docker",
+				"GitHub Actions",
+				"NGINX",
+				"Ubuntu VPS",
+				"Jira · Agile/Scrum"
+			]
+		},
 		{
 			"label": "Kalite ve test",
 			"items": [
@@ -52,10 +92,25 @@
 		"title": "Konuştuğum diller",
 		"count": "5 dil",
 		"items": [
-			{ "name": "Rusça", "native": "Русский", "level": "Ana dil", "percent": 100 },
+			{
+				"name": "Rusça",
+				"native": "Русский",
+				"level": "Ana dil",
+				"percent": 100
+			},
 			{ "name": "Türkçe", "native": "Türkçe", "level": "C1", "percent": 85 },
-			{ "name": "Özbekçe", "native": "Oʻzbekcha", "level": "Ana dil", "percent": 100 },
-			{ "name": "Kırgızca", "native": "Кыргызча", "level": "Ana dil", "percent": 100 },
+			{
+				"name": "Özbekçe",
+				"native": "Oʻzbekcha",
+				"level": "Ana dil",
+				"percent": 100
+			},
+			{
+				"name": "Kırgızca",
+				"native": "Кыргызча",
+				"level": "Ana dil",
+				"percent": 100
+			},
 			{ "name": "İngilizce", "native": "English", "level": "B1", "percent": 50 }
 		]
 	},

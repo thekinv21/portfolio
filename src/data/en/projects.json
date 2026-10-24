@@ -23,8 +23,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Read case study", "caseStudy": "dentacare", "primary": true },
-				{ "label": "Source", "href": "https://github.com/thekinv21/DentaCareAdminPanel" }
+				{
+					"label": "Read case study",
+					"caseStudy": "dentacare",
+					"primary": true
+				},
+				{
+					"label": "Source",
+					"href": "https://github.com/thekinv21/DentaCareAdminPanel"
+				}
 			]
 		},
 		{
@@ -33,15 +40,16 @@
 			"year": "2025—26",
 			"meta": "Client · Kastamonu Entegre",
 			"title": "LIKE Admin Panel",
-			"description": "The order management panel for Kastamonu Entegre (Hayat Holding). I built the entire frontend end to end in Next.js and owned the order module.",
+			"description": "The order management panel for Kastamonu Entegre (Hayat Holding). I owned the 3-stage order module, introduced TanStack Query as the data layer and set up an AI-assisted workflow with Claude Code agents.",
 			"bullets": [
 				"Order module across three stages: Draft → Quote → Order",
-				"Real-time order locking with SignalR to prevent concurrent edit conflicts",
-				"Dashboards sped up by virtualizing 1,000+ row tables and moving heavy filters off keystrokes",
-				"Standardized dialog and form accessibility: focus, keyboard, labels and errors",
-				"Leaner Webpack builds with code splitting and bundle-size reduction"
+				"Real-time order locking with SignalR to prevent concurrent edits",
+				"Legacy modules refactored — ~20–30% faster load/render on affected screens",
+				"HttpOnly, Secure JWT cookie auth with input validation and OWASP protections",
+				"AWS multipart uploads with presigned URLs for assets up to 1 GB",
+				"Claude Code AI dev team: Architect, Developer, Tester and Planner agents"
 			],
-			"tech": "Next.js · TypeScript · Jotai · TanStack Query · React Hook Form · Axios · SignalR",
+			"tech": "Next.js · TypeScript · Kendo UI · Jotai · TanStack Query · SignalR · AWS S3 · Claude Code",
 			"mock": {
 				"label": "LIKE · ORDER MODULE",
 				"note": "Internal system · no public screenshots",
@@ -70,9 +78,11 @@
 				"Model pages with galleries and virtual tours; listings with full specs, PDF download and sales contact",
 				"Brand pages for Azimut and Williams, plus news and events",
 				"English and Turkish, with a video hero on the homepage",
+				"Next.js SSR / SSG / ISR on 10+ public pages; Core Web Vitals (LCP, CLS, INP) optimized",
+				"Custom Leaflet map with tailored markers and interactions",
 				"CI/CD with GitHub Actions; ESLint, Prettier and Husky rules"
 			],
-			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion",
+			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion · TanStack Query · Leaflet",
 			"images": [
 				{
 					"src": "/images/projects/karina-home.jpg",
@@ -95,17 +105,18 @@
 		{
 			"id": "cost",
 			"category": "client",
-			"year": "2023—25",
+			"year": "2024—26",
 			"meta": "Client · EDICT Digital",
 			"title": "COST Admin Panel",
-			"description": "A back-office panel built solo — customers, a product configurator, offers and second-hand listings, with revenue and sales dashboards. It also powers all the content on the Karina website.",
+			"description": "A back-office panel for customers, a product configurator, offers and second-hand listings, with revenue and sales dashboards. It also powers all the content on the Karina website.",
 			"bullets": [
-				"Built the entire panel, incl. Customer and Configurator modules",
-				"Config-driven dynamic form engine",
-				"Full CI/CD pipeline with GitHub Actions for automated tests and deploys",
+				"Offer PDFs generated and exported on the frontend with React PDF Renderer",
+				"Dynamic forms rendered from backend configurations stored in PostgreSQL",
+				"JWT access/refresh tokens, protected routes, RBAC and granular permissions",
+				"CI/CD with GitHub Actions and an Ubuntu VPS",
 				"Core Web Vitals improved with memoization, code splitting and lazy loading"
 			],
-			"tech": "React · TypeScript · GitHub Actions · Lighthouse · React Profiler",
+			"tech": "React · Vite · TypeScript · TanStack Query · Redux Toolkit · React Hook Form · Tailwind · Spring Boot",
 			"images": [
 				{
 					"src": "/images/projects/cost.jpg",
@@ -140,8 +151,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Frontend", "href": "https://github.com/thekinv21/nextjs_movie_app", "primary": true },
-				{ "label": "Backend", "href": "https://github.com/thekinv21/nextjs_movie_app_backend" }
+				{
+					"label": "Frontend",
+					"href": "https://github.com/thekinv21/nextjs_movie_app",
+					"primary": true
+				},
+				{
+					"label": "Backend",
+					"href": "https://github.com/thekinv21/nextjs_movie_app_backend"
+				}
 			]
 		},
 		{
@@ -166,7 +184,13 @@
 					"position": "left center"
 				}
 			],
-			"links": [{ "label": "Source", "href": "https://github.com/thekinv21/cars_catalog_nextjs", "primary": true }]
+			"links": [
+				{
+					"label": "Source",
+					"href": "https://github.com/thekinv21/cars_catalog_nextjs",
+					"primary": true
+				}
+			]
 		},
 		{
 			"id": "rezztoran",
@@ -191,8 +215,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Web app", "href": "https://github.com/thekinv21/rezztoran-frontend", "primary": true },
-				{ "label": "Admin panel", "href": "https://github.com/thekinv21/rezztoran-admin-panel" }
+				{
+					"label": "Web app",
+					"href": "https://github.com/thekinv21/rezztoran-frontend",
+					"primary": true
+				},
+				{
+					"label": "Admin panel",
+					"href": "https://github.com/thekinv21/rezztoran-admin-panel"
+				}
 			]
 		},
 		{
@@ -217,7 +248,13 @@
 					"position": "top"
 				}
 			],
-			"links": [{ "label": "Source", "href": "https://github.com/thekinv21/spotify_clone_nextjs", "primary": true }]
+			"links": [
+				{
+					"label": "Source",
+					"href": "https://github.com/thekinv21/spotify_clone_nextjs",
+					"primary": true
+				}
+			]
 		},
 		{
 			"id": "netflix-clone",

@@ -1,6 +1,13 @@
 {
 	"groups": [
-		{ "label": "Languages", "items": ["TypeScript", "JavaScript (ES6+)", "Java (learning)", "SQL"] },
+		{
+			"label": "Languages",
+			"items": ["TypeScript", "JavaScript (ES6+)", "Java (learning)", "SQL"]
+		},
+		{
+			"label": "AI-based development",
+			"items": ["Claude Code", "OpenAI Codex", "Gemini", "GitHub Copilot"]
+		},
 		{
 			"label": "Frontend",
 			"items": [
@@ -11,6 +18,7 @@
 				"SCSS",
 				"shadcn/ui",
 				"Mantine UI",
+				"Kendo UI",
 				"Framer Motion",
 				"next-intl · i18n"
 			]
@@ -25,13 +33,48 @@
 				"Axios",
 				"React Hook Form",
 				"Zod",
-				"Formik · Yup"
+				"Formik · Yup",
+				"React PDF Renderer"
 			]
 		},
-		{ "label": "Real-time", "items": ["SignalR", "WebSocket"] },
-		{ "label": "Backend", "items": ["NestJS 11", "Express.js", "REST APIs", "Swagger", "Resend · Postmark"] },
-		{ "label": "Data & auth", "items": ["PostgreSQL", "Prisma ORM", "MongoDB", "JWT", "OAuth2", "RBAC", "OTP"] },
-		{ "label": "Cloud & DevOps", "items": ["AWS S3", "Docker", "GitHub Actions", "NGINX", "Ubuntu VPS"] },
+		{
+			"label": "Real-time",
+			"items": ["SignalR", "WebSocket"]
+		},
+		{
+			"label": "Backend",
+			"items": [
+				"NestJS 11",
+				"Express.js",
+				"REST APIs",
+				"Swagger",
+				"Resend · Postmark",
+				"Java · Spring Boot"
+			]
+		},
+		{
+			"label": "Data & auth",
+			"items": [
+				"PostgreSQL",
+				"Prisma ORM",
+				"MongoDB",
+				"JWT",
+				"OAuth2",
+				"RBAC",
+				"OTP"
+			]
+		},
+		{
+			"label": "Cloud & DevOps",
+			"items": [
+				"AWS S3",
+				"Docker",
+				"GitHub Actions",
+				"NGINX",
+				"Ubuntu VPS",
+				"Jira · Agile/Scrum"
+			]
+		},
 		{
 			"label": "Quality",
 			"items": [
@@ -49,10 +92,25 @@
 		"title": "Languages",
 		"count": "5 languages",
 		"items": [
-			{ "name": "Russian", "native": "Русский", "level": "Native", "percent": 100 },
+			{
+				"name": "Russian",
+				"native": "Русский",
+				"level": "Native",
+				"percent": 100
+			},
 			{ "name": "Turkish", "native": "Türkçe", "level": "C1", "percent": 85 },
-			{ "name": "Uzbek", "native": "Oʻzbekcha", "level": "Native", "percent": 100 },
-			{ "name": "Kyrgyz", "native": "Кыргызча", "level": "Native", "percent": 100 },
+			{
+				"name": "Uzbek",
+				"native": "Oʻzbekcha",
+				"level": "Native",
+				"percent": 100
+			},
+			{
+				"name": "Kyrgyz",
+				"native": "Кыргызча",
+				"level": "Native",
+				"percent": 100
+			},
 			{ "name": "English", "native": "English", "level": "B1", "percent": 50 }
 		]
 	},

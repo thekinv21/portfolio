@@ -23,8 +23,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Vaka çalışmasını incele", "caseStudy": "dentacare", "primary": true },
-				{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/DentaCareAdminPanel" }
+				{
+					"label": "Vaka çalışmasını incele",
+					"caseStudy": "dentacare",
+					"primary": true
+				},
+				{
+					"label": "Kaynak kod",
+					"href": "https://github.com/thekinv21/DentaCareAdminPanel"
+				}
 			]
 		},
 		{
@@ -33,15 +40,16 @@
 			"year": "2025—26",
 			"meta": "Müşteri · Kastamonu Entegre",
 			"title": "LIKE Yönetim Paneli",
-			"description": "Kastamonu Entegre (Hayat Holding) için sipariş yönetim paneli. Frontend’in tamamını Next.js ile sıfırdan geliştirdim ve sipariş modülünün sorumluluğunu üstlendim.",
+			"description": "Kastamonu Entegre (Hayat Holding) için sipariş yönetim paneli. 3 aşamalı sipariş modülünü üstlendim, TanStack Query’yi veri katmanı olarak getirdim ve Claude Code ajanlarıyla yapay zekâ destekli bir geliştirme süreci kurdum.",
 			"bullets": [
 				"Taslak → Teklif → Sipariş aşamalarından oluşan sipariş modülü",
-				"Eş zamanlı düzenleme çakışmalarını önleyen, SignalR ile gerçek zamanlı sipariş kilitleme",
-				"1.000+ satırlık tabloları sanallaştırıp ağır filtreleri tuş vuruşlarından ayırarak hızlanan gösterge panelleri",
-				"Diyalog ve formlarda standart erişilebilirlik: odak yönetimi, klavye kullanımı, etiketler ve hata mesajları",
-				"Code splitting ve paket boyutu optimizasyonuyla daha hafif Webpack derlemeleri"
+				"Eşzamanlı düzenlemeleri önleyen, SignalR ile gerçek zamanlı sipariş kilitleme",
+				"Eski modüller yeniden düzenlendi — ilgili ekranlarda ~%20–30 daha hızlı yükleme/render",
+				"Girdi doğrulaması ve OWASP korumalarıyla HttpOnly, Secure JWT çerez tabanlı kimlik doğrulama",
+				"1 GB’a kadar dosyalar için presigned URL’li AWS multipart yükleme",
+				"Claude Code yapay zekâ ekibi: Architect, Developer, Tester ve Planner ajanları"
 			],
-			"tech": "Next.js · TypeScript · Jotai · TanStack Query · React Hook Form · Axios · SignalR",
+			"tech": "Next.js · TypeScript · Kendo UI · Jotai · TanStack Query · SignalR · AWS S3 · Claude Code",
 			"mock": {
 				"label": "LIKE · SİPARİŞ MODÜLÜ",
 				"note": "Şirket içi sistem · ekran görüntüsü paylaşılamaz",
@@ -70,9 +78,11 @@
 				"Galerili ve sanal turlu model sayfaları; tam teknik özellik, PDF indirme ve satış iletişimi içeren ilan sayfaları",
 				"Azimut ve Williams marka sayfaları, haberler ve etkinlikler",
 				"İngilizce ve Türkçe dil desteği, ana sayfada video karşılama alanı",
+				"10+ herkese açık sayfada Next.js SSR / SSG / ISR; Core Web Vitals (LCP, CLS, INP) optimizasyonu",
+				"İşaretçileri ve etkileşimleri özelleştirilmiş Leaflet haritası",
 				"GitHub Actions ile CI/CD; ESLint, Prettier ve Husky ile kod standartları"
 			],
-			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion",
+			"tech": "Next.js · TypeScript · Tailwind · React Hook Form · Framer Motion · TanStack Query · Leaflet",
 			"images": [
 				{
 					"src": "/images/projects/karina-home.jpg",
@@ -88,24 +98,32 @@
 				}
 			],
 			"links": [
-				{ "label": "Vaka çalışmasını incele", "caseStudy": "karina", "primary": true },
-				{ "label": "karina.com.tr’yi ziyaret et", "href": "https://karina.com.tr" }
+				{
+					"label": "Vaka çalışmasını incele",
+					"caseStudy": "karina",
+					"primary": true
+				},
+				{
+					"label": "karina.com.tr’yi ziyaret et",
+					"href": "https://karina.com.tr"
+				}
 			]
 		},
 		{
 			"id": "cost",
 			"category": "client",
-			"year": "2023—25",
+			"year": "2024—26",
 			"meta": "Müşteri · EDICT Digital",
 			"title": "COST Yönetim Paneli",
-			"description": "Tek başıma geliştirdiğim bir arka ofis paneli: müşteriler, ürün konfigüratörü, teklifler ve ikinci el ilanları; gelir ve satış gösterge panelleriyle. Karina web sitesinin tüm içeriği de bu panelden yönetiliyor.",
+			"description": "Müşteriler, ürün konfigüratörü, teklifler ve ikinci el ilanlar için gelir ve satış panolarına sahip bir yönetim paneli. Karina web sitesindeki tüm içerik de buradan yönetiliyor.",
 			"bullets": [
-				"Müşteri ve Konfigüratör modülleri dahil panelin tamamı",
-				"Yapılandırma tabanlı dinamik form motoru",
-				"Otomatik test ve dağıtım için GitHub Actions ile uçtan uca CI/CD",
-				"Memoization, code splitting ve lazy loading ile iyileşen Core Web Vitals değerleri"
+				"React PDF Renderer ile teklif PDF’lerinin frontend’de oluşturulup dışa aktarılması",
+				"PostgreSQL’deki backend yapılandırmalarından oluşturulan dinamik formlar",
+				"JWT access/refresh token, korumalı rotalar, RBAC ve ayrıntılı yetki yönetimi",
+				"GitHub Actions ve Ubuntu VPS ile CI/CD",
+				"Memoization, code splitting ve lazy loading ile iyileştirilmiş Core Web Vitals"
 			],
-			"tech": "React · TypeScript · GitHub Actions · Lighthouse · React Profiler",
+			"tech": "React · Vite · TypeScript · TanStack Query · Redux Toolkit · React Hook Form · Tailwind · Spring Boot",
 			"images": [
 				{
 					"src": "/images/projects/cost.jpg",
@@ -140,8 +158,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Frontend", "href": "https://github.com/thekinv21/nextjs_movie_app", "primary": true },
-				{ "label": "Backend", "href": "https://github.com/thekinv21/nextjs_movie_app_backend" }
+				{
+					"label": "Frontend",
+					"href": "https://github.com/thekinv21/nextjs_movie_app",
+					"primary": true
+				},
+				{
+					"label": "Backend",
+					"href": "https://github.com/thekinv21/nextjs_movie_app_backend"
+				}
 			]
 		},
 		{
@@ -166,7 +191,13 @@
 					"position": "left center"
 				}
 			],
-			"links": [{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/cars_catalog_nextjs", "primary": true }]
+			"links": [
+				{
+					"label": "Kaynak kod",
+					"href": "https://github.com/thekinv21/cars_catalog_nextjs",
+					"primary": true
+				}
+			]
 		},
 		{
 			"id": "rezztoran",
@@ -191,8 +222,15 @@
 				}
 			],
 			"links": [
-				{ "label": "Web uygulaması", "href": "https://github.com/thekinv21/rezztoran-frontend", "primary": true },
-				{ "label": "Yönetim paneli", "href": "https://github.com/thekinv21/rezztoran-admin-panel" }
+				{
+					"label": "Web uygulaması",
+					"href": "https://github.com/thekinv21/rezztoran-frontend",
+					"primary": true
+				},
+				{
+					"label": "Yönetim paneli",
+					"href": "https://github.com/thekinv21/rezztoran-admin-panel"
+				}
 			]
 		},
 		{
@@ -218,7 +256,11 @@
 				}
 			],
 			"links": [
-				{ "label": "Kaynak kod", "href": "https://github.com/thekinv21/spotify_clone_nextjs", "primary": true }
+				{
+					"label": "Kaynak kod",
+					"href": "https://github.com/thekinv21/spotify_clone_nextjs",
+					"primary": true
+				}
 			]
 		},
 		{

@@ -39,8 +39,14 @@ export function ExperienceSection({ heading, items }: TExperienceSectionProps) {
 							</p>
 						)}
 
+						{item.bullets && (
+							<div className='reveal max-w-180'>
+								<BulletList items={item.bullets} />
+							</div>
+						)}
+
 						{item.projects && (
-							<div className='flex max-w-205 flex-col gap-4'>
+							<div className='flex max-w-auto flex-col gap-4'>
 								{item.projects.map(project => (
 									<div
 										key={project.title}
@@ -64,12 +70,6 @@ export function ExperienceSection({ heading, items }: TExperienceSectionProps) {
 										<BulletList items={project.bullets} />
 									</div>
 								))}
-							</div>
-						)}
-
-						{item.bullets && (
-							<div className='reveal max-w-180'>
-								<BulletList items={item.bullets} />
 							</div>
 						)}
 

@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"title": "Vadim Kiniabaev — Full-Stack Geliştirici",
-		"description": "React ve Next.js ile hızlı, erişilebilir arayüzler; NestJS ile güvenilir API’ler geliştiren full-stack geliştirici."
+		"title": "Vadim Kiniabaev — Yapay Zekâ Mühendisi ve Full-Stack Geliştirici",
+		"description": "Turkcell ve Kastamonu Entegre gibi kurumsal müşteriler için React ve Next.js ürünlerini uçtan uca geliştiren, 3 yıllık deneyime sahip yapay zekâ mühendisi ve full-stack geliştirici."
 	},
 	"nav": {
 		"label": "Ana menü",
@@ -21,23 +21,29 @@
 		"ariaLabel": "English version"
 	},
 	"hero": {
-		"status": "Frontend, backend ve full-stack pozisyonlarına açığım",
+		"status": "AI, full-stack ve frontend rollerine açığım",
 		"greeting": "Merhaba, ben",
-		"intro": "Yüksek performanslı ve ölçeklenebilir web uygulamaları geliştiriyorum. **React ve Next.js** ile modern, kullanıcı odaklı arayüzler tasarlıyor; **NestJS** ile güvenli ve sürdürülebilir altyapılar kuruyorum.",
+		"intro": "Üretmeyi seven biriyim — **React, Next.js** ve **NestJS** ile web uygulamaları geliştiriyorum. Şu an derinlemesine **yapay zekâ** öğreniyorum.",
 		"cv": "CV’mi indir",
 		"portraitAlt": "Vadim Kiniabaev’in portresi",
-		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",
+		"badge": "AI ENGINEER · FULL-STACK · REACT · NEXT.JS · ",
 		"stat": { "value": "3+ yıl", "label": "canlıya çıkan projeler" },
 		"location": "İstanbul’da ofisten · Şehir dışından uzaktan",
 		"facts": [
-			{ "label": "ROL", "value": "Full-Stack Geliştirici" },
-			{ "label": "ODAK", "value": "Full-Stack Geliştirme" },
+			{
+				"label": "ROL",
+				"value": "Full-Stack Geliştirici / Yapay Zekâ Mühendisi"
+			},
+			{
+				"label": "ODAK",
+				"value": "Full-Stack Geliştirme / Yapay Zekâ Destekli Geliştirme"
+			},
 			{ "label": "SON POZİSYON", "value": "EDICT Digital, 2024–26" },
 			{ "label": "EĞİTİM", "value": "Bilgisayar Müh., Trakya Üniversitesi" }
 		],
 		"now": {
 			"label": "ŞU SIRALAR",
-			"text": "Şu sıralar **Java**’yı derinlemesine öğreniyor, **Spring Boot**’a başlamaya hazırlanıyor ve ürettiklerimi Medium’da yazıyorum.",
+			"text": "Şu an **yapay zekâ ile geliştirmeyi** derinlemesine öğreniyorum.",
 			"updated": "Ekim 2026 itibarıyla"
 		}
 	},
@@ -47,6 +53,7 @@
 			"React 19",
 			"Next.js",
 			"TypeScript",
+			"Claude Code",
 			"NestJS",
 			"PostgreSQL",
 			"Prisma",
@@ -59,7 +66,10 @@
 	},
 	"sections": {
 		"experience": { "eyebrow": "01 — Deneyim", "title": "Kariyer yolculuğum" },
-		"stack": { "eyebrow": "02 — Teknolojiler", "title": "Kullandığım teknolojiler" },
+		"stack": {
+			"eyebrow": "02 — Teknolojiler",
+			"title": "Kullandığım teknolojiler"
+		},
 		"projects": {
 			"eyebrow": "03 — Öne çıkan işler",
 			"title": "Projeler",
@@ -96,18 +106,43 @@
 	},
 	"contact": {
 		"rows": [
-			{ "label": "E-POSTA", "value": "vkiniabaev@gmail.com", "href": "mailto:vkiniabaev@gmail.com" },
-			{ "label": "LINKEDIN", "value": "in/vadimkiniabaev", "href": "https://www.linkedin.com/in/vadimkiniabaev" },
-			{ "label": "GITHUB", "value": "@thekinv21", "href": "https://github.com/thekinv21" },
-			{ "label": "MEDIUM", "value": "@thekinv21", "href": "https://medium.com/@thekinv21" }
+			{
+				"label": "E-POSTA",
+				"value": "vkiniabaev@gmail.com",
+				"href": "mailto:vkiniabaev@gmail.com"
+			},
+			{
+				"label": "LINKEDIN",
+				"value": "in/vadimkiniabaev",
+				"href": "https://www.linkedin.com/in/vadimkiniabaev"
+			},
+			{
+				"label": "GITHUB",
+				"value": "@thekinv21",
+				"href": "https://github.com/thekinv21"
+			},
+			{
+				"label": "MEDIUM",
+				"value": "@thekinv21",
+				"href": "https://medium.com/@thekinv21"
+			}
 		],
 		"copy": { "idle": "E-postamı kopyala", "done": "Kopyalandı!" },
 		"cv": "CV",
 		"details": [
 			{ "label": "KONUM", "value": "İstanbul, Türkiye" },
-			{ "label": "ÇALIŞMA ŞEKLİ", "value": "İstanbul’da ofisten veya hibrit · İstanbul dışı için uzaktan" },
-			{ "label": "ARADIĞIM POZİSYONLAR", "value": "Frontend, backend ve full-stack" },
-			{ "label": "TEMEL TEKNOLOJİLER", "value": "React · Next.js · NestJS · PostgreSQL" }
+			{
+				"label": "ÇALIŞMA ŞEKLİ",
+				"value": "İstanbul’da ofisten veya hibrit · İstanbul dışı için uzaktan"
+			},
+			{
+				"label": "ARADIĞIM POZİSYONLAR",
+				"value": "AI, full-stack, frontend ve backend"
+			},
+			{
+				"label": "TEMEL TEKNOLOJİLER",
+				"value": "React 19 · Next.js · TypeScript · NestJS · PostgreSQL"
+			}
 		]
 	},
 	"footer": {

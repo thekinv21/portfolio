@@ -1,62 +1,72 @@
 {
 	"items": [
 		{
-			"period": "Mart 2024 — Mayıs 2026 · 2 yıl 3 ay",
-			"role": "Full-Stack Mühendis",
-			"company": "EDICT Digital Bilgi Teknolojileri A.Ş. · Tam zamanlı · İstanbul, uzaktan",
-			"summary": "Bir yazılım hizmetleri şirketinde telekom, üretim ve eğitim sektörlerindeki müşterilere web uygulamaları, yönetim panelleri ve kurumsal web siteleri geliştirdim.",
+			"period": "01/03/2024 — 15/05/2026",
+			"role": "Full Stack Developer",
+			"company": "Edict Digital Bilgi Teknolojileri A.Ş.",
 			"projects": [
 				{
-					"title": "Kastamonu Entegre — LIKE Yönetim Paneli",
-					"period": "Nis 2025 — Oca 2026",
-					"subtitle": "Hayat Holding · üretim",
+					"title": "Edict Digital — Genel",
+					"subtitle": "Tüm Edict Digital ürünlerinde",
 					"bullets": [
-						"Frontend’in tamamını Next.js ile sıfırdan kurdum: mimari, yönlendirme ve bileşenler",
-						"Aynı siparişin aynı anda birden fazla kişi tarafından düzenlenmesini önlemek için SignalR ile gerçek zamanlı sipariş kilitleme geliştirdim",
-						"Taslak → Teklif → Sipariş aşamalarından oluşan sipariş modülünü uçtan uca üstlendim",
-						"1.000+ satırlık tabloları sanallaştırarak ve ağır filtreleri her tuş vuruşunda çalışmaktan kurtararak gösterge panellerini hızlandırdım",
-						"State yönetiminde Jotai; veri ve formlarda TanStack Query, React Hook Form ve Axios kullandım",
-						"Code splitting ve paket boyutunu küçülterek Webpack derlemelerini optimize ettim"
+						"Tüm Edict Digital ürünlerinde GitHub Actions CI/CD, ESLint, Prettier, Husky, Jest ve React Testing Library dahil proje genelinde mühendislik standartlarını yapılandırdım.",
+						"İş mantığını arayüz bileşenlerinden ayırmak ve tekrarı azaltmak için yeniden kullanılabilir custom React hook’ları ve ortak yardımcı fonksiyonlar oluşturdum.",
+						"Geliştirme, test, refactoring ve teknik analiz için Claude Code, Codex, Gemini ve GitHub Copilot ile yapay zekâ destekli geliştirme uyguladım.",
+						"React.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3/SCSS, Next.js ve SSR kullanarak responsive ve erişilebilir frontend özellikleri geliştirdim.",
+						"Presigned URL’lerle güvenli AWS S3 dosya yükleme akışları geliştirdim; performans, kod kalitesi ve sürdürülebilirlik iyileştirmelerine katkı sağladım."
 					]
 				},
 				{
-					"title": "Turkcell — TLife",
-					"period": "Eki 2024 — Ara 2024",
-					"subtitle": "Telekom · Avantajlar Dünyası",
+					"title": "Kastamonu Entegre – LIKE Admin Panel",
+					"period": "04/2025 — 01/2026",
+					"subtitle": "Müşteri Projesi",
 					"bullets": [
-						"“Avantajlar Dünyası”nın Kampanyalar modülünü baştan sona tek başıma geliştirdim"
+						"Figma tasarımlarından Kendo UI ile responsive, kullanıcı dostu arayüzler geliştirdim.",
+						"Eski modülleri yeniden düzenleyip optimize ettim — okunabilirliği/sürdürülebilirliği artırdım ve ilgili ekranlarda yükleme/render süresini ~%20–30 kısalttım.",
+						"Önbellekleme ve istek tekilleştirme için TanStack Query’yi veri katmanı olarak getirdim; client state’i Jotai ile yönettim.",
+						"HttpOnly, Secure JWT çerezleriyle yetkilendirme ve güvenli kimlik doğrulama; girdi doğrulaması ve yaygın OWASP açıklarına karşı koruma uyguladım.",
+						"Eşzamanlı düzenlemeleri önlemek için SignalR ile gerçek zamanlı sipariş kilitlemeye sahip 3 aşamalı Sipariş modülünü (Taslak, Teklif, Sipariş) üstlendim.",
+						"Presigned URL’ler ve temizleme (fallback cleanup) mantığıyla güvenli AWS multipart dosya yükleme akışlarını entegre ederek 1GB’a kadar büyük dosyaların sorunsuz aktarımını sağladım.",
+						"Code splitting ve paket boyutu küçültme ile Webpack derlemelerini optimize ettim.",
+						"Yapay zekâ kodlama ajanlarını (Claude Code, Codex, Gemini) ekip kuralları ve küçük, kapsamı belirli prompt’larla kullandım; her diff’i doğru API, tip ve uç durumlar açısından inceledim, değişiklikleri Jest ve manuel QA ile doğruladım.",
+						"Yapılandırılmış ajan incelemesi uyguladım: küçük ve kapsamı belirli prompt’lar, TanStack Query kullanımı ile form/state mantığı kontrolü; güvensiz veya kapsam dışı ajan değişikliklerini CI/CD dağıtımlarından önce reddettim.",
+						"Proje için her biri ayrı rol ve sorumluluğa sahip Architect, Developer, Tester ve Planner ajanlarından oluşan Claude Code tabanlı bir yapay zekâ geliştirme ekibi tasarladım."
 					]
 				},
 				{
-					"title": "COST — Yönetim Paneli",
-					"period": "2023 — 2025",
-					"subtitle": "Müşteri ve Konfigüratör modülleri",
+					"title": "Turkcell TLIFE – Avantajlar Dünyası Modülü",
+					"period": "10/2024 — 12/2024",
+					"subtitle": "Müşteri Projesi",
 					"bullets": [
-						"Müşteri ve Konfigüratör modülleri dahil panelin tamamını tek başıma geliştirdim",
-						"Yapılandırma tabanlı dinamik bir form motoru geliştirdim",
-						"Otomatik test ve dağıtım için GitHub Actions ile CI/CD sürecini sıfırdan kurdum",
-						"ESLint, Prettier ve Husky pre-commit kancalarıyla kod standartlarını belirledim",
-						"Lighthouse ve React Profiler ile Core Web Vitals değerlerini iyileştirdim (memoization, code splitting, lazy loading)"
+						"Blazor, jQuery ve vanilla JavaScript ile, verileri AJAX ile asenkron yükleyen dinamik ve responsive arayüzler geliştirdim.",
+						"İçeriklerin yapılandırılmış şekilde düzenlenmesini ve filtrelenmesini sağlayan Kategori ve Etiket modüllerini geliştirdim.",
+						"Kampanya modülünü geliştirdim ve kampanyayla ilgili verileri gösterge paneli grafiklerinde görselleştirdim."
 					]
 				},
 				{
-					"title": "Karina — Web",
-					"period": "Tek başıma",
-					"subtitle": "SEO uyumlu web uygulaması",
+					"title": "COST – Admin Panel",
+					"subtitle": "Proje",
 					"bullets": [
-						"SEO uyumlu web uygulamasını Next.js ve TypeScript ile baştan sona tek başıma geliştirdim",
-						"GitHub Actions ile CI/CD sürecini sıfırdan kurdum",
-						"ESLint, Prettier ve Husky pre-commit kancalarıyla kod standartlarını belirledim"
+						"Figma tasarımlarından React.js, Vite, TypeScript, React Router Dom, Tailwind CSS ve SCSS kullanarak responsive, kullanıcı dostu yönetim paneli arayüzleri geliştirdim.",
+						"Önbellekleme ve istek tekilleştirme için TanStack Query’yi veri katmanı olarak getirdim; client state’i Redux Toolkit, form state’ini React Hook Form ile yönettim.",
+						"React PDF Renderer ile PDF oluşturma ve dışa aktarma akışını sıfırdan geliştirdim; kullanıcıların API’den gelen verilerle doldurulan teklif belgelerini frontend’de önizleyip indirmesini sağlayarak önceki backend tabanlı PDF sürecinin yerini aldım.",
+						"PostgreSQL’den alınan backend yapılandırmalarına göre frontend bileşenlerini oluşturan dinamik, veri odaklı formlar tasarlayıp geliştirerek sabit kodlanmış form yapılarına olan ihtiyacı ortadan kaldırdım.",
+						"Access ve refresh token mekanizmaları, korumalı rotalar, rol tabanlı erişim kontrolü (RBAC) ve ayrıntılı yetki yönetimi içeren JWT tabanlı kapsamlı bir kimlik doğrulama ve yetkilendirme sistemi kurdum.",
+						"GitHub Actions ve Ubuntu VPS ile uçtan uca CI/CD süreçlerini otomatikleştirerek derleme, dağıtım ve canlıya çıkış süreçlerini hızlandırdım.",
+						"Memoization, code splitting ve lazy loading ile Core Web Vitals değerlerini iyileştirdim.",
+						"Frontend geliştirmenin yanında Java, Spring Boot ve REST API’lerle backend geliştirmeye katkı verdim; API tasarımı, istek doğrulama, hata yönetimi, test ve servis entegrasyonu üzerinde çalıştım."
 					]
 				},
 				{
-					"title": "ElodiLab — Eğitim Teknolojileri",
-					"period": "Yönetim paneli",
-					"subtitle": "Eğitim platformu",
+					"title": "Karina – WEB",
+					"subtitle": "Proje",
 					"bullets": [
-						"Yönetim panelinin frontend’ini React ve TypeScript ile geliştirdim",
-						"Kod incelemelerinde tekrar eden yorumları, ekibin kullandığı bir frontend kontrol listesine dönüştürdüm",
-						"GitHub Actions ile CI/CD sürecini; ESLint, Prettier ve pre-commit kancalarını kurdum"
+						"Next.js, TypeScript, Tailwind CSS, Framer Motion ve SCSS kullanarak responsive, kullanıcı dostu arayüzler geliştirdim.",
+						"SEO meta etiketlerini uyguladım ve sitenin tüm içeriğini TanStack Query ile backend REST API’lerine bağladım.",
+						"SEO ve daha hızlı ilk yükleme için 10+ herkese açık sayfada Next.js SSR / SSG / ISR kullandım.",
+						"Chrome DevTools ve Google Lighthouse ile performans sorunlarını tespit edip çözerek Core Web Vitals (LCP, CLS ve INP) değerlerini optimize ettim.",
+						"Leaflet haritasını projeye entegre ettim; işaretçilerini, stilini ve etkileşim davranışını ürün gereksinimlerine göre özelleştirdim.",
+						"Ürün için CI/CD (GitHub Actions) ve canlı ortam dağıtımlarını kurdum."
 					]
 				}
 			],
@@ -64,50 +74,58 @@
 				"Next.js",
 				"React",
 				"TypeScript",
-				"NestJS",
-				"PostgreSQL",
-				"Prisma",
 				"TanStack Query",
 				"Jotai",
+				"Redux Toolkit",
 				"React Hook Form",
 				"SignalR",
+				"AWS S3",
 				"GitHub Actions",
-				"Jest"
+				"Jest",
+				"Claude Code"
 			]
 		},
 		{
-			"period": "Ağustos 2023 — Şubat 2024 · 7 ay",
-			"role": "Junior Frontend Geliştirici",
-			"company": "BossCubes Teknoloji A.Ş. · Yarı zamanlı · Türkiye, uzaktan",
+			"period": "14/08/2023 — 20/02/2024",
+			"role": "Junior Frontend Developer",
+			"company": "BossCubes Teknoloji A.Ş.",
 			"projects": [
 				{
-					"title": "Helpdesk Yönetim Paneli",
+					"title": "Helpdesk Admin Panel",
 					"bullets": [
-						"Helpdesk Yönetim Paneli’ni React ve Vite ile geliştirdim; yönlendirme ve yeniden kullanılabilir bileşenlere odaklandım",
-						"Mantine DataTable ile 1.000+ satırlık tabloları sanallaştırdım",
-						"i18n ile çoklu dil desteği ekledim",
-						"İş mantığını arayüzden ayıran, yeniden kullanılabilir custom hook’lar ve yardımcı fonksiyonlar yazdım",
-						"Figma tasarımlarını erişilebilir bileşenlere dönüştürdüm; backend ekipleriyle API sözleşmelerini belirledim"
+						"Helpdesk Admin Panel’i React ve Vite ile geliştirdim; yönlendirme, yeniden kullanılabilir bileşenler ve custom hook’lar dahil.",
+						"Mantine DataTable ile 1.000+ satırlık tabloları sanallaştırdım ve i18n ile çoklu dil desteği ekledim.",
+						"Figma’dan erişilebilir bileşenler geliştirdim ve backend ekibiyle API sözleşmelerini belirledim.",
+						"Backend yapılandırmalarına göre frontend bileşenlerini oluşturan dinamik, veri odaklı formlar geliştirdim.",
+						"HelpDesk projesi için TanStack Query ve React Hook Form entegrasyonunu yaptım.",
+						"Eski modülleri yeniden düzenleyip optimize ettim — okunabilirliği ve sürdürülebilirliği artırdım."
 					]
 				}
 			],
-			"tags": ["React", "TypeScript", "Vite", "Mantine UI", "i18n"]
-		},
-		{
-			"period": "Temmuz 2023 — Ağustos 2023 · 2 ay",
-			"role": "Frontend Stajyer",
-			"company": "BossCubes Teknoloji A.Ş. · Staj · İstanbul, ofisten",
-			"bullets": [
-				"Helpdesk Yönetim Paneli’ne yeni özellikler ekledim ve arayüz hatalarını giderdim",
-				"Alan yapılandırmalarına göre çalışan esnek, yeniden kullanılabilir dinamik form bileşenleri geliştirdim",
-				"Figma tasarımlarından Mantine UI ile responsive arayüzler geliştirdim"
+			"tags": [
+				"React",
+				"TypeScript",
+				"Vite",
+				"Mantine UI",
+				"TanStack Query",
+				"React Hook Form",
+				"i18n"
 			]
 		},
 		{
-			"period": "Eylül 2019 — Temmuz 2023",
-			"role": "Bilgisayar Mühendisliği, Lisans",
-			"company": "Trakya Üniversitesi · Edirne",
-			"note": "Bitirme projesi: Rezztoran — React ile geliştirdiğim restoran rezervasyon uygulaması ve yönetim paneli."
+			"period": "10/07/2023 — 10/08/2023",
+			"role": "Frontend Developer Intern",
+			"company": "BossCubes Teknoloji A.Ş.",
+			"bullets": [
+				"Helpdesk Admin Panel’e yeni özellikler ekledim ve arayüz hatalarını giderdim",
+				"Alan yapılandırmalarına göre esnek, yeniden kullanılabilir dinamik form bileşenleri geliştirdim",
+				"Figma tasarımlarından Mantine UI ile responsive, kullanıcı dostu arayüzler geliştirdim"
+			]
+		},
+		{
+			"period": "23/09/2019 — 25/06/2023",
+			"role": "Bilgisayar Mühendisliği Lisans",
+			"company": "Trakya Üniversitesi"
 		}
 	]
 }

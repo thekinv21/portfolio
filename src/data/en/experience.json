@@ -1,62 +1,72 @@
 {
 	"items": [
 		{
-			"period": "Mar 2024 — May 2026 · 2 yrs 3 mos",
-			"role": "Full Stack Engineer",
-			"company": "EDICT Digital Bilgi Teknolojileri A.Ş. · Full-time · Istanbul, Remote",
-			"summary": "Full-stack developer at a software services company, delivering web apps, admin panels and websites for clients in telecom, manufacturing and education.",
+			"period": "01/03/2024 — 15/05/2026",
+			"role": "Full Stack Developer",
+			"company": "Edict Digital Bilgi Teknolojileri A.Ş.",
 			"projects": [
 				{
-					"title": "Kastamonu Entegre — LIKE Admin",
-					"period": "Apr 25 — Jan 26",
-					"subtitle": "Hayat Holding · manufacturing",
+					"title": "Edict Digital — General",
+					"subtitle": "Across all Edict Digital products",
 					"bullets": [
-						"Built the entire frontend end to end with Next.js: architecture, routing, components",
-						"Real-time order locking with SignalR to prevent concurrent edit conflicts",
-						"Owned the Order module across three stages: Draft → Quote → Order",
-						"Sped up dashboards by virtualizing 1,000+ row tables and moving heavy filters out of keystroke updates",
-						"State with Jotai; data and forms with TanStack Query, React Hook Form and Axios",
-						"Optimized Webpack builds with code splitting and bundle size reduction"
+						"Configured project-wide engineering standards across every Edict Digital product, including GitHub Actions CI/CD, ESLint, Prettier, Husky, Jest, and React Testing Library.",
+						"Created reusable custom React hooks and shared utilities to separate business logic from UI components and reduce duplication.",
+						"Applied AI-assisted development with Claude Code, Codex, Gemini, and GitHub Copilot for implementation, testing, refactoring, and technical analysis.",
+						"Delivered responsive, accessible frontend features using React.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3/SCSS, Next.js, and SSR.",
+						"Implemented secure AWS S3 file-upload flows with presigned URLs and contributed to performance, code-quality, and maintainability improvements."
 					]
 				},
 				{
-					"title": "Turkcell — TLife",
-					"period": "Oct 24 — Dec 24",
-					"subtitle": "Telecom · Avantajlar Dünyası",
+					"title": "Kastamonu Entegre – LIKE Admin Panel",
+					"period": "04/2025 — 01/2026",
+					"subtitle": "Client Project",
 					"bullets": [
-						"Built the entire Campaigns module of “Avantajlar Dünyası” (Benefits World) single-handedly"
+						"Built responsive, user-friendly interfaces from Figma designs with Kendo UI.",
+						"Refactored and optimized legacy modules — improved readability/maintainability and cut load/render time on affected screens by ~20–30%.",
+						"Introduced TanStack Query as the data layer for caching and request deduplication; managed client state with Jotai.",
+						"Implemented authorization and secure authentication using HttpOnly, Secure JWT cookies, with input validation and protection against common OWASP vulnerabilities.",
+						"Owned the 3-stage Order module (Draft, Quote, Order) with real-time order locking via SignalR to prevent concurrent edits.",
+						"Integrated AWS secure multi-part file upload flows with presigned URLs and fallback cleanup logic, enabling smooth transfer of large assets up to 1GB.",
+						"Optimized Webpack builds with code splitting and bundle size reduction.",
+						"Used AI coding agents (Claude Code, Codex, Gemini) with team rules and small, scoped prompts; reviewed every diff for correct APIs, types and edge cases and validated changes with Jest and manual QA.",
+						"Practiced structured agent review: small scoped prompts, checked TanStack Query usage and form/state logic, and rejected unsafe or over-scoped agent changes before CI/CD deploys.",
+						"Designed a Claude Code-based AI development team for the project, assigning dedicated Architect, Developer, Tester, and Planner agents, each with a distinct role and responsibility."
 					]
 				},
 				{
-					"title": "COST — Admin Panel",
-					"period": "2023 — 2025",
-					"subtitle": "Customer & Configurator modules",
+					"title": "Turkcell TLIFE – Avantajlar Dünyası Module",
+					"period": "10/2024 — 12/2024",
+					"subtitle": "Client Project",
 					"bullets": [
-						"Built the entire panel single-handedly, incl. Customer and Configurator modules",
-						"Developed a config-driven dynamic form engine",
-						"Set up the full CI/CD pipeline with GitHub Actions for automated testing and deployment",
-						"Code style rules with ESLint, Prettier and Husky pre-commit hooks",
-						"Improved Core Web Vitals with Lighthouse and React Profiler (memoization, code splitting, lazy loading)"
+						"Built dynamic, responsive interfaces with Blazor, jQuery and vanilla JavaScript, loading data asynchronously via AJAX.",
+						"Developed the Category and Tags modules, enabling structured content organization and filtering.",
+						"Developed the Campaign module and visualized campaign-related data in dashboard charts."
 					]
 				},
 				{
-					"title": "Karina — Web",
-					"period": "Solo build",
-					"subtitle": "SEO-friendly web application",
+					"title": "COST – Admin Panel",
+					"subtitle": "Project",
 					"bullets": [
-						"Built the entire SEO-friendly web application single-handedly with Next.js and TypeScript",
-						"Set up the full CI/CD pipeline with GitHub Actions",
-						"Code style rules with ESLint, Prettier and Husky pre-commit hooks"
+						"Developed responsive, user-friendly admin panel interfaces from Figma designs using React.js, Vite, TypeScript, React Router Dom, Tailwind CSS, and SCSS.",
+						"Introduced TanStack Query as the data layer for caching and request deduplication; managed client state with Redux Toolkit; managed client form state with React Hook Form.",
+						"Built a PDF generation and export workflow from scratch using React PDF Renderer, enabling users to preview and download offer documents populated with API-fetched data on the frontend, replacing the previous backend-generated PDF process.",
+						"Designed and developed dynamic, data-driven forms that render frontend components based on backend configurations retrieved from PostgreSQL, eliminating the need for hardcoded form structures.",
+						"Established a comprehensive authentication and authorization system using JWT, featuring access and refresh token mechanisms, protected routes, role-based access control (RBAC), and granular permission management.",
+						"Automated end-to-end CI/CD workflows using GitHub Actions and an Ubuntu VPS, streamlining application builds, deployments, and production releases.",
+						"Improved Core Web Vitals with memoization, code splitting and lazy loading.",
+						"Contributed to backend development using Java, Spring Boot, and REST APIs, working on API design, request validation, error handling, testing, and service integration alongside frontend development."
 					]
 				},
 				{
-					"title": "ElodiLab — EdTech",
-					"period": "Admin panel",
-					"subtitle": "Education platform",
+					"title": "Karina – WEB",
+					"subtitle": "Project",
 					"bullets": [
-						"Developed the admin panel frontend with React and TypeScript",
-						"Created a frontend review checklist that turned repeated review comments into team guidance",
-						"Set up CI/CD with GitHub Actions; ESLint, Prettier and pre-commit hooks"
+						"Developed responsive, user-friendly interfaces using Next.js, TypeScript, Tailwind CSS, Framer Motion and SCSS.",
+						"Implemented SEO meta tags and connected all site content to backend REST APIs with TanStack Query.",
+						"Used Next.js SSR / SSG / ISR on 10+ public pages for SEO and faster first load.",
+						"Optimized Core Web Vitals (LCP, CLS, and INP) by identifying and resolving performance issues using Chrome DevTools and Google Lighthouse.",
+						"Customized and integrated a Leaflet map into the project, adapting its markers, styling and interaction behavior to the product requirements.",
+						"Set up CI/CD (GitHub Actions) and production deploys for the product."
 					]
 				}
 			],
@@ -64,50 +74,58 @@
 				"Next.js",
 				"React",
 				"TypeScript",
-				"NestJS",
-				"PostgreSQL",
-				"Prisma",
 				"TanStack Query",
 				"Jotai",
+				"Redux Toolkit",
 				"React Hook Form",
 				"SignalR",
+				"AWS S3",
 				"GitHub Actions",
-				"Jest"
+				"Jest",
+				"Claude Code"
 			]
 		},
 		{
-			"period": "Aug 2023 — Feb 2024 · 7 mos",
+			"period": "14/08/2023 — 20/02/2024",
 			"role": "Junior Frontend Developer",
-			"company": "BossCubes Teknoloji A.Ş. · Part-time · Türkiye, Remote",
+			"company": "BossCubes Teknoloji A.Ş.",
 			"projects": [
 				{
 					"title": "Helpdesk Admin Panel",
 					"bullets": [
-						"Built the Helpdesk Admin Panel with React and Vite, focusing on routing and reusable components",
-						"Virtualized 1,000+ row tables with Mantine DataTable",
-						"Implemented i18n multi-language support",
-						"Created reusable custom hooks and utilities, separating logic from UI",
-						"Turned Figma designs into accessible components and defined API contracts with backend teams"
+						"Built the Helpdesk Admin Panel with React and Vite, including routing, reusable components and custom hooks.",
+						"Virtualized 1,000+ row tables with Mantine DataTable and added i18n multi-language support.",
+						"Built accessible components from Figma and defined API contracts with the backend team.",
+						"Developed dynamic and data-driven forms that render frontend components based on backend configurations.",
+						"Implemented TanStack Query and React Hook Form for the HelpDesk project.",
+						"Refactored and optimized legacy modules — improved readability and maintainability."
 					]
 				}
 			],
-			"tags": ["React", "TypeScript", "Vite", "Mantine UI", "i18n"]
-		},
-		{
-			"period": "Jul 2023 — Aug 2023 · 2 mos",
-			"role": "Frontend Intern",
-			"company": "BossCubes Teknoloji A.Ş. · Internship · Istanbul, On-site",
-			"bullets": [
-				"Implemented new features and fixed UI issues in the Helpdesk Admin Panel",
-				"Built flexible, reusable dynamic form components based on field configurations",
-				"Built responsive interfaces from Figma designs with Mantine UI"
+			"tags": [
+				"React",
+				"TypeScript",
+				"Vite",
+				"Mantine UI",
+				"TanStack Query",
+				"React Hook Form",
+				"i18n"
 			]
 		},
 		{
-			"period": "Sep 2019 — Jul 2023",
-			"role": "B.Sc. Computer Engineering",
-			"company": "Trakya University · Edirne",
-			"note": "Graduation project: Rezztoran — a restaurant booking web app and admin panel built with React."
+			"period": "10/07/2023 — 10/08/2023",
+			"role": "Frontend Developer Intern",
+			"company": "BossCubes Teknoloji A.Ş.",
+			"bullets": [
+				"Implemented new features and fixed UI issues in the Helpdesk Admin Panel",
+				"Built flexible, reusable dynamic form components based on field configurations",
+				"Built responsive, user-friendly interfaces from Figma designs with Mantine UI"
+			]
+		},
+		{
+			"period": "23/09/2019 — 25/06/2023",
+			"role": "Bachelor's Degree in Computer Engineering",
+			"company": "Trakya University"
 		}
 	]
 }

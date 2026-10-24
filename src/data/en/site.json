@@ -1,7 +1,7 @@
 {
 	"meta": {
-		"title": "Vadim Kiniabaev — Full-Stack Developer",
-		"description": "Full-stack developer building fast, accessible interfaces with React & Next.js and reliable APIs with NestJS."
+		"title": "Vadim Kiniabaev — AI Engineer & Full-Stack Developer",
+		"description": "AI Engineer and full-stack developer with 3 years of experience owning React and Next.js products end to end for enterprise clients like Turkcell and Kastamonu Entegre."
 	},
 	"nav": {
 		"label": "Primary",
@@ -21,23 +21,26 @@
 		"ariaLabel": "Türkçe sürüm"
 	},
 	"hero": {
-		"status": "Open to frontend, backend & full-stack roles",
+		"status": "Open to AI, full-stack & frontend roles",
 		"greeting": "Hi, I'm",
-		"intro": "I develop high-performance, scalable web applications. I design modern, user-focused interfaces with **React & Next.js** and build secure, maintainable infrastructure with **NestJS**.",
+		"intro": "I love building things — web apps with **React, Next.js** and **NestJS**. Right now I'm learning **AI** in depth.",
 		"cv": "Download CV",
 		"portraitAlt": "Portrait of Vadim Kiniabaev",
-		"badge": "FULL-STACK · REACT · NEXT.JS · NESTJS · ",
+		"badge": "AI ENGINEER · FULL-STACK · REACT · NEXT.JS · ",
 		"stat": { "value": "3+ yrs", "label": "shipping production apps" },
 		"location": "On-site in Istanbul · Remote anywhere else",
 		"facts": [
-			{ "label": "ROLE", "value": "Full-Stack Developer" },
-			{ "label": "FOCUS", "value": "Full-Stack Development" },
+			{ "label": "ROLE", "value": "Full-Stack Developer / AI Engineer" },
+			{
+				"label": "FOCUS",
+				"value": "Full-Stack Development / AI-Based Development"
+			},
 			{ "label": "LAST ROLE", "value": "EDICT Digital, 2024–26" },
 			{ "label": "EDUCATION", "value": "Computer Eng., Trakya Univ." }
 		],
 		"now": {
 			"label": "NOW",
-			"text": "Learning **Java** in depth and getting ready for **Spring Boot** — and writing about what I build on Medium.",
+			"text": "Currently learning **AI-based development** in depth.",
 			"updated": "Updated Oct 2026"
 		}
 	},
@@ -47,6 +50,7 @@
 			"React 19",
 			"Next.js",
 			"TypeScript",
+			"Claude Code",
 			"NestJS",
 			"PostgreSQL",
 			"Prisma",
@@ -96,18 +100,43 @@
 	},
 	"contact": {
 		"rows": [
-			{ "label": "EMAIL", "value": "vkiniabaev@gmail.com", "href": "mailto:vkiniabaev@gmail.com" },
-			{ "label": "LINKEDIN", "value": "in/vadimkiniabaev", "href": "https://www.linkedin.com/in/vadimkiniabaev" },
-			{ "label": "GITHUB", "value": "@thekinv21", "href": "https://github.com/thekinv21" },
-			{ "label": "MEDIUM", "value": "@thekinv21", "href": "https://medium.com/@thekinv21" }
+			{
+				"label": "EMAIL",
+				"value": "vkiniabaev@gmail.com",
+				"href": "mailto:vkiniabaev@gmail.com"
+			},
+			{
+				"label": "LINKEDIN",
+				"value": "in/vadimkiniabaev",
+				"href": "https://www.linkedin.com/in/vadimkiniabaev"
+			},
+			{
+				"label": "GITHUB",
+				"value": "@thekinv21",
+				"href": "https://github.com/thekinv21"
+			},
+			{
+				"label": "MEDIUM",
+				"value": "@thekinv21",
+				"href": "https://medium.com/@thekinv21"
+			}
 		],
 		"copy": { "idle": "Copy email", "done": "Copied!" },
 		"cv": "CV",
 		"details": [
 			{ "label": "BASED IN", "value": "Istanbul, Türkiye" },
-			{ "label": "WORK MODE", "value": "On-site or hybrid in Istanbul · Remote outside Istanbul" },
-			{ "label": "LOOKING FOR", "value": "Frontend, backend & full-stack roles" },
-			{ "label": "CORE STACK", "value": "React · Next.js · NestJS · PostgreSQL" }
+			{
+				"label": "WORK MODE",
+				"value": "On-site or hybrid in Istanbul · Remote outside Istanbul"
+			},
+			{
+				"label": "LOOKING FOR",
+				"value": "AI, full-stack, frontend & backend"
+			},
+			{
+				"label": "CORE STACK",
+				"value": "React 19 · Next.js · TypeScript · NestJS · PostgreSQL"
+			}
 		]
 	},
 	"footer": {
